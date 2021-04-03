@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://nathanaelj.github.io/</loc>
+  <lastmod>2021-04-03T19:46:23+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://nathanaelj.github.io/Projects</loc>
+  <lastmod>2021-04-03T19:46:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nathanaelj.github.io/Feb2021</loc>
+  <lastmod>2021-04-03T19:46:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nathanaelj.github.io/Jan2021</loc>
+  <lastmod>2021-04-03T19:46:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nathanaelj.github.io/Dec2020</loc>
+  <lastmod>2021-04-03T19:46:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nathanaelj.github.io/EPQ</loc>
+  <lastmod>2021-04-03T19:46:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nathanaelj.github.io/CV</loc>
+  <lastmod>2021-04-03T19:46:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nathanaelj.github.io/EPQ.pdf</loc>
+  <lastmod>2021-04-03T19:46:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nathanaelj.github.io/resources-CV/NJenkinsCV.pdf</loc>
+  <lastmod>2021-04-03T19:46:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
