@@ -1,11 +1,17 @@
+/* Nathanael Jenkins*/
+/* 2021 */
+
+/* -------------- DEFAULT STYLES ------------- */
+
+/* All formatting; black background, crosshair cursor */
 *{
     background: black;
     cursor: crosshair;
 }
 
+/* Selected test shows red */
 ::selection{
-    background-color: #AA0000;
-    color: #FFF;
+    color: #AA0000;
 }
 
 /* Text default */
@@ -16,6 +22,7 @@ body, figcaption, h2, h3, p, a, nav, div{
     padding: 0;
 }
 
+/* Span */
 span{
     background: none;
 }
@@ -32,24 +39,11 @@ h1{
     padding-top: 2px;
 }
 
+/* Caption default (small) */
 figcaption{
     color: #555;
     font: 1.7vh Helvetica Neue Bold, Arial Black, Verdana, sans-serif;
     text-align: center;
-}
-
-.sidevid{
-    width: 40vw;
-    display; inline;
-    float: right;
-    margin-right: 15vw;
-    margin-left: 1vw;
-}
-
-.fullvid{
-    width: 70vw;
-    display; inline;
-    margin-left: 15vw;
 }
 
 /* Header 2 default (italic) */
@@ -72,39 +66,13 @@ p a{
 
 
 
+/* -------------- CUSTOM STYLES ------------- */
+
+/* HEADER */
+
 /* Site header display */
 .site-header{
     display: inline;
-}
-
-/* Text wrapping */
-.wrapper{
-    max-width: 70%;
-    margin-right: 5%;
-    margin-left: 5%;
-    padding-right: 10%;
-    padding-left: 10%;
-}
-
-/* Project images */
-.projectimg{
-    height: 10vh;
-    clip-path: circle();
-    margin-top: 2vh;
-    margin-left: 38%;
-    margin-right: 1%;
-    display: inline;
-    float: left;
-}
-
-.cat{
-    max-width: 70%;
-    margin-right: 5%;
-    margin-left: 5%;
-    padding-right: 10%;
-    padding-left: 10%;
-    clip-path: circle();
-    opacity: 0.9;
 }
 
 /* Homepage link formatting */
@@ -113,7 +81,7 @@ p a{
     padding: 0%;
 }
 
-
+/* Homepage link (surname) */
 .name1{
     font-family: "HelveticaNeue-UltraLight";
     font-size: 100%;
@@ -129,6 +97,7 @@ p a{
     padding: 4px 4px;
 }
 
+/* Dropdown settings */
 .dropdown{
     position: relative;
     display: inline-block;
@@ -192,20 +161,47 @@ p a{
     z-index: 1;
 }
 
+
+
+/* CONTENT */
+
+/* Text wrapping */
+.wrapper{
+    max-width: 70%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+/* Project images (centered) */
+.projectimg{
+    height: 10vh;
+    clip-path: circle();
+    margin-top: 2vh;
+    margin-left: 38%;
+    margin-right: 1%;
+    display: inline;
+    float: left;
+}
+
+/* Error page image (circular crop) */
+.cat{
+    max-width: 70%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    clip-path: circle();
+    opacity: 0.9;
+}
+
 /* Homepage left box */
 .introbox{
     max-width: 50vw;
     text-align: justify;
     margin-right: 25vw;
     margin-left: 25vw;
-}
-
-/* Logo sizing */
-.logo{
-    width: 3vh;
-    vertical-align: middle;
-    margin-top: -0.4vw;
-    background: none;
 }
 
 /* PDF embed box */
@@ -220,6 +216,48 @@ p a{
     overflow: hidden;
 }
 
+/* Changes colour of links on hover */
+.menu-links:hover, .social-links:hover, .logo:hover, p a:hover, h1 a:hover, span:hover{
+    background-color: #333;
+    cursor: pointer;
+}
+
+.name:hover, .name1:hover, a img:hover{
+    cursor: pointer;
+}
+
+
+
+/* VIDEOS */
+
+/* Video inline wtih articles (right aligned) */
+.sidevid{
+    width: 40vw;
+    display; inline;
+    float: right;
+    margin-right: 15vw;
+    margin-left: 1vw;
+}
+
+/* Full width video (centered) */
+.fullvid{
+    width: 70vw;
+    display; inline;
+    margin-left: 15vw;
+}
+
+
+
+/* FOOTER */
+
+/* Logo sizing */
+.logo{
+    width: 3vh;
+    vertical-align: middle;
+    margin-top: -0.4vw;
+    background: none;
+}
+
 /* Social media links */
 .social-links, .social-links:visited{
     display: inline;
@@ -231,20 +269,14 @@ p a{
     vertical-align: middle;
 }
 
-/* Changes colour of links on hover */
-.menu-links:hover, .social-links:hover, .logo:hover, p a:hover, h1 a:hover, span:hover{
-    background-color: #333;
-    cursor: pointer;
-}
-
-.name:hover, .name1:hover, a img:hover{
-    cursor: pointer;
-}
-
 /* Footer default */
 .footer{
     text-align: center
 }
+
+
+
+/* -------------- MOBILE STYLES ------------- */
 
 /* Small screen optimisation */
 @media all and (max-aspect-ratio: 624/768){
@@ -254,8 +286,8 @@ p a{
     .menu-links, .social-links, p a, *, a{
         font-size: 1.4vh;
     }
-    .name{
-        font-size: 3vh;
+    .name, .name1{
+        font-size: 2vh;
     }
     .menu-right{
         font-size: 2.5vh;
