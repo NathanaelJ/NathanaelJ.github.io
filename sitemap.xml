@@ -34,6 +34,11 @@
 			<loc>https://nathanaelj.github.io/cv.html</loc>
 			<changefreq>monthly</changefreq>
 		</url>
+        
+        <url>
+            <loc>https://nathanaelj.github.io/f1is.html</loc>
+            <changefreq>monthly</changefreq>
+        </url>
 
 	</urlset>
 
