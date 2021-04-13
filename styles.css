@@ -281,6 +281,7 @@ p a{
     }
     .menu-links, .social-links, p a, *, a{
         font-size: 1.4vh;
+        margin: 4px, 4px;
     }
     .name, .name1{
         font-size: 2vh;
@@ -298,17 +299,17 @@ p a{
         margin-right: 10%;
         padding: 0, 0;
     }
-    .introbox .site-main{
+    .site-main{
         margin-top: 2%;
-        max-width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        max-width: 75vw;
+        margin-left: 12.5vw;
+        margin-right: 12.5vw;
         padding: 0, 0;
     }
     .wrapper{
         margin-top: 2%;
         font-size: 1.4vh;
-        max-width: 90%;
+        max-width: 90vw;
         margin-right: 5%;
         margin-left: 5%;
         padding: 0, 0;
