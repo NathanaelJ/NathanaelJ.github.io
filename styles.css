@@ -39,6 +39,13 @@ h1{
     padding-top: 2px;
 }
 
+/* Header 3 default (medium) */
+h3{
+    font: 5vh "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Verdana, sans-serif;
+    color: #999;
+    padding-top: 2px;
+}
+
 /* Caption default (small) */
 figcaption{
     color: #555;
