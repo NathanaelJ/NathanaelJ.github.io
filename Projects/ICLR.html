@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+        
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles.css" />
+        <title>Nathanael Jenkins | ICLR</title>
+    </head>
+
+
+    <body>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <div w3-include-html="../header.html"></div>
+        <script>w3.includeHTML();</script>
+        
+        <main class="site-main">
+            
+            <!--    ICLR    -->
+            <p class="wrapper"><br/><a href="ICLR" style="font-size: 5vh;">ICLR</a></p>
+            <p class="wrapper">The Altitude Record Team (ART) is a small sub-team of Imperial College London Rocketry (ICLR), with a particular focus on breaking United Kingdom Rocketry Association (UKRA) altitude records. The team is relatively young, having formed in 2019, and currently has plans for three rockets, with one successful launch.<br/><br/>ART is split into a number of smaller sub-teams, with responsibilities for different rocket performance criteria and components. As lead aerodynamics and simulations engineer, I lead our small team of aerodynamicists in simulating the behaviour of the rocket using OpenRocket, StarCCM+, MATLAB, and other packages. The majority of effort is placed on pre-apogee performance, which has the greatest impact on altitude record attempts, although we also work with the recovery, structures and avionics sub-teams to consider post-apogee performance, structural integrity and data acquisition.<br/><br/></p>
+            
+            <!--    ASTRA    -->
+            <hr width="50%" size="1px" color="#555" z-index="1">
+            <h3 class="wrapper">ASTRA</h3>
+            <p class="wrapper">ASTRA served as the team's first ever rocket, and an excellent test bed for future rocket components. Developed in early 2021, it took its first flight on the 11th April 2021, reaching an apogee of 546m.<br/><br/></p>
+            <img src="Proj1/OR.png" class="wrapper" alt="OpenRocket model">
+            <figcaption class="wrapper">OpenRocket model of ASTRA</figcaption>
+            <p class="wrapper"><br/>ASTRA's first flight provided excellent validation of OpenRocket predictions for low-mach flight (M&#60;0.3). The simulated velocity and altitude profiles matched avionics data, particularly before apogee. The shock cord came untied from a recovery eye bolt when the streamer was deployed, causing the upper body tube to undergo ballistic descent. This lightened the load under the parachute, likely causing the slower descent visible in the altitude plot. Aside from the loss of the upper body tube, all components worked well, and avionics data matched simulations as expected. Most importantly, apogee predictions were accurate to less than 5m.<br/><br/></p>
+            <img src="Proj1/ASTRAData.jpg" class="wrapper" alt="ASTRA flight data">
+            <figcaption class="wrapper">ASTRA flight data</figcaption>
+            <p class="wrapper"><br/>ASTRA is expected to fly again, providing an excellent test-bed for future rocket components. Lessons learnt from ASTRA's launch have been documented and applied in order to improve the design, manufacture, and launch procedure, bringing ART one step closer to breaking our first record.<br/><br/></p>
+
+            <!--    APEX    -->
+            <hr width="50%" size="1px" color="#555" z-index="1">
+            <h3 class="wrapper">APEX</h3>
+            <video preload autoplay loop muted playsinline class="sidevid">
+              <source src="Proj1/Video.mp4" type="video/mp4">
+            Oh dear! Your browser doesn't support this video.
+            </video>
+            <figcaption class="sidevid">APEX fin CFD</figcaption>
+            <p class="wrapper">APEX will be ART's first record attempt, aiming to break the UKRA I-class altitude record. Using a single motor, it will need to fly higher than 2788m (9199ft), travelling at supersonic speeds and calling for a highly-optimised design. APEX will be a step up from ASTRA, using advanced CFD for aerodynamic optimisation.<br/><br/>One of the most apparrent issues when developing APEX was the failure of OpenRocket to simulate behaviour near the speed of sound. This is beacuse of the complexity of modelling wave drag, particularly without the use of CFD. The approximations made by OpenRocket are difficult to validate, so simulations are expected to be less accurate than for low-mach flights.<br/><br/>To account for the issues caused by OpenRocket's approximations, CFD was used to optimise the rocket's aerodynamics, with a particular focus on nose shape and fin planform. APEX's fins were optimised through CFD testing using StarCCM+, for speeds above and below mach 1. It was found that a curved 'delta-style' fin was optimal, providing the greatest stability for the lowest drag.<br/><br/></p>
+            <img src="Proj1/streamlines.png" class="wrapper" alt="APEX Fins">
+            <figcaption class="wrapper">APEX streamlines</figcaption>
+            <p class="wrapper"><br/>Following the first launch of ASTRA, APEX is currently under a significant design review in order to properly implement findings from the launch.<br/><br/></p>
+            
+            <!--    ASCENSION    -->
+            <hr width="50%" size="1px" color="#555" z-index="1">
+            <h3 class="wrapper">ASCENSION</h3>
+            <p class="wrapper">ART is aiming to break the UKRA L-Class altitude record with our biggest rocket yet, ASCENSION. Watch this space!<br/><br/></p>
+            <p><br/></p>
+            
+            <!--    FLIGHTS    -->
+            <hr width="50%" size="1px" color="#555" z-index="1">
+            <h3 class="wrapper">Flights</h3>
+            <div class="wrapper">
+                <p><br/><a href="Proj1/ASTRA.mp4">ASTRA, 11.04.2021 (EARS event)</a></p>
+                <h2 style="margin-left: 2%">First ART flight<br/>Successful launch and (partial) recovery of a rocket<br/>Use and validation of in-house avionics systems<br/>Verification of OpenRocket predictions for low-mach flight<br/>Successful implementation of in-house lugless launch system<br/>Validation of ASTRA's structure<br/><br/></h2>
+            </div>
+
+            <p class="wrapper"><a href="../Projects.html">Check out more of my projects</a><br/><br/></p>
+        </main>
+        
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <div w3-include-html="../footer.html"></div>
+        <script>w3.includeHTML();</script>
+    </body>
+    
+</html>
