@@ -1,6 +1,6 @@
 <b>NathanaelJ.github.io</b>
 
-I'm no HTML developer... or any kind of developer for that matter.
+I'm no web developer... or any kind of developer for that matter.
 This is a 'just for fun' project to explore the basics of HTML and CSS (and boy do I have a new respect for web developers!)
 <hr>
 
