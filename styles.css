@@ -185,13 +185,18 @@ p a{
     margin-right: 1%;
     display: inline;
     float: left;
-    transition: 0.25s;
+    transition: 0.1s;
 }
 
 /* Project preview boxes */
 .box{
+    position: absolute;
     width: 60vw;
     margin-left:20vw;
+}
+.box *{
+    background: none;
+    transition: 0.1s;
 }
 
 /* Error page image (circular crop) */
@@ -329,7 +334,16 @@ p a{
     transform: translate(-2vw, -1vw);
     height: 14vh;
     z-index: 2;
-    transition:  0.25s;
+    transition: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.box:hover p, .box:hover a, .box:hover h2{
+    transform: translateY(-1vw);
+    font-size: 115%;
+    z-index: 2;
+    transition: 0.1s;
+    /*transition-delay: 0.1s;*/
 }
 
 
