@@ -3,28 +3,24 @@
 
 /* -------------- DEFAULT STYLES ------------- */
 
-/* All formatting; black background, crosshair cursor */
+/* All formatting; white background, crosshair cursor */
 *{
-    background: black;
+    background: white;
     cursor: crosshair;
 }
 
-/* Selected test shows red */
+/* Selected text */
 ::selection{
-    color: #AA0000;
+    color: white;
+    background: #444;
 }
 
 /* Text default */
-body, figcaption, h2, h3, p, a, nav, div{
-    font: 2.4vh "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Verdana, sans-serif;
-    color: #999;
+body, figcaption, h2, p, a, nav, div{
+    font: small "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Verdana, sans-serif;
+    color: #444;
     margin: 0;
     padding: 0;
-}
-
-/* Span */
-span{
-    background: none;
 }
 
 /* Hyperlink default (consistent colour) */
@@ -34,34 +30,31 @@ a:link, a:visited, a:active{
 
 /* Header 1 default (bold) */
 h1{
-    font: 120%/1.3 Helvetica Neue Bold, Arial Black, Verdana, sans-serif;
-    color: #999;
-    padding-top: 2px;
+    font: xx-large Helvetica Neue Bold, Arial Black, Verdana, sans-serif;
+    margin-bottom: 0;
+    color: #444;
+}
+
+h2{
+    font-style: italic;
 }
 
 /* Header 3 default (medium) */
-h3{
-    font: 5vh "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Verdana, sans-serif;
-    color: #999;
+h3, h3 a{
+    font: x-large "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Verdana, sans-serif;
+    color: #444;
     padding-top: 2px;
 }
 
 /* Caption default (small) */
 figcaption{
-    color: #555;
-    font: 1.7vh Helvetica Neue Bold, Arial Black, Verdana, sans-serif;
+    color: #999;
+    font: small Helvetica Neue Bold, Arial Black, Verdana, sans-serif;
     text-align: center;
-}
-
-/* Header 2 default (italic) */
-h2{
-    font-style: italic;
-    font-size: 100%;
 }
 
 /* Paragraph default */
 p{
-    font-size: 100%;
     text-align: justify;
 }
 
@@ -80,27 +73,30 @@ p a{
 /* Site header display */
 .site-header{
     display: inline;
+    margin: 1vw;
 }
 
 /* Homepage link formatting */
 .name{
-    font-size: 200%;
-    padding: 0%;
+    font-size: xx-large;
+    padding: 0;
+    margin: 2px;
+    display: inline;
 }
 
 /* Homepage link (surname) */
 .name1{
     font-family: "HelveticaNeue-UltraLight";
-    font-size: 100%;
+    font-size: xx-large;
     display: inline;
 }
 
 /* menu link defaults */
 .menu-links, .menu-links:visited{
     display: inline-block;
-    font-size: 120%;
-    color: #999;
-    margin: 0 1vw;
+    font-size: large;
+    color: #444;
+    margin: 0 0.5vw;
     padding: 4px 4px;
 }
 
@@ -108,7 +104,6 @@ p a{
 .dropdown{
     position: relative;
     display: inline-block;
-    margin: 0 -7%;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -116,21 +111,17 @@ p a{
     opacity: 0;
     transition: visibility 1s, opacity 0.25s;
     visibility: hidden;
-    position: absolute;
-    top: 100%;
-    left: 13%;
-    right: 5%;
-    bottom: 5%;
+    position: fixed;
     z-index: 2;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
     display: block;
-    color: #999;
-    background: #333;
+    color: #444;
+    background: #BBB;
     padding: 4px 4px;
-    min-width: 170%;
+    min-width: 100%;
     overflow: auto;
     text-decoration: none;
 }
@@ -140,12 +131,12 @@ p a{
     display: inline-block;
     float: right;
     text-align: center;
-    padding: 0.5vh 0;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover{
-    background-color: #222;
+    background-color: #444;
+    color: white;
     cursor: pointer;
 }
 
@@ -158,7 +149,7 @@ p a{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .menu-links{
-    background-color: #333;
+    background-color: #BBB;
 }
 
 
@@ -173,33 +164,35 @@ p a{
     padding-right: 10%;
     padding-left: 10%;
 }
-.box .wrapper{
-    width: 90%;
-    margin-left: 30%;
-}
 
 /* Project images (centered) */
 .projectimg{
+    background: none;
+    z-index: 1;
     position: absolute;
-    height: 10vh;
+    height: 70px;
+    right: 60vw;
     clip-path: circle();
-    margin-top: 2vh;
-    margin-left: 17vw;
-    margin-right: 1%;
-    display: inline;
-    float: left;
+    margin-top: 10px;
+    display: inline-block;
     transition: 0.1s;
 }
 
 /* Project preview boxes */
 .box{
+    background: none;
+    display: block;
     position: absolute;
-    width: 60vw;
-    margin-left:20vw;
-}
-.box *{
+    width: 70vw;
+    left: 35vw;
     background: none;
     transition: 0.1s;
+}
+.projectgap{
+    padding-bottom: 70px;
+}
+.mobilegap{
+    display: none;
 }
 
 /* Error page image (circular crop) */
@@ -234,8 +227,9 @@ p a{
 }
 
 /* Changes colour of links on hover */
-.menu-links:hover, .social-links:hover, .logo:hover, p a:hover, h1 a:hover, span:hover{
-    background-color: #333;
+.menu-links:hover, .social-links:hover, .logo:hover, p a:hover, h1 a:hover, span:hover, h3 a:hover{
+    background-color: #BBB;
+    color: white;
     cursor: pointer;
 }
 
@@ -246,15 +240,6 @@ p a{
 
 
 /* VIDEOS */
-
-/* Video inline wtih articles (right aligned) */
-.sidevid{
-    width: 40vw;
-    display; inline;
-    float: right;
-    margin-right: 15vw;
-    margin-left: 1vw;
-}
 
 /* Full width video (centered) */
 .fullvid{
@@ -275,21 +260,28 @@ p a{
 
 /* Logo sizing */
 .logo{
-    width: 3vh;
+    height: 15px;
     vertical-align: middle;
-    margin-top: -0.4vw;
+    margin-top: -0.2vw;
+    background: none;
+}
+.logo:hover{
     background: none;
 }
 
 /* Social media links */
 .social-links, .social-links:visited{
     display: inline;
-    font-size: 120%;
-    color: #999;
+    font-size: medium;
+    background: none;
+    color: #444;
     line-height: 300%;
     margin: 0 5px;
     padding: 4px 4px;
     vertical-align: middle;
+}
+.social-links:hover{
+    color: white;
 }
 
 /* Footer default */
@@ -304,7 +296,7 @@ p a{
 /* Horizontal rules (header/ footer) */
 .rule{
     width: 100%;
-    color: #555;
+    color: #444;
     z-index: 1;
     animation-name: widen;
     animation-duration: 2s;
@@ -334,75 +326,78 @@ p a{
 
 /* Project images (zoom on hover) */
 .box:hover .projectimg{
-    transform: translate(-2vw, -1vw);
-    height: 14vh;
-    z-index: 2;
+    transform: translate(-15px, -15px);
+    height: 100px;
+    z-index: 3;
     transition: 0.1s;
     transition-delay: 0.1s;
 }
 
-.box:hover p, .box:hover a, .box:hover h2{
+.box:hover p, .box:hover h2{
+    background: none;
     transform: translateY(-1vw);
     font-size: 115%;
     z-index: 2;
     transition: 0.1s;
     /*transition-delay: 0.1s;*/
 }
+.box:hover a{
+    transform: translateY(-1vw);
+    font-size: 115%;
+    z-index: 2;
+    transition: 0.1s;
+    /*transition-delay: 0.1s;*/
+}
+.box:hover{
+    z-index: 1;
+}
 
+/* Mobile optimisation */
+@media (max-aspect-ratio: 13/18){
+    .box{
+        display: block;
+        height: 100%;
+        width: 90vw;
+        left: 5vw;
+        background: none;
+    }
+    .box:hover p, .box:hover a, .box:hover h2{
+        transform: translateY(0);
+        font-size: 100%;
+    }
+    .projectimg, .box:hover .projectimg{
+        transform: translate(0, 0);
+        display: inline-block;
+        height: 30vw;
+        left: 30vw;
+    }
+    .projectgap{
+        padding-bottom: 70vw;
+    }
+    .mobilegap{
+        display: block;
+        padding-bottom: 25vw;
+    }
+}
 
-
-
-/* -------------- MOBILE STYLES ------------- */
-
-/* Small screen optimisation */
-@media all and (max-aspect-ratio: 624/768){
-    .hline{
-        margin-top: 4%;
+/* Dark mode compatibility */
+@media (prefers-color-scheme: dark){
+    *{
+        background: #222;
+        color: white;
     }
-    .menu-links, .social-links, p a, *, a{
-        font-size: 1.4vh;
-        margin: 4px, 4px;
+    body, figcaption, h2, h3, p, a, nav, div, h1, .menu-links, .menu-links:visited, .social-links, .social-links:visited{
+        color: #DDD;
     }
-    .name, .name1{
-        font-size: 2vh;
+    figcaption{
+        color: #999;
     }
-    .menu-right{
-        font-size: 2.5vh;
+    .dropdown-content a {
+        color: #DDD;
+        background: #444;
     }
-    .dropdown{
-        font-size: 1.5vh;
-    }
-    .introbox{
-        margin-top: 2%;
-        max-width: 70%;
-        margin-left: 20%;
-        margin-right: 10%;
-        padding: 0, 0;
-    }
-    .site-main{
-        margin-top: 2%;
-        max-width: 75vw;
-        margin-left: 12.5vw;
-        margin-right: 12.5vw;
-        padding: 0, 0;
-    }
-    .wrapper{
-        margin-top: 2%;
-        font-size: 1.4vh;
-        max-width: 90vw;
-        margin-right: 5%;
-        margin-left: 5%;
-        padding: 0, 0;
-    }
-    .projectimg{
-        position: absolute;
-        height: 8vh;
-        margin-top: 3vh;
-        margin-bottom: 2vh;
-        margin-left: 5vh;
-        padding-left: 0;
-    }
-    br{
-        height: 200%;
+    .menu-links:hover, .social-links:hover, .logo:hover, p a:hover, h1 a:hover, span:hover, .dropdown:hover .menu-links, .dropdown-content a:hover, .social-links:hover, h3 a:hover{
+        background: #DDD;
+        color: #222;
     }
 }
