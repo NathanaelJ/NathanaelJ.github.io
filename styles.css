@@ -386,7 +386,7 @@ p a{
         background: #222;
         color: white;
     }
-    body, figcaption, h2, h3, p, a, nav, div, h1, .menu-links, .menu-links:visited, .social-links, .social-links:visited{
+    body, figcaption, h2, h3, p, a, nav, div, h1, .menu-links, .menu-links:visited, .social-links, .social-links:visited, h3 a{
         color: #DDD;
     }
     figcaption{
