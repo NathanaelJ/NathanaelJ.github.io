@@ -3,7 +3,7 @@
         
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="styles.css" />
         <title>Nathanael Jenkins | CV</title>
     </head>
@@ -15,8 +15,14 @@
         <script>w3.includeHTML();</script>
         
         <main class="site-main">
-            <a href="resources-CV/NJenkinsCV.pdf" download>
-            <img  src="resources-CV/CV.svg" class="wrapper"></img></a>
+            <h3 class="wrapper">Want to know more?<a href="mailto:naj20@ic.ac.uk"> Click here to email me.</a></h1>
+            <p class="wrapper"><a href="resources-CV/NJenkinsCV.pdf" download>Click here to download a copy of my CV.</a><br/><br/></p>
+            <picture>
+              <source
+                srcset="resources-CV/CV_W.png"
+                media="(prefers-color-scheme: dark)" class="wrapper" alt="CV">
+              <img src="resources-CV/CV.png" class="wrapper" alt="CV">
+            </picture>
         </main>
         
         <script src="java.js"></script>
