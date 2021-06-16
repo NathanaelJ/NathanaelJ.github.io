@@ -20,7 +20,7 @@
             <!--    ICLR    -->
             <h1 class="wrapper">Imperial College London Rocketry</h1>
             <h2 class="wrapper">The Altitude Record Team at Imperial College London Rocketry<br/><br/></h2>
-            <p class="wrapper">The Altitude Record Team (ART) is a small sub-team of Imperial College London Rocketry (ICLR), with a particular focus on breaking United Kingdom Rocketry Association (UKRA) altitude records. The team is relatively young, having formed in 2019, and currently has plans for three rockets, with one successful launch.<br/><br/>ART is split into a number of smaller sub-teams, with responsibilities for different rocket performance criteria and components. As lead aerodynamics and simulations engineer, I lead our small team of aerodynamicists in simulating the behaviour of the rocket using OpenRocket, StarCCM+, MATLAB, and other packages. The majority of effort is placed on pre-apogee performance, which has the greatest impact on altitude record attempts, although we also work with the recovery, structures and avionics sub-teams to consider post-apogee performance, structural integrity and data acquisition.<br/><br/></p>
+            <p class="wrapper">The Altitude Record Team (ART) is a small sub-team of Imperial College London Rocketry (ICLR), with a particular focus on breaking United Kingdom Rocketry Association (UKRA) altitude records. The team is relatively young, having formed in 2019, and currently has plans for three rockets, with one successful launch.<br/><br/>ART is split into a number of smaller sub-teams, with responsibilities for different rocket performance criteria and components. As lead aerodynamics and simulations engineer, I lead our small team of aerodynamicists in simulating the behaviour of the rocket using OpenRocket, StarCCM+, ASTOS, and other packages. The majority of effort is placed on pre-apogee performance, which has the greatest impact on altitude record attempts, although we also work with the recovery, structures and avionics sub-teams to consider post-apogee performance, structural integrity and data acquisition.<br/><br/></p>
             
             <!--    ASTRA    -->
             <hr width="50%" size="1px" color="#555" z-index="1">
@@ -41,35 +41,50 @@
               <img src="Proj1/ASTRAData_W.png" class="wrapper" alt="OpenRocket model">
             </picture>
             <figcaption class="wrapper">ASTRA flight data</figcaption>
-            <p class="wrapper"><br/>ASTRA is expected to fly again, providing an excellent test-bed for future rocket components. Lessons from ASTRA's launch have been documented and applied in order to improve the design, manufacture, and launch procedure, bringing ART one step closer to breaking our first record. <a href="Proj1/ASTRA.mp4">Click here to see ASTRA's first flight.</a><br/><br/></p>
+            <p class="wrapper"><br/>ASTRA flew a second time in June 2021, with improved recovery systems. It successfully flew to an altitude of 523m, validating OpenRocket predictions further. ASTRA is expected to fly again, providing an excellent test-bed for future rocket components. Lessons from ASTRA's launch have been documented and applied in order to improve the design, manufacture, and launch procedure, bringing ART one step closer to breaking our first record. <a href="Proj1/ASTRA.mp4">Click here to see ASTRA's first flight.</a><br/><br/></p>
 
             <!--    APEX    -->
             <hr width="50%" size="1px" color="#555" z-index="1">
             <h3 class="wrapper">APEX</h3>
+            <p class="wrapper">APEX will be ART's first record attempt, aiming to break the UKRA I-class altitude record. Using a single motor, it will need to fly higher than 2788m (9199ft), travelling at supersonic speeds and calling for a highly-optimised design. APEX will be a step up from ASTRA, using advanced CFD for aerodynamic optimisation. The first record breaking flight will take place on 25 July 2021.<br/><br/></p>
+            <picture>
+              <source
+                srcset="Proj1/APEX.png"
+                media="(prefers-color-scheme: dark)" class="wrapper" alt="OpenRocket model">
+              <img src="Proj1/APEX_W.png" class="wrapper" alt="OpenRocket model">
+            </picture>
+            <figcaption class="wrapper">OpenRocket model of APEX</figcaption>
+            <p class="wrapper"><br/><br/><br/>One of the most apparrent issues when developing APEX was the failure of OpenRocket to simulate behaviour near the speed of sound. This is beacuse of the complexity of modelling wave drag, particularly without the use of CFD. The approximations made by OpenRocket are difficult to validate, so simulations are expected to be less accurate than for low-mach flights.<br/><br/>To account for the issues caused by OpenRocket's approximations, CFD was used to optimise the rocket's aerodynamics, with a particular focus on nose shape and fin planform. APEX's fins were optimised through CFD testing using StarCCM+, for speeds above and below mach 1. It was found that a curved 'delta-style' fin was optimal, providing the greatest stability for the lowest drag.<br/><br/></p>
+            <!--    ADD VIDEO AT SOME POINT?
             <video preload autoplay loop muted playsinline class="fullvid">
               <source src="Proj1/Video.mp4" type="video/mp4">
             Oh dear! Your browser doesn't support this video.
             </video>
-            <figcaption class="fullvid">APEX fin CFD</figcaption>
-            <p class="wrapper"><br/>APEX will be ART's first record attempt, aiming to break the UKRA I-class altitude record. Using a single motor, it will need to fly higher than 2788m (9199ft), travelling at supersonic speeds and calling for a highly-optimised design. APEX will be a step up from ASTRA, using advanced CFD for aerodynamic optimisation.<br/><br/>One of the most apparrent issues when developing APEX was the failure of OpenRocket to simulate behaviour near the speed of sound. This is beacuse of the complexity of modelling wave drag, particularly without the use of CFD. The approximations made by OpenRocket are difficult to validate, so simulations are expected to be less accurate than for low-mach flights.<br/><br/>To account for the issues caused by OpenRocket's approximations, CFD was used to optimise the rocket's aerodynamics, with a particular focus on nose shape and fin planform. APEX's fins were optimised through CFD testing using StarCCM+, for speeds above and below mach 1. It was found that a curved 'delta-style' fin was optimal, providing the greatest stability for the lowest drag.<br/><br/></p>
-            <img src="Proj1/Streamlines.png" class="wrapper" alt="APEX Fins">
-            <figcaption class="wrapper">APEX streamlines</figcaption>
-            <p class="wrapper"><br/>Following the first launch of ASTRA, APEX is currently under a significant design review in order to properly implement findings from the launch.<br/><br/></p>
+            <figcaption class="fullvid">APEX fin CFD</figcaption>-->
+            <!--    PICTURE NEEDS UPDATING
+            <picture>
+              <source
+                srcset="Proj1/APSIM.png"
+                media="(prefers-color-scheme: dark)" class="wrapper" alt="APEX OpenRocket simulation">
+              <img src="Proj1/APSIM_W.png" class="wrapper" alt="APEX OpenRocket simulation">
+            </picture>
+            <figcaption class="wrapper">APEX OpenRocket data</figcaption>-->
             
             <!--    ASCENSION    (Unfinished)
             <hr width="50%" size="1px" color="#555" z-index="1">
             <h3 class="wrapper">ASCENSION</h3>
             <p class="wrapper">ART is aiming to break the UKRA L-Class altitude record with our biggest rocket yet, ASCENSION. Watch this space!<br/><br/></p>
-            <p><br/></p>
+            <p><br/></p>-->
             
-                FLIGHTS
             <hr width="50%" size="1px" color="#555" z-index="1">
             <h3 class="wrapper">Flights</h3>
             <div class="wrapper">
                 <p><br/><a href="Proj1/ASTRA.mp4">ASTRA, 11.04.2021 (EARS event)</a></p>
                 <h2 style="margin-left: 2%">First ART flight<br/>Successful launch and (partial) recovery of a rocket<br/>Use and validation of in-house avionics systems<br/>Verification of OpenRocket predictions for low-mach flight<br/>Successful implementation of in-house lugless launch system<br/>Validation of ASTRA's structure<br/><br/></h2>
+                <p><br/><a href="Proj1/ASTRA2.mp4">ASTRA, 13.06.2021 (EARS event)</a></p>
+                <h2 style="margin-left: 2%">Successful launch and recovery of a rocket<br/>Use and validation of revised in-house avionics systems<br/>Data collection for verification of ASTOS simulations<br/>Lugless launch system improvements noted (caused slight wobble)<br/>Validation of improved recovery system<br/><br/></h2>
+                <p><br/><br/><p>
             </div>
-            -->
 
             <p class="wrapper"><a href="../Projects.html">Check out more of my projects</a><br/><br/></p>
         </main>
