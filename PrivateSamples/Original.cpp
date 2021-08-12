@@ -2,13 +2,15 @@
 //  2D Navier Stokes Equation Solver
 //  Created      | Sylvain Laizet    | 2014 | Fortran
 //  Translated   | Nathanael Jenkins | 2021 | C++
-//  Parallelised | Nathanael Jenkins |      | hipSYCL
+//  Parallelised | Nathanael Jenkins | 2021 | SYCL
 //==========================================================
-//  Version 1.0
+//  Version 1.1
 //  Basic C++ code, no implementation of hipSYCL
 //  Compile using g++: 'g++ -O3 2DSolver.cpp -o run && ./run'
 
 // NOTE - a bug is present in this code that generates invalid results
+// This bug is related to an issue with array indexes in the derivative functions
+// It is resolved in future versions of the solver
 
 #include <iostream>
 #include <fstream>

@@ -6,9 +6,7 @@
 //  Parallelised | Nathanael Jenkins | 2021 | SYCL
 //==========================================================
 //  Version 3.6
-//  C++ solver with SYCL using Explicit USM (data & dependencies)
-//  Compile using makefile ONLY
-//  Note this file is NOT capable of serial execution
+//  Compile using makefile ONLY=
 
 
 
