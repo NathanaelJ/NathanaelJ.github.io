@@ -6,7 +6,9 @@
 //  Parallelised | Nathanael Jenkins | 2021 | SYCL
 //==========================================================
 //  Version 3.6
-//  Compile using makefile ONLY=
+//  Compile using makefile ONLY
+//  Download makefile here: nathanaelj.github.io/PrivateSamples/Makefile
+//  Last updated 13.08.2021
 
 
 
