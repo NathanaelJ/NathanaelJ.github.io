@@ -20,7 +20,7 @@
             <!--    INTRO    -->
             <h1 class="wrapper">GPU Parallelisation of a 2D Navier-Stokes Solver</h1>
             <h2 class="wrapper">'Undergraduate Research Opportunity' at Imperial College London<br/><br/></h2>
-            <p class="wrapper">Under the supervision of <a href="https://www.turbulencesimulation.com">Sylvain Laizet</a>, I undertook a research project exploring parallelism in computational fluid dynamics. In particular, parallelisation using <a href="https://github.com/illuhad/hipSYCL">hipSYCL</a> and <a href="https://www.openmp.org">OpenMP</a> was explored, with a focus on high performance heterogeneous computing including the use of GPU devices. <br/><br/></p>
+            <p class="wrapper">Under the supervision of <a href="https://www.turbulencesimulation.com">Sylvain Laizet</a>, I undertook a research project exploring parallelism in computational fluid dynamics. In particular, parallelisation using <a href="https://github.com/illuhad/hipSYCL">hipSYCL</a> and <a href="https://www.openmp.org">OpenMP</a> was explored, with a focus on high performance heterogeneous computing and the use of GPU devices.<br/><br/>Conventional computer code runs serially using a single thread. This means that each task is executed sequentially as the program runs. However, for computational fluid dynamics programs (and other software), many tasks are independent of one another and often involve making repeated calculations on elements in large arrays. These tasks can be run in parallel (simultaneously) on several processors, speeding up the program. 'Traditional' high performance computing achieves this using CPU parallelism, launching simulations on tens, hundreds, or even thousands of computational cores at once.<br/><br/></p>
             
             <!--    THE SOLVER    -->
             <hr width="50%" size="1px" color="#555" z-index="1">
@@ -41,18 +41,16 @@
 
             <!--    PARALLELISATION    -->
             <hr width="50%" size="1px" color="#555" z-index="1">
-            <h3 class="wrapper">Parallelisation</h3>
+            <h3 class="wrapper">SYCL</h3>
             <p class="wrapper">Details coming soon...<br/><br/></p>
 
             <!--    REPORT    -->
-            
             <hr width="50%" size="1px" color="#555" z-index="1">
             <h3 class="wrapper">Project Report</h3>
-            <p class="wrapper">A short report was written to summarise the findings of this project, which will be made available here upon project completion.<br/><br/></p>
-            <!--<p class="wrapper"><a href="Proj4/Report.pdf" download>Click here to download a copy</a><br/><br/></p>
+            <p class="wrapper"><a href="Proj4/UROP_Report.pdf" download>Click here to download a copy</a><br/><br/></p>
             <div class="iframewindow">
-                <iframe class="iframepdf" src="Proj4/Report.pdf"></iframe>
-            </div>-->
+                <iframe class="iframepdf" src="Proj4/UROP_Report.pdf"></iframe>
+            </div>
             <p class="wrapper"><br/>Please cite this project:<br/>Jenkins, N. (2021). <i>GPU Parallelisation of a 2D Navier-Stokes Solver</i> [pdf] London: Imperial College London. Available at: http://nathanaelj.github.io/Projects/UROP [Accessed: <script> document.write(new Date().toLocaleDateString()); </script>]<br/><br/></p>
             <p class="wrapper"><a href="../Projects.html">Check out more of my projects</a><br/><br/></p>
         </main>
