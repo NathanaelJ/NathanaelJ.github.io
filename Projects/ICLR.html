@@ -30,31 +30,41 @@
             <!--    ICLR    -->
             <h1 class="wrapper">Imperial College London Rocketry</h1>
             <h2 class="wrapper">The Altitude Record Team at Imperial College London Rocketry<br/><br/></h2>
-            <p class="wrapper">The Altitude Record Team (ART) is a project within <a href="https://imperialrocketry.com" target="_blank" rel="noreferrer noopener">Imperial College London Rocketry (ICLR)</a> which exists to break <a href="https://ukra.ork.uk" target="_blank" rel="noreferrer noopener">United Kingdom Rocketry Association (UKRA)</a> altitude records. The team formed in 2019, with it's first two launches in early 2021. Three further launches are planned over the 2021-22 academic year.<br/><br/>I lead the aerodynamics and simulations sub-team, using (and writing) computer software to predict the behaviour of our rocket. We make use of packages including OpenRocket, StarCCM+, and recently ESTECO modeFrontier, which has proved to be hugely valuable.<br/><br/></p>
+            <p class="wrapper">The Altitude Record Team (ART) is an advanced project within <a href="https://imperialrocketry.com" target="_blank" rel="noreferrer noopener">Imperial College London Rocketry (ICLR)</a>, with a particular focus on breaking <a href="https://ukra.ork.uk" target="_blank" rel="noreferrer noopener">United Kingdom Rocketry Association (UKRA)</a> altitude records. The team formed in 2019, with it's first two launches in early 2021. Three further launches are planned over the 2021-22 academic year.<br/><br/>As lead aerodynamics and simulations engineer, I lead our team of aerodynamicists in simulating the behaviour of the rocket using OpenRocket, StarCCM+, MATLAB, and other software packages. The majority of effort is placed on ascent characteristics, which has the greatest impact on altitude record attempts, although we also work with the recovery, structures and avionics sub-teams to consider performance after apogee, structural integrity, and data acquisition.<br/><br/></p>
             
             <!--    ASTRA    -->
             <hr width="50%" size="1px" color="#555" z-index="1">
             <h3 class="wrapper">ASTRA</h3>
-            <p class="wrapper">This is a family of test-bed rockets used to verify systems in preparation for record-breaking flights. Two successful flights have taken place, with a further two planned to take place in 2022.<br/><br/></p>
+            <p class="wrapper">ASTRA serves as the team's test-bed rocket, the Mk.I and Mk.II designs successfully launched in 2021, and ASTRA Mk.III is expected to launch in spring 2022. Developed in early 2021, ASTRA Mk.I took its first flight on the 11th April 2021, reaching an apogee of 546m.<br/><br/></p>
             <picture>
               <source
-                srcset="Proj1/ASTRAD.png"
-                media="(prefers-color-scheme: dark)" class="wrapper" alt="ASTRA Family">
-              <img src="Proj1/ASTRAW.png" style="width: 40vw; margin-left: auto; margin-right: auto;"  alt="ASTRA Family">
+                srcset="Proj1/OR.png"
+                media="(prefers-color-scheme: dark)" class="wrapper" alt="OpenRocket model">
+              <img src="Proj1/OR_W.png" style="width: 40vw; margin-left: auto; margin-right: auto;"  alt="OpenRocket model">
             </picture>
-            <figcaption class="wrapper">ASTRA Rocket Family</figcaption>
+            <figcaption class="wrapper">OpenRocket model of ASTRA Mk.I</figcaption>
+            <p class="wrapper"><br/>ASTRA Mk.I's first flight provided excellent validation of OpenRocket predictions for low-mach flight (M&#60;0.3). The simulated velocity and altitude profiles matched avionics data, particularly before apogee. The shock cord was ripped from a recovery eye bolt when the streamer was deployed, causing the upper body tube to undergo ballistic descent. Additionally, the parachute was released with the streamer at apogee, rather than at the simulated altitude of 300m, resulting in a slower descent. Aside from the loss of the upper body tube, all components worked well, and avionics data matched simulations as expected. Most importantly, apogee predictions were accurate to less than ±5m.<br/><br/></p>
+            <picture>
+              <source
+                srcset="Proj1/ASTRAData.png"
+                media="(prefers-color-scheme: dark)" class="wrapper" alt="OpenRocket model">
+              <img src="Proj1/ASTRAData_W.png" style="width: 40vw; margin-left: auto; margin-right: auto;"  alt="OpenRocket model">
+            </picture>
+            <figcaption class="wrapper">ASTRA Mk.I (left) & Mk.II (right) flight data</figcaption>
+            <p class="wrapper"><br/>ASTRA Mk.II flew in June 2021, with improved recovery systems. It successfully flew to an altitude of 523m, validating OpenRocket predictions further. ASTRA is expected to fly again, providing an excellent test-bed for future rocket components. Lessons from ASTRA's launch have been documented and applied in order to improve the design, manufacture, and launch procedure, bringing ART one step closer to breaking our first record. <a href="Proj1/ASTRA.mp4">Click here to see ASTRA's first flight.</a><br/><br/></p>
 
             <!--    APEX    -->
             <hr width="50%" size="1px" color="#555" z-index="1">
             <h3 class="wrapper">APEX</h3>
-            <p class="wrapper">APEX will be ART's first record attempt, aiming to break the UKRA I-class altitude record. Using a single motor, it will need to fly higher than 2804m (9199ft), travelling at supersonic speeds and calling for a highly-optimised design.<br/><br/></p>
+            <p class="wrapper">APEX will be ART's first record attempt, aiming to break the UKRA I-class altitude record. Using a single motor, it will need to fly higher than 2804m (9199ft), travelling at supersonic speeds and calling for a highly-optimised design. APEX will be a step up from ASTRA, using advanced CFD for aerodynamic optimisation. Launch was attempted in August 2021, although this was scrubbed due to a battery fault with the GPS unit. Whilst the rocket could have been launched, it was unlikely to share a GPS location and would have been difficult to recover. The team chose to make minor changes to this system, as well as other components, with a preliminary launch date now planned for Spring 2022.<br/><br/></p>
             <picture>
               <source
                 srcset="Proj1/APEX.png"
                 media="(prefers-color-scheme: dark)" class="wrapper" alt="OpenRocket model">
               <img src="Proj1/APEX_W.png" style="width: 40vw; margin-left: auto; margin-right: auto;"  alt="OpenRocket model">
             </picture>
-            <figcaption class="wrapper">APEX</figcaption>
+            <figcaption class="wrapper">OpenRocket model of APEX</figcaption>
+            <p class="wrapper"><br/><br/><br/>One of the most apparrent issues when developing APEX was the failure of OpenRocket to model aerodynamic behaviour near the speed of sound. This is beacuse of the complexity of modelling wave drag, particularly without the use of CFD. The approximations made by OpenRocket are difficult to validate, so simulations are expected to be less accurate than for low-mach flights.<br/><br/>To account for the issues caused by OpenRocket's approximations, CFD was used to optimise the rocket's aerodynamics, with a particular focus on nose shape and fin planform. APEX's fins were optimised through CFD testing using StarCCM+, for speeds above and below mach 1. It was found that a curved 'delta-style' fin was optimal, providing the greatest stability for the lowest drag.<br/><br/></p>
 
             <!--    OUT OF DATE...
             <picture>
