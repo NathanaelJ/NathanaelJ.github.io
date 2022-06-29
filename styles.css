@@ -5,14 +5,13 @@
 
 /* All formatting; white background, crosshair cursor */
 *{
-    background: white;
     cursor: crosshair;
 }
 
 /* Selected text */
 ::selection{
     color: white;
-    background: #444;
+    background: #DDD;
 }
 
 /* Text default */
@@ -380,24 +379,23 @@ p a{
     }
 }
 
-/* Dark mode compatibility */
-@media (prefers-color-scheme: dark){
-    *{
-        background: #222;
-        color: white;
-    }
-    body, figcaption, h2, h3, p, a, nav, div, h1, .menu-links, .menu-links:visited, .social-links, .social-links:visited, h3 a{
-        color: #DDD;
-    }
-    figcaption{
-        color: #999;
-    }
-    .dropdown-content a {
-        color: #DDD;
-        background: #444;
-    }
-    .menu-links:hover, .social-links:hover, .logo:hover, p a:hover, h1 a:hover, span:hover, .dropdown:hover .menu-links, .dropdown-content a:hover, .social-links:hover, h3 a:hover{
-        background: #DDD;
-        color: #222;
-    }
+/* Dark mode compatibility (Now Default) */
+
+*{
+    background: #222;
+    color: white;
+}
+body, figcaption, h2, h3, p, a, nav, div, h1, .menu-links, .menu-links:visited, .social-links, .social-links:visited, h3 a{
+    color: #DDD;
+}
+figcaption{
+    color: #999;
+}
+.dropdown-content a {
+    color: #DDD;
+    background: #444;
+}
+.menu-links:hover, .social-links:hover, .logo:hover, p a:hover, h1 a:hover, span:hover, .dropdown:hover .menu-links, .dropdown-content a:hover, .social-links:hover, h3 a:hover{
+    background: #DDD;
+    color: #222;
 }
