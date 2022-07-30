@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+        
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles.css" />
+        <title>Nathanael Jenkins | UROP</title>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKWKKGM4TW"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-PKWKKGM4TW');
+        </script>
+    </head>
+
+
+    <body>
+        <script src="../../java.js"></script>
+        <div w3-include-html="../../header.html"></div>
+        <script>w3.includeHTML();</script>
+        
+        <main class="site-main">
+            
+            <!--    INTRO    -->
+            <h1 class="wrapper">GPU Parallelisation of a 2D Navier-Stokes Solver</h1>
+            <h2 class="wrapper">'Undergraduate Research Opportunity' at Imperial College London<br/><br/></h2>
+            <p class="wrapper">Under the supervision of <a href="https://www.turbulencesimulation.com">Sylvain Laizet</a>, I undertook a research project exploring parallelism in computational fluid dynamics. The project compared the performance of computational parallelism using <a href="https://github.com/illuhad/hipSYCL">hipSYCL</a> and <a href="https://www.openmp.org">OpenMP</a>, with a focus on high performance heterogeneous computing and the use of GPU devices.<br/><br/>Conventional computer code runs in serial on a single 'thread'. This means that each task is executed sequentially as the program runs. Only once the current task is complete can the next one begin. However, for computational fluid dynamics programs (and other software), many tasks are independent of one another and often involve making repeated calculations over large matrices. These tasks can be run in parallel (simultaneously) on several processors, speeding up the program. Traditional high performance computing achieves this using central processing unit (CPU) parallelism, launching tasks on tens, hundreds, or even thousands of computational cores at once.<br/><br/>Graphics processing units (GPUs) are designed for performing calculations on images using hundreds of smaller processor cores; these are optimised for matrix mathematics, making them theoretically ideal for CFD calculations. GPUs generally have a lower cost per core than CPUs, and GPU clusters could theoretically outperform CPU supercomputers in some cases. While traditional supercomputing uses CPU cores, there is growing interest in the use of GPUs and other accelerator devices because of their reduced cost and theoretically superior performance.<br/></p>
+            <picture>
+                <img src="Proj4/Offloading.png" class="wrapper" alt="Offloading diagram">
+            </picture>
+            <figcaption class="wrapper">A simplified overview of various levels of computational parallelism</figcaption>
+            <p class="wrapper"><br/>It can be useful to combine the resources of CPUs and GPUs in what is called a heterogeneous computing system. Heterogeneous parallelism can take advantage of the unique advantages of GPUs, CPUs, and other hardware, making the most of all available resources. These systems are typically more difficult to manage (note the large number of arrows on the right of the diagram above), because data must be moved between memory locations, and communication between hardware devices can be slow. The aim of this project was to explore a relatively new heterogeneous computing framework called SYCL, by using it to parallelise a 2D Navier-Stokes solver.<br/><br/>One major advantage of SYCL is that it uses single-source code to run on any device type. Exactly the same code can be compiled for use on a single CPU, GPU cluster, or heterogeneous system without any changes. This makes it easier to develop code, which can be tested on any machine in confidence that the program could also be run on other machines. There are naturally nuances to this, and the framework is still under active development.<br/><br/></p>
+            
+            <!--    THE SOLVER    -->
+            <hr width="50%" size="1px" color="#555" z-index="1">
+            <h3 class="wrapper">The Solver</h3>
+            <p class="wrapper">The primary project deliverable was a short finite-difference 2D Navier-Stokes solver used to simulate flow over a heat exchanger based on circular cylinders. Code was initially written in Fortran90, using a computational domain of 129x129 elements. A sample of the solver result is shown below. The solver uses second order differencing methods, with the Adams-Bashforth temporal scheme and periodic boundary conditions. As a part of a coursework task, students are asked to add fourth-order differencing and the Runge-Kutta temporal scheme, as well as simple inlet/ outlet conditions.<br/><br/></p>
+            <picture>
+                <source
+                  srcset="Proj4/flow_Dark.gif" class="wrapper" alt="Flow gif">
+                <img src="Proj4/flow_Dark.gif" style="width: 40vw; margin-left: auto; margin-right: auto;" alt="Flow gif">
+            </picture>
+            <figcaption class="wrapper">Simulated flow over a heat exchanger at Re=200 (coloured by periodicity)</figcaption>
+            <p class="wrapper"><br/>The original code was single-threaded, but the majority of computation took place inside of highly parallelisable loops. To take advantage of these, a parallelisation framework was to be implemented so that the code could be run in the most efficient way possible on a range of devices. Fortran can be used with OpenMP, which is capable of running in parallel on heterogeneous systems (version 5+), although the language is becoming less popular and less widely supported. An new alternative to OpenMP heterogeneous computing is Khronos Group's SYCL framework, which is growing in popularity.<br/><br/>To implement SYCL, either C or C++ code is needed. For this reason, the solver was 'translated' into C++. With some minor changes to data types in C++, the two programs were tested to confirm that they returned identical results. Initially, C++ multidimensional arrays were used, although these are stored in stack memory, which led to significant issues when testing with larger computational domains. For this reason, a pointer-based method was used to store arrays in heap instead. This made parallelisation easier, as it simplified the process of using USM, which was found to perform better than buffers in this case.<br/><br/></p>
+            <picture>
+                <img src="Proj4/comp.png" class="wrapper" alt="Comparison of Fortran and C++ functions">
+            </picture>
+            <figcaption class="wrapper">Example of original Fortran code against 'translated' C++ code</figcaption>
+            <p><br/></p>
+
+            <!--    PARALLELISATION    -->
+            <hr width="50%" size="1px" color="#555" z-index="1">
+            <h3 class="wrapper">SYCL</h3>
+            <p class="wrapper">Several approaches to parallelisation using SYCL were explored, as discussed in the report below. The final outcome implemented SYCL with explicit Unified Shared Memory (USM) and explicit event-based dependencies, using the sycl::reduction class to calculate field averages. An example of the 'average' function from this version of the program is shown below. Note how this function uses an ND-Range kernel, although other work groups in the program made use of basic kernels for simplicity.<br/><br/></p>
+            <picture>
+                <img src="Proj4/average.png" class="wrapper" alt="Parallelised average function">
+            </picture>
+            <figcaption class="wrapper">Parallelised function with sylc::reduction</figcaption>
+            <p class="wrapper"><br/>The final SYCL implementation was thoroughly tested, and found to perform at least 3.8x faster than the equivalent serial C++ code when offlaoded to the GPU. The code can be run on a CPU, GPU, or FPGA without any changes, and is made easy to compile using a short Makefile. Intel Devcloud nodes were particularly useful when testing, and the Intel Advisor and VTune tools made program profiling easy.<br/><br/>Intel VTune calculated that the program could theoretically experience a huge increase in speed of more than 300x when properly offloaded to a GPU. This agrees with simple calculations using Amdhal's Law, since it can be shown that nearly 99% of the program is parallelisable. It is only I/O tasks, including printing to screen and writing files, which cannot run from the GPU. However, inefficiencies in this implementation of SYCl combined with relatively new compilers made the actual speed increase much less impressive.<br/><br/>Explicit USM is used to offload arrays to the GPU (or other sycl::device) at the start of the program using sycl::malloc_device. This means that some time is spent at program launch preparing the GPU and initialising the sycl::queue, although testing results below show how this becomes negligible after approximately 200 timestesps for a 1500x1500 domain. The adjusted speed increase takes into account this time, demonstrating how speed increase is independent of timesteps.<br/><br/></p>
+            <picture>
+                <img src="Proj4/Graph_D.png" class="wrapper" alt="GPU Performance Graph">
+            </picture>
+            <figcaption class="wrapper">Speed increase caused by GPU offloading relative to CPU parallel performance</figcaption>
+            <p class="wrapper"><br/>Future improvements to the code could include use of ND-Range or hierarchical kernels, and an improved reduction method in the average function. There is significant scope for further testing, particularly around the interaction of the code with integrated and discrete GPUs. While a small domain could be tested on a single GPU, it is much more difficult to utilise multiple discrete GPU devices simultaneously using SYCL, making methods such as GPU cluster computing challenging. More testing data is available in the full report below.<br/><br/></p>
+
+            <!--    REPORT    -->
+            <hr width="50%" size="1px" color="#555" z-index="1">
+            <h3 class="wrapper">Project Report</h3>
+            <p class="wrapper"><a href="Proj4/UROP_Report.pdf" download>Click here to download a copy</a><br/><br/></p>
+            <div class="iframewindow">
+                <iframe class="iframepdf" src="Proj4/UROP_Report.pdf"></iframe>
+            </div>
+            <p class="wrapper"><br/>Please cite this project:<br/>Jenkins, N. (2021). <i>GPU Parallelisation of a 2D Navier-Stokes Solver</i> [pdf] London: Imperial College London. Available at: http://nathanaelj.github.io/Projects/UROP [Accessed: <script> document.write(new Date().toLocaleDateString()); </script>]<br/><br/></p>
+            <p class="wrapper"><a href="../Projects.html">Check out more of my projects</a><br/><br/></p>
+        </main>
+        
+        <script src="../../java.js"></script>
+        <div w3-include-html="../../footer.html"></div>
+        <script>w3.includeHTML();</script>
+    </body>
+    
+</html>
