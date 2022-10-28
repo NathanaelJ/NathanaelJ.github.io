@@ -46,8 +46,14 @@ h3, h3 a{
 }
 
 /* Caption default (small) */
-figcaption, figcaption a{
+figcaption{
     color: #999;
+    font: small Helvetica Neue Bold, Arial Black, Verdana, sans-serif;
+    text-align: center;
+}
+figcaption a{
+    background-color: #BBB;
+    color: white;
     font: small Helvetica Neue Bold, Arial Black, Verdana, sans-serif;
     text-align: center;
 }
@@ -230,6 +236,9 @@ p a{
     background-color: #BBB;
     color: white;
     cursor: pointer;
+}
+figcaption a:hover{
+    cursor:pointer;
 }
 
 .name:hover, .name1:hover, a img:hover, .box *:hover{
