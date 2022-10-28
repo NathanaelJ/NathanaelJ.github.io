@@ -46,7 +46,7 @@ h3, h3 a{
 }
 
 /* Caption default (small) */
-figcaption{
+figcaption, figcaption a{
     color: #999;
     font: small Helvetica Neue Bold, Arial Black, Verdana, sans-serif;
     text-align: center;
@@ -85,7 +85,7 @@ p a{
 
 /* Homepage link (surname) */
 .name1{
-    font-family: "HelveticaNeue-UltraLight";
+    font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Light", "Helvetica Neue", Arial, Verdana;
     font-size: xx-large;
     display: inline;
 }
