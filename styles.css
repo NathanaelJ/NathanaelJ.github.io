@@ -52,7 +52,6 @@ figcaption{
     text-align: center;
 }
 figcaption a{
-    background-color: #BBB;
     color: white;
     font: small Helvetica Neue Bold, Arial Black, Verdana, sans-serif;
     text-align: center;
@@ -239,6 +238,7 @@ p a{
 }
 figcaption a:hover{
     cursor:pointer;
+    background-color: #BBB;
 }
 
 .name:hover, .name1:hover, a img:hover, .box *:hover{
