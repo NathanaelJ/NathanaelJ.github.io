@@ -34,6 +34,11 @@
             <loc>https://nathanaelj.github.io/Projects/UROP.html</loc>
             <changefreq>yearly</changefreq>
         </url>
+        
+        <url>
+            <loc>https://nathanaelj.github.io/Projects/Modelling.html</loc>
+            <changefreq>monthly</changefreq>
+        </url>
 
 		<url>
 			<loc>https://nathanaelj.github.io/CV.html</loc>
