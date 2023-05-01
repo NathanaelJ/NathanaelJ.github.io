@@ -11,7 +11,7 @@
 /* Selected text */
 ::selection{
     color: white;
-    background: #DDD;
+    background: #222;
 }
 
 /* Text default */
@@ -47,12 +47,12 @@ h3, h3 a{
 
 /* Caption default (small) */
 figcaption{
-    color: #999;
+    color: #666;
     font: small Helvetica Neue Bold, Arial Black, Verdana, sans-serif;
     text-align: center;
 }
 figcaption a{
-    color: white;
+    color: black;
     font: small Helvetica Neue Bold, Arial Black, Verdana, sans-serif;
     text-align: center;
 }
@@ -123,7 +123,7 @@ p a{
 .dropdown-content a {
     display: block;
     color: #444;
-    background: #BBB;
+    background: #CCC;
     padding: 4px 4px;
     min-width: 100%;
     overflow: auto;
@@ -140,7 +140,7 @@ p a{
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover{
     background-color: #444;
-    color: white;
+    color: #CCC;
     cursor: pointer;
 }
 
@@ -153,15 +153,16 @@ p a{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .menu-links{
-    background-color: #BBB;
+    background-color: #CCC;
+/*    color: #444;*/
 }
-
 
 
 /* CONTENT */
 
 /* Text wrapping */
 .wrapper{
+    overflow: hidden;
     max-width: 70%;
     margin-right: 5%;
     margin-left: 5%;
@@ -212,6 +213,7 @@ p a{
 
 /* Homepage left box */
 .introbox{
+    overflow: hidden;
     width: 50vw;
     text-align: justify;
     margin-right: 25vw;
@@ -232,13 +234,13 @@ p a{
 
 /* Changes colour of links on hover */
 .menu-links:hover, .social-links:hover, .logo:hover, p a:hover, h1 a:hover, span:hover, h3 a:hover{
-    background-color: #BBB;
-    color: white;
+    background-color: #CCC;
+/*    color: #CCC;*/
     cursor: pointer;
 }
 figcaption a:hover{
     cursor:pointer;
-    background-color: #BBB;
+    background-color: #CCC;
 }
 
 .name:hover, .name1:hover, a img:hover, .box *:hover{
@@ -288,9 +290,9 @@ figcaption a:hover{
     padding: 4px 4px;
     vertical-align: middle;
 }
-.social-links:hover{
-    color: white;
-}
+/*.social-links:hover{*/
+/*    color: white;*/
+/*}*/
 
 /* Footer default */
 .footer{
@@ -304,7 +306,7 @@ figcaption a:hover{
 /* Horizontal rules (header/ footer) */
 .rule{
     width: 100%;
-    color: #444;
+    color: #CCC;
     z-index: 1;
     animation-name: widen;
     animation-duration: 2s;
@@ -341,20 +343,15 @@ figcaption a:hover{
     transition-delay: 0.1s;
 }
 
-.box:hover p, .box:hover h2{
+.box:hover p, .box:hover h2, .box:hover a{
     background: none;
-    transform: translateY(-1vw);
-    font-size: 115%;
+/*    transform: translateY(-1vw);*/
+    transform-origin: top left;
+    transform: scale(1.15);
+/*    font-size: 115%;*/
     z-index: 2;
     transition: 0.1s;
-    /*transition-delay: 0.1s;*/
-}
-.box:hover a{
-    transform: translateY(-1vw);
-    font-size: 115%;
-    z-index: 2;
-    transition: 0.1s;
-    /*transition-delay: 0.1s;*/
+/*    transition-delay: 0.1s;*/
 }
 .box:hover{
     z-index: 1;
@@ -386,25 +383,4 @@ figcaption a:hover{
         display: block;
         padding-bottom: 25vw;
     }
-}
-
-/* Dark mode compatibility (Now Default) */
-
-*{
-    background: #222;
-    color: white;
-}
-body, figcaption, h2, h3, p, a, nav, div, h1, .menu-links, .menu-links:visited, .social-links, .social-links:visited, h3 a{
-    color: #DDD;
-}
-figcaption{
-    color: #999;
-}
-.dropdown-content a {
-    color: #DDD;
-    background: #444;
-}
-.menu-links:hover, .social-links:hover, .logo:hover, p a:hover, h1 a:hover, span:hover, .dropdown:hover .menu-links, .dropdown-content a:hover, .social-links:hover, h3 a:hover{
-    background: #DDD;
-    color: #222;
 }
