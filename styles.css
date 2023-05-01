@@ -16,7 +16,7 @@
 
 /* Text default */
 body, figcaption, h2, p, a, nav, div{
-    font: small "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Verdana, sans-serif;
+    font: small "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Calibri, Arial, Verdana, sans-serif;
     color: #444;
     margin: 0;
     padding: 0;
@@ -88,9 +88,9 @@ p a{
     display: inline;
 }
 
-/* Homepage link (surname) */
+/* Homepage link (forename) */
 .name1{
-    font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Light", "Helvetica Neue", Arial, Verdana;
+    font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Light", "Helvetica Neue", "Calibri Light", Calibri, Arial, Verdana;
     font-size: xx-large;
     display: inline;
 }
@@ -218,6 +218,10 @@ p a{
     text-align: justify;
     margin-right: 25vw;
     margin-left: 25vw;
+}
+video {
+    /* Prevent blinking black borders on videos */
+    clip-path: inset(1px 1px);
 }
 
 /* PDF embed box */

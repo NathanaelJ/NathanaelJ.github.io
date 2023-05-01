@@ -152,10 +152,7 @@ end program navierstokes
 subroutine average(uuu,um,nx,ny)
 !
 !computation of the mean value of a 2D field
-!############################################
-!
   implicit none
-!
   real(8),dimension(nx,ny) :: uuu
   real(8) :: um
   integer :: i,j,nx,ny,nxm
