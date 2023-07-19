@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+        
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles.css" />
+        <title>Nathanael Jenkins | GDP</title>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKWKKGM4TW"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-PKWKKGM4TW');
+        </script>
+    </head>
+
+
+    <body>
+        <script src="../../java.js"></script>
+        <div w3-include-html="../../header.html"></div>
+        <script>w3.includeHTML();</script>
+        
+        <main class="site-main">
+            
+            <!--    INTRO    -->
+            <h1 class="wrapper">Hypersonic CFD</h1>
+            <h2 class="wrapper">Aerothermodynamic analysis of a hypersonic sounding rocket nosecone<br/>'Group Design Project' at Imperial College London<br/><br/></h2>
+            <p class="wrapper">Summer term in the 3rd year of an Aeronautics degree at Imperial brings the infamous (maybe even notorious) 'Group Design Project'. Students are placed in large teams, mine being 27 in number, and given a broad task simulating a real industrial project. My team was the 'Foldable Aeroshell Demonstrator', FAD for short.<br/><br/>
+                When a spacecraft enters the atmosphere of a planet, it is usually moving at several kilometers per second and tens of times faster than the speed of sound. While it slows down and descends, it can reach incredibly high temperatures of more than 2000ºc (that's hotter than the inside of a volcano). Rigid 'aeroshells' are used to protect most spacecraft from this, but larger spacecraft require huge heat shields which wouldn't fit in even our biggest rockets. One potential solution to this issue is a <i>folding</i> aeroshell, but this technology is not yet developed enough for real missions. Our group was tasked with designing a demonstrator for this technology to bring us one step closer to being able to use it 'for real'.<br/><br/>
+                To test an aeroshell, you have to launch it. We planned to launch a scale model of a large folding aeroshell using our own custom-made sounding rocket (a sounding rocket is a research rocket which doesn't quite reach orbit). If we wanted the demonstrator to fall back to Earth faster than the speed of sound, then the rocket carrying it up would also need to travel very fast. In fact, the launcher for this mission would need to exceed Mach 7 (that is, 7 times the speed of sound!) Such extreme speeds mean the nosecone of the rocket would need to be designed carefully to minimise aerodynamic drag and keep it from melting on the way up.<br/><br/>
+                And that's where my role came in. I was tasked with performing an aerodynamic analysis on the nosecone designs proposed by another sub-team. At hypersonic speeds (more than 5 times the speed of sound), this turns out to be really quite difficult. As well as analytical methods, I used computational fluid dynamics (CFD) to predict the behaviour of the nosecone. To properly model a hypersonic flow, several considerations must be made (outlined in the report below), including application of 'adaptive mesh refinement'.<br/><br/>
+                As well as conducting the aerodynamic analysis, I used <a href="https://www.blender.org">Blender</a> and <a href="https://www.blackmagicdesign.com/products/davinciresolve">Davinci Resolve</a> to create a short animation for our group presentations.<br/><br/></p>
+            <video controls class="introbox">
+                <source src="GDP_res/FAD_Video.mp4" type="video/mp4">
+                Sorry! I upload my videos as mp4... it looks like your browser can't handle that.
+            </video>
+            <figcaption class="wrapper">Group Design Project Video<br/><br/></figcaption>
+
+            <!--    REPORT    -->
+            <hr width="50%" size="1px" color="#555" z-index="1">
+            <h3 class="wrapper">Project Report</h3>
+            <p class="wrapper">Part of this project is assessed based on an individual report, available below. <a href="GDP_res/NJenkins_Report.pdf" download>Click here to download a copy</a><br/><br/></p>
+            <div class="iframewindow">
+                <iframe class="iframepdf" src="GDP_res/NJenkins_Report.pdf"></iframe>
+            </div>
+            <p class="wrapper"><br/>Please cite this project:<br/>Jenkins, N. (2023). <i>SpaceHAVEN: Aerothermodynamic Analysis of a Hypersonic Rocket Nosecone.</i> [pdf] London: Imperial College London. Available at: http://nathanaelj.github.io/Projects/GDP [Accessed: <script> document.write(new Date().toLocaleDateString()); </script>]<br/><br/></p>
+            <p class="wrapper"><a href="../Projects.html">Check out more of my projects</a><br/><br/></p>
+        </main>
+        
+        <script src="../../java.js"></script>
+        <div w3-include-html="../../footer.html"></div>
+        <script>w3.includeHTML();</script>
+    </body>
+    
+</html>
