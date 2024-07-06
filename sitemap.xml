@@ -11,7 +11,7 @@
 		</url>
 
 		<url>
-			<loc>https://nathanaelj.github.io/Projects/EPQ.html</loc>
+			<loc>https://nathanaelj.github.io/Projects/Academic.html</loc>
 			<changefreq>yearly</changefreq>
 		</url>
 
@@ -21,22 +21,12 @@
 		</url>
         
         <url>
-            <loc>https://nathanaelj.github.io/Projects/mF_oR/oRmFIntegration.html</loc>
-            <changefreq>monthly</changefreq>
-        </url>
-        
-        <url>
-            <loc>https://nathanaelj.github.io/Projects/mF_oR/NSGA_HYBRID.html</loc>
-            <changefreq>monthly</changefreq>
-        </url>
-        
-        <url>
-            <loc>https://nathanaelj.github.io/Projects/UROP.html</loc>
-            <changefreq>yearly</changefreq>
-        </url>
-        
-        <url>
             <loc>https://nathanaelj.github.io/Projects/Modelling.html</loc>
+            <changefreq>monthly</changefreq>
+        </url>
+
+		<url>
+            <loc>https://nathanaelj.github.io/Projects/FYP.html</loc>
             <changefreq>monthly</changefreq>
         </url>
 
