@@ -91,6 +91,15 @@ h3, h3 a {
     color: var(--color-text-primary);
     padding-top: 2px;
 }
+h5 {
+    font-size: var(--font-size-large);
+    color: var(--color-text-primary);
+    border-bottom: var(--border-width-thin) solid var(--color-border);
+    padding-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+    font-weight: normal;
+}
 
 /* Caption default */
 figcaption {
@@ -131,6 +140,10 @@ p a{
     display: inline;
     margin: 1vw;
 }
+/* Title block container */
+.title-block {
+    display: inline-block;
+}
 
 /* NAME TITLE */
 /* Surname */
@@ -145,6 +158,15 @@ p a{
     font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Light", "Helvetica Neue", "Calibri Light", Calibri, Arial, Verdana;
     font-size: xx-large;
     display: inline;
+}
+/* Subtitle below name (if included) */
+.subtitle {
+    font-style: italic;
+    font-size: small;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #666;
 }
 
 /* NAV MENU */
@@ -182,8 +204,8 @@ p a{
 }
 /* Dropdown container positioning */
 .menu-right {
-    display: flex;
-    justify-content: flex-end;
+    display: block;
+    float: right;
     text-align: center;
 }
 /* Change color of dropdown links on hover */
@@ -237,12 +259,11 @@ p a{
     padding: 0 var(--spacing-md);
     padding-bottom: var(--spacing-xl);  /* Add space for caption */
 }
-
 /* Add specific alignment for first container */
 .intro-container:first-of-type {
     align-items: flex-start;  /* Keep original alignment for first container */
 }
-
+/* Portrait image */
 .introimg {
     width: 200px;
     height: 200px;
@@ -250,64 +271,73 @@ p a{
     object-fit: cover;
     flex-shrink: 0;
 }
-
 .intro-text {
     flex: 1;
 }
-
 .intro-text h1 {
     margin-bottom: var(--spacing-md);
 }
-
 .intro-text p {
     line-height: 1.5;
 }
-
-.name:hover, .name1:hover, a img:hover, .box *:hover{
-    cursor: pointer;
+/* Video styling */
+.intro-video {
+    width: 200px;
+    height: 200px;
+    clip-path: circle();
+    object-fit: cover;
+    flex-shrink: 0;
+}
+/* Position caption below video */
+.intro-container figcaption {
+    position: absolute;
+    right: var(--spacing-md);  /* Align with video */
+    width: 200px;  /* Match video width */
+    padding-top: var(--spacing-sm);
+    font-size: smaller;
+    text-align: center;
+    top: 200px;  /* Position below video instead of using margin */
+}
+/* Add some space between the containers */
+.intro-container + .intro-container {
+    margin-top: var(--spacing-xl);
 }
 
+
+
+/* -------------- CUSTOM STYLES: ARTICLES (CITATIONS) ------------- */
 .citation {
     font-style: italic;
     font-weight: unset;
 }
-
-/* FOOTER */
-
-/* Logo sizing */
-.logo{
-    height: 15px;
-    vertical-align: middle;
-    margin-top: -0.2vw;
-    background: none;
+/* Publication citations (used in Resume) */
+.citation-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
 }
-.logo:hover{
-    background: none;
-}
-
-/* Social media links */
-.social-links, .social-links:visited{
-    display: inline;
-    font-size: medium;
-    background: none;
+.citation {
+    margin-bottom: 1em;
+    font-size: small;
     color: #444;
-    line-height: 300%;
-    margin: 0 5px;
-    padding: 4px 4px;
-    vertical-align: middle;
 }
-/*.social-links:hover{*/
-/*    color: white;*/
-/*}*/
-
-/* Footer default */
-.footer{
-    text-align: center;
-    margin-top: 3em;  /* Add space before footer */
+.citation-title {
+    font-weight: bold;
+}
+.citation a {
+    color: #666;
+    text-decoration: none;
+}
+.citation a:hover {
+    color: #444;
+    text-decoration: underline;
 }
 
-/* -------------- ANIMATIONS ------------- */
 
+
+
+/* -------------- CUSTOM STYLES: LOADING ANIMATIONS ------------- */
 /* Horizontal rules (header/ footer) */
 .rule{
     width: 100%;
@@ -324,7 +354,6 @@ p a{
         width:100%;
     }
 }
-
 /* Fade in (all) */
 *{
     animation-name: header;
@@ -339,6 +368,8 @@ p a{
     }
 }
 
+
+/* -------------- CUSTOM STYLES: PROJECT PAGE ANIMATIONS ------------- */
 /* Project images (zoom on hover) */
 .box:hover .projectimg{
     transform: translate(-15px, -15px);
@@ -347,7 +378,6 @@ p a{
     transition: 0.1s;
     transition-delay: 0.1s;
 }
-
 .box:hover p, .box:hover h2, .box:hover a{
     background: none;
 /*    transform: translateY(-1vw);*/
@@ -362,6 +392,8 @@ p a{
     z-index: 1;
 }
 
+
+/* -------------- CUSTOM STYLES: MOBILE OPTIMIZATION ------------- */
 /* Mobile optimisation */
 @media (max-aspect-ratio: 13/18){
     .box{
@@ -390,6 +422,10 @@ p a{
     }
 }
 
+
+
+
+/* -------------- CUSTOM STYLES: CONTACT FORM (6.C85 PORTFOLIO) ------------- */
 /* Contact form styling */
 .form-group {
     display: grid;
@@ -398,12 +434,10 @@ p a{
     align-items: baseline;  /* Align items vertically */
     margin-bottom: 1.5em;
 }
-
 .form-group label {
     text-align: right;  /* Right-align labels */
     padding-right: 1em;
 }
-
 .form-input {
     width: 100%;
     padding: var(--spacing-xs);
@@ -414,13 +448,11 @@ p a{
     color: var(--color-text-primary);
     box-sizing: border-box;  /* Include padding in width calculation */
 }
-
 /* Make submit button align with input fields */
 .submit-button-container {
     display: grid;
     grid-template-columns: 150px 1fr;
 }
-
 .submit-button {
     grid-column: 2;  /* Place in second column */
     background-color: var(--color-button);
@@ -433,100 +465,71 @@ p a{
     font-size: inherit;
     width: fit-content;  /* Only as wide as needed */
 }
-
 .submit-button:hover {
     background-color: var(--color-button-hover);
 }
-
 textarea.form-input {
     resize: vertical;
     min-height: 100px;
 }
 
-/* Title block container */
-.title-block {
-    display: inline-block;
-}
 
-/* Subtitle above name */
-.subtitle {
-    font-style: italic;
-    font-size: small;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    color: #666;
-}
 
-/* Resume styling */
+
+/* -------------- CUSTOM STYLES: RESUME ------------- */
+/* Basic resume styling */
 .resume-section {
     margin: 2em 0;
 }
-
-h5 {
-    font-size: var(--font-size-large);
-    color: var(--color-text-primary);
-    border-bottom: var(--border-width-thin) solid var(--color-border);
-    padding-bottom: var(--spacing-xs);
-    margin-bottom: var(--spacing-md);
-    margin-top: var(--spacing-lg);
-    font-weight: normal;
-}
-
 .resume-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
+/* Indent items */
 .resume-list li {
     margin-bottom: 1.2em;  /* Increased from 0.5em to 1.2em */
     display: block;
 }
-
 /* Keep last item in each section from having extra space */
 .resume-list li:last-child {
     margin-bottom: 0;
 }
-
+/* Header for each item in list */
 .position-line {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 0.2em;
 }
-
+/* Resume item fields */
 .position {
     font-weight: bold;
     color: var(--color-text-primary);
 }
-
 .date-range {
     color: var(--color-text-secondary);
     font-style: normal;
     white-space: nowrap;
     font-size: var(--font-size-small);
 }
-
 .institution {
     color: var(--color-text-primary);
     font-style: italic;
     margin-bottom: var(--spacing-xs);
 }
-
 .description {
     font-size: var(--font-size-small);
     color: var(--color-text-secondary);
     margin-left: var(--spacing-md);
 }
-
+/* Description bullet points */
 .description::before {
     content: "•";
     margin-right: var(--spacing-sm);
     color: var(--color-text-secondary);
 }
-
-/* Contact info in resume */
+/* Resume contact info */
 .contact-info {
     float: right;
     text-align: right;
@@ -536,161 +539,32 @@ h5 {
     height: 2em;
     position: relative;
 }
-
 .contact-line {
     color: var(--color-text-secondary);
     font-size: var(--font-size-small);
     white-space: nowrap;
     margin-bottom: var(--spacing-xs);
 }
-
 .contact-line a {
     color: var(--color-text-secondary);
     text-decoration: none;
 }
-
 .contact-line a:hover {
     color: var(--color-text-primary);
 }
-
 .contact-icon {
     margin-right: 0.5em;
 }
-
-/* Publication citations */
-.citation-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    line-height: 1.5;
-}
-
-.citation {
-    margin-bottom: 1em;
-    font-size: small;
-    color: #444;
-}
-
-.citation-title {
-    font-weight: bold;
-}
-
-.citation a {
-    color: #666;
-    text-decoration: none;
-}
-
-.citation a:hover {
-    color: #444;
-    text-decoration: underline;
-}
-
 /* Resume link styling */
 .resume-list .institution a,
 .description a {
     text-decoration: underline;
     color: #444;
 }
-
 .resume-list .institution a:hover,
 .description a:hover {
     color: #666;
 }
-
-/* Keep contact info links without underline */
-.contact-line a {
-    text-decoration: none;
-}
-
-/* Keep citation DOI links as they were */
-.citation a {
-    text-decoration: none;
-}
-
-/* Project grid layout */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2em;
-    margin: 2em 0;
-}
-
-.project-card {
-    background: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 1px solid #eee;
-}
-
-.project-content {
-    padding: 1.5em;
-}
-
-.project-content h2 {
-    font-size: 1.4em;
-    margin: 0 0 0.5em 0;
-    color: #444;
-}
-
-.project-content h3 {
-    font-size: 1.1em;
-    color: #666;
-    margin: 0 0 1em 0;
-    font-style: italic;
-}
-
-.project-content p {
-    font-size: 0.9em;
-    line-height: 1.5;
-    color: #666;
-    margin-bottom: 1em;
-}
-
-.project-link {
-    display: inline-block;
-    padding: 0.5em 1em;
-    background: #444;
-    color: white !important;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background 0.2s;
-}
-
-.project-link:hover {
-    background: #666;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1.5em;
-    }
-}
-
-/* Footer spacing */
-.footer {
-    text-align: center;
-    margin-top: 3em;  /* Add space before footer */
-}
-
-/* OR if the above doesn't target correctly, we can add it to the main content: */
-.site-main {
-    margin-bottom: 3em;  /* Add space after main content */
-}
-
 /* Resume header layout */
 .resume-header {
     display: flex;
@@ -700,23 +574,20 @@ h5 {
     margin: 1em 0 1em 0;
     height: 2em;
 }
-
+/* Resume title formatting */
 .name-block {
     display: inline-block;
     line-height: 1;
     white-space: nowrap;  /* Prevent line breaks */
 }
-
 .name-block p {
     margin: 0;  /* Remove paragraph margin */
 }
-
 .name-block .subtitle {
     font-weight: normal;  /* Remove bold from subtitle */
     display: block;  /* Put subtitle on new line */
     margin-top: 0.2em;  /* Small space after name */
 }
-
 /* Remove any whitespace between name spans */
 .resume-header .name1,
 .resume-header .name {
@@ -727,73 +598,137 @@ h5 {
     line-height: 1;
     white-space: nowrap;  /* Prevent line breaks */
 }
-
 .resume-header .name1 {
     font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Light", "Helvetica Neue", "Calibri Light", Calibri, Arial, Verdana;
 }
 
-/* Base link hover cursor */
-a:hover,
-.menu-links:hover,
-.social-links:hover,
-.project-link:hover,
-.submit-button:hover {
-    cursor: pointer;
-}
 
-/* Keep pointer cursor for specific interactive elements */
-button,
-.menu-links,
-.social-links,
-.project-link,
-.dropdown-content a,
-.resume-list .institution a,
-.description a,
-.contact-line a,
-.citation a {
-    cursor: pointer;
-}
 
-/* Video styling */
-.intro-video {
-    width: 200px;
+
+/* -------------- CUSTOM STYLES: PROJECT PAGE GRID ------------- */
+/* Grid layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    margin: 2em 0;
+}
+/* Project card item */
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+.project-image {
+    width: 100%;
     height: 200px;
-    clip-path: circle();
     object-fit: cover;
-    flex-shrink: 0;
+    border-bottom: 1px solid #eee;
+}
+/* Special text formatting for project cards */
+.project-content {
+    padding: 1.5em;
+}
+.project-content h2 {
+    font-size: 1.4em;
+    margin: 0 0 0.5em 0;
+    color: #444;
+}
+.project-content h3 {
+    font-size: 1.1em;
+    color: #666;
+    margin: 0 0 1em 0;
+    font-style: italic;
+}
+.project-content p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 1em;
+}
+/* Project 'View Here' links */
+.project-link {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #444;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+.project-link:hover {
+    background: #666;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5em;
+    }
 }
 
-/* Position caption below video */
-.intro-container figcaption {
-    position: absolute;
-    right: var(--spacing-md);  /* Align with video */
-    width: 200px;  /* Match video width */
-    padding-top: var(--spacing-sm);
-    font-size: smaller;
+
+
+
+/* -------------- CUSTOM STYLES: FOOTER ------------- */
+/* Logo sizing */
+.logo{
+    height: 15px;
+    vertical-align: middle;
+    margin-top: -0.2vw;
+    background: none;
+}
+.logo:hover{
+    background: none;
+}
+/* Social media links */
+.social-links, .social-links:visited{
+    display: inline;
+    font-size: medium;
+    background: none;
+    color: #444;
+    line-height: 300%;
+    margin: 0 5px;
+    padding: 4px 4px;
+    vertical-align: middle;
+}
+/* Footer default */
+.footer{
     text-align: center;
-    top: 200px;  /* Position below video instead of using margin */
+    margin-top: 3em;  /* Add space before footer */
+}
+/* Footer spacing */
+.footer {
+    text-align: center;
+    margin-top: 3em;  /* Add space before footer */
+}
+/* OR if the above doesn't target correctly, we can add it to the main content: */
+.site-main {
+    margin-bottom: 3em;  /* Add space after main content */
 }
 
-/* Add some space between the containers */
-.intro-container + .intro-container {
-    margin-top: var(--spacing-xl);
-}
 
-/* -------------- HOVER STYLES ------------- */
+
+
+
+/* -------------- CUSTOM STYLES: HOVERING ------------- */
 /* Default text link hover */
 a:hover {
     background-color: var(--color-hover);
     cursor: pointer;
 }
-
-/* Menu hover - restore original behavior */
+/* Menu hover */
 .menu-links:hover {
     background-color: var(--color-hover);
     border-bottom-color: var(--color-accent);
     border-bottom-width: var(--border-width-thick);
     cursor: pointer;
 }
-
 /* Special elements with no hover background */
 .name:hover,
 .name1:hover,
@@ -801,12 +736,13 @@ a:hover {
 .social-links:hover {
     background: none;
 }
-
 /* Button-style hover */
 .project-link:hover,
 .submit-button:hover {
     background-color: var(--color-button-hover);
     color: var(--color-background);
 }
-
-/* Remove all other hover definitions from the stylesheet */
+/* Enforce cursor... unsure if this line is actually needed */
+.name:hover, .name1:hover, a img:hover, .box *:hover{
+    cursor: pointer;
+}
