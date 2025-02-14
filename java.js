@@ -1,5 +1,5 @@
 
-/* SOURCE: https://www.w3schools.com/lib/w3.js */
+/* SOURCE: https:/www.w3schools.com/lib/w3.js */
 /* Nathanael Jenkins 2021 */
 
 "use strict";

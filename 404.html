@@ -4,11 +4,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../../../../styles.css" />
-        <title>Error 404!</title>
+        <link rel="stylesheet" href="/styles.css" />
+        <title>404: Page Not Found</title>
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKWKKGM4TW"></script>
+        <script async src="https:/www.googletagmanager.com/gtag/js?id=G-PKWKKGM4TW"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -20,20 +20,29 @@
 
 
     <body>
-        <script src="../../../../java.js"></script>
-<!--        <div w3-include-html="header.html"></div>-->
-<!--        <div w3-include-html="../header.html"></div>-->
-        <div w3-include-html=".../../../../header.html"></div>
-        <script>w3.includeHTML();</script>
+        <script src="/java.js"></script>
+        <div w3-include-html="/header.html"></div>
+        <script>
+            // First include the HTML
+            w3.includeHTML();
+            // Then load and run our header script
+            w3.includeHTML(function() {
+                // Run after header is loaded
+                highlightCurrentPage();
+            });
+        </script>
+        <script src="/header_script.js"></script>
         
         <main class="site-main">
-            <h1 class="wrapper" style="text-align: center;"><br/>Oh No! Something's gone wrong... How embarrassing.<br/><br/></h1>
-            <p class="wrapper" style="text-align: center;"><a href="/">Click here to go home</a><br/><br/></p>
-            <p class="wrapper" style="text-align: center;"><a href="./dog">Click here to look at some dogs</a><br/><br/></p>
+            <div class="wrapper">
+                <h1 style="text-align: center;"><br/>Oh No! Something's gone wrong... How embarrassing.<br/><br/></h1>
+                <p style="text-align: center;"><a href="/">Click here to go home</a><br/><br/></p>
+                <p style="text-align: center;"><a href="/dog.html">Click here to look at some dogs</a><br/><br/></p>
+            </div>
         </main>
         
-        <script src="java.js"></script>
-        <div w3-include-html="../../../../footer.html"></div>
+        <script src="/java.js"></script>
+        <div w3-include-html="/footer.html"></div>
         <script>w3.includeHTML();</script>
     </body>
     

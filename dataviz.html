@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>NJ | Data Visualisation</title>
+</head>
+<body>
+    <script src="/java.js"></script>
+    <div w3-include-html="/header.html"></div>
+    <script>
+        // First include the HTML
+        w3.includeHTML();
+        // Then load and run our header script
+        w3.includeHTML(function() {
+            // Run after header is loaded
+            highlightCurrentPage();
+        });
+    </script>
+    <script src="/header_script.js"></script>
+
+    <main class="site-main">
+        <div class="wrapper">
+            <h1>6.C85: Interactive Data Visualisation and Society</h1>
+            <p>This portfolio contains my class work from an MIT class on data visualization and society.</p>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="/Thumbnails/PLACEHOLDER.jpeg" alt="Project thumbnail" class="project-image">
+                    <div class="project-content">
+                        <h2>Boston Housing Data: Speculations</h2>
+                        <h3>A2: Exploratory Visual Analysis</h3>
+                        <p>Exploration of Boston housing data and the effect of speculation on house prices.</p>
+                        <a href="/portfolio/A2" class="project-link">View Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="/Thumbnails/PLACEHOLDER.jpeg" alt="Project thumbnail" class="project-image">
+                    <div class="project-content">
+                        <h2>More coming soon...</h2>
+                        <h3>Placeholder subtitle</h3>
+                        <p>Placeholder description</p>
+                        <a href="/portfolio/A2" class="project-link">View Project</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <script src="/java.js"></script>
+    <div w3-include-html="/footer.html"></div>
+    <script>w3.includeHTML();</script>
+</body>
+</html>

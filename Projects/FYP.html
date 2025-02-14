@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
         
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles.css" />
-        <title>Nathanael Jenkins | FYP</title>
+        <link rel="stylesheet" href="/styles.css" />
+        <title>NJ | Thesis</title>
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKWKKGM4TW"></script>
@@ -21,46 +20,50 @@
 
 
     <body>
-        <script src="../../java.js"></script>
-        <div w3-include-html="../../header.html"></div>
-        <script>w3.includeHTML();</script>
+        <script src="/java.js"></script>
+        <div w3-include-html="/header.html"></div>
+        <script>
+            // First include the HTML
+            w3.includeHTML();
+            // Then load and run our header script
+            w3.includeHTML(function() {
+                // Run after header is loaded
+                highlightCurrentPage();
+            });
+        </script>
+        <script src="/header_script.js"></script>
         
         <main class="site-main">
-            
-            <!--    INTRO    -->
-            <h1 class="wrapper">Masters' Thesis</h1>
-            <h2 class="wrapper">Numerical simulation of the lightning swept stroke for unconventional aircraft.<br/><br/></h2>
-            <p class="wrapper">For my masters' thesis, I developed a physics-based model for the 'swept-stroke' phase of lightning strikes on aircraft under the supervision of Prof. Guerra-Garcia in the <a href="apg.mit.edu">MIT Aerospace Plasma Group.</a> The work is summarised in my master's thesis and published in several papers which will be linked below as they are released publicly.<br/><br/></p>
-            
-            <div class="iframewindow">
-                <iframe class="iframepdf" style="border:none;" title="Thesis" src="FYPResources/NJenkins Thesis Final.pdf">
-                </iframe>
+            <div class="wrapper">
+                <h1>Masters' Thesis</h1>
+                <h2>Numerical simulation of the lightning swept stroke for zoning unconventional aircraft.<br/><br/></h2>
+                
+                <p>For my masters' thesis, I developed a physics-based model for the 'swept-stroke' phase of lightning strikes on aircraft under the supervision of Prof. Guerra-Garcia in the <a href="apg.mit.edu">MIT Aerospace Plasma Group.</a> The work is summarised in my master's thesis and published in several papers which will be linked below as they are released publicly.<br/><br/></p>
+                
+                <div class="pdf-container">
+                    <iframe class="pdf-viewer" title="Thesis" src="FYPResources/NJenkins Thesis Final.pdf"></iframe>
+                </div>
+
+                <hr width="50%" size="1px" color="#555" z-index="1">
+                <h3>Publications and Presentations</h3>
+
+                <p>▸ <a href="FYPResources/NJenkins Thesis Final.pdf">Click here to download my master's thesis.</a><br/><br/></p>
+
+                <p>▸ This work was presented at the <a href="https://icolse2024.fee.unicamp.br">International Conference On Lightning and Static Electricity (ICOLSE)</a> in Campinas, Brazil in September 2024. The associated paper is available at <a href="https://zenodo.org/records/13838314">zenodo.org/records/13838314</a><br/><br/></p>
+
+                <p>▸ This work was presented at the SAE AE-2 Comittee Meeting in Cape Canaveral, Florida in October 2024.<br/><br/></p>
+
+                <p>▸ Jenkins N A, Guerra-Garcia C. Numerical Simulation of the Lightning Swept Stroke: Application to the Results from the NASA Storm Hazards Program. IEEE Access. (Early Access) December 2024. DOI: <a href="https://doi.org/10.1109/ACCESS.2024.3515833">10.1109/ACCESS.2024.3515833</a><br/><br/></p>
+
+                <p>More publications related to this work are currently under review and will be released soon.<br/><br/></p>
+
+                <p><br/>Please cite this project:<br/>Jenkins, N. (2023). <i>Numerical Simulation of the Lightning Swept Stroke for
+                    the Zoning of Unconventional Aircraft.</i> [Master's Thesis.] Boston: Massachusetts Institute of Technology. Available at: http://nathanaelj.github.io/Projects/FYP [Accessed: <script> document.write(new Date().toLocaleDateString()); </script>]<br/><br/></p>
             </div>
-
-            <!--    REPORT    -->
-            <hr width="50%" size="1px" color="#555" z-index="1">
-            <h3 class="wrapper">Publications and Presentations</h3>
-
-            <p class="wrapper">▸ <a href="FYPResources/NJenkins Thesis Final.pdf">Click here to download my master's thesis.</a><br/><br/></p>
-
-            <p class="wrapper">▸ This work was presented at the <a href="https://icolse2024.fee.unicamp.br">International Conference On Lightning and Static Electricity (ICOLSE)</a> in Campinas, Brazil in September 2024. The associated paper is available at <a href="https://zenodo.org/records/13838314">zenodo.org/records/13838314</a><br/><br/></p>
-
-            <p class="wrapper">▸ This work was presented at the SAE AE-2 Comittee Meeting in Cape Canaveral, Florida in October 2024.<br/><br/></p>
-
-            <p class="wrapper">▸ Jenkins N A, Guerra-Garcia C. Numerical Simulation of the Lightning Swept Stroke: Application to the Results from the NASA Storm Hazards Program. IEEE Access. (Early Access) December 2024. DOI: <a href="https://doi.org/10.1109/ACCESS.2024.3515833">10.1109/ACCESS.2024.3515833</a><br/><br/></p>
-
-            <p class="wrapper">More publications related to this work are currently under review and will be released soon.<br/><br/></p>
-<!--            <a href="FYP/Thesis.pdf" download>Click here to download a copy</a><br/><br/></p>-->
-<!--            <div class="iframewindow">-->
-<!--                <iframe class="iframepdf" src="FYP/Thesis.pdf"></iframe>-->
-<!--            </div>-->
-            <p class="wrapper"><br/>Please cite this project:<br/>Jenkins, N. (2023). <i>Numerical Simulation of the Lightning Swept Stroke for
-                the Zoning of Unconventional Aircraft.</i> [Master's Thesis.] Boston: Massachusetts Institute of Technology. Available at: http://nathanaelj.github.io/Projects/FYP [Accessed: <script> document.write(new Date().toLocaleDateString()); </script>]<br/><br/></p>
-            <p class="wrapper"><a href="../Projects.html">Check out more of my projects</a><br/><br/></p>
         </main>
         
-        <script src="../../java.js"></script>
-        <div w3-include-html="../../footer.html"></div>
+        <script src="/java.js"></script>
+        <div w3-include-html="/footer.html"></div>
         <script>w3.includeHTML();</script>
     </body>
     
