@@ -18,6 +18,10 @@ function highlightCurrentPage() {
     }
     if (portfolioLink) {
         portfolioLink.style.display = isPortfolio ? 'inline-block' : 'none';
+        // Add current-page class if we're in a portfolio directory
+        if (isPortfolio) {
+            portfolioLink.classList.add("current-page");
+        }
     }
     
     // Get current page filename and path segments
