@@ -101,9 +101,10 @@ h5 {
     font-weight: normal;
 }
 h6 {
-    font: var(--font-size-xlarge) var(--font-primary);
+    font: var(--font-size-large) var(--font-primary);
     color: var(--color-text-primary);
     font-weight: bold;
+    margin-bottom: var(--spacing-sm);
 }
 
 /* Caption default */
@@ -337,6 +338,23 @@ p a{
 .citation a:hover {
     color: #444;
     text-decoration: underline;
+}
+
+/* -------------- CUSTOM STYLES: ARTICLES (CUSTOM LIST STYLING) ------------- */
+/* Question list styling */
+.question-list {
+    list-style: none;
+    padding-left: 0;
+}
+.question-list li {
+    display: list-item;
+    list-style: decimal;  /* Use native decimal numbering */
+    margin-left: 2em;
+    margin-bottom: 1em;
+    font-weight: normal;  /* Reset font weight for list item content */
+}
+.question-list li::marker {
+    font-weight: bold;  /* Make just the number bold */
 }
 
 
