@@ -10,10 +10,14 @@ function highlightCurrentPage() {
     const isPortfolio = currentPath.includes('portfolio');
     console.log("Is portfolio page:", isPortfolio);
     
-    // Show/hide subtitle based on directory
+    // Show/hide subtitle and portfolio menu item based on directory
     const subtitle = document.querySelector('.title-block .subtitle');
+    const portfolioLink = document.querySelector('.portfolio-only');
     if (subtitle) {
         subtitle.style.display = isPortfolio ? 'block' : 'none';
+    }
+    if (portfolioLink) {
+        portfolioLink.style.display = isPortfolio ? 'inline-block' : 'none';
     }
     
     // Get current page filename and path segments
@@ -26,6 +30,7 @@ function highlightCurrentPage() {
         "index.html": "home-link",
         "Projects.html": "projects-link",
         "resume.html": "resume-link",
+        "dataviz.html": "portfolio-link"
     };
     
     // Check if we're in a Projects subdirectory or on a project-related page
