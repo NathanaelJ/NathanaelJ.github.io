@@ -24,7 +24,7 @@ function highlightCurrentPage() {
     // Map filenames to their corresponding link IDs
     const pageMap = {
         "index.html": "home-link",
-        "projects.html": "projects-link",
+        "Projects.html": "projects-link",
         "resume.html": "resume-link",
     };
     
