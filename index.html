@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-        
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css" />
-        <title>Nathanael Jenkins</title>
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKWKKGM4TW"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_labs.css">
+    <title>Nathanael Jenkins: Interactive Data Visualization</title>
+</head>
+<body>
+    <!-- Header -->
+    <script src="../java.js"></script>
+        <div w3-include-html="header_labs.html"></div>
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-PKWKKGM4TW');
+            // First include the HTML
+            w3.includeHTML();
+            // Then load and run our header script
+            w3.includeHTML(function() {
+                // Run after header is loaded
+                highlightCurrentPage();
+            });
         </script>
-    </head>
+    <script src="header_script.js"></script>
 
+    <!-- Main -->
+    <main class="site-main">
+        <div class="intro-container">
+            <img src="../resources-General/Self.jpg" class="introimg" alt="Nathanael Jenkins portrait">
+            <div class="intro-text">
+                <h1>Hi there!</h1>
+                <p>I'm Nathanael, a PhD student in Aeronautics and Astronautics at the <a href="https://www.mit.edu" target="_blank" rel="noreferrer noopener">Massachusetts Institute of Technology</a>. Welcome to my little space on the web.</p>
+            </div>
+        </div>
 
-    <body>
-        <script src="java.js"></script>
-        <div w3-include-html="header.html"></div>
-        <script>w3.includeHTML();</script>
-        
-        <main class="site-main">
-            <p class="introbox"><br/>Hi there!<br/>I'm Nathanael, an AeroAstro graduate student at the <a href="https://www.mit.edu" target="_blank" rel="noreferrer noopener">Massachusetts Institute of Technology</a>. Welcome to my little space on the web.<br/><br/></p>
-
-            <video preload autoplay loop muted class="introbox">
-                <source src="/resources-General/CFD.mp4" type="video/mp4">
+        <div class="intro-container">
+            <div class="intro-text">
+                <p>I specialize in physics simulations and my current research explores simulation tools for aircraft lightning protection. You can find out more about my projects <a href="./projects_labs.html">here</a>.</p>
+            </div>
+            <video class="intro-video" preload autoplay loop muted>
+                <source src="../resources-General/CFD_Dark.mp4" type="video/mp4">
             </video>
-            <figcaption class="wrapper">DNS of a Taylor-Green vortex using <a href="https://www.incompact3d.com" target="_blank" rel="noreferrer noopener">Incompact3D</a></figcaption>
-            <p><br/><br/></p>
-        </main>
+            <figcaption>DNS of a Taylor-Green vortex using <a href="https://www.incompact3d.com" target="_blank" rel="noreferrer noopener">Incompact3D</a></figcaption>
+        </div>
+    </main>
 
-        <script src="java.js"></script>
-        <div w3-include-html="footer.html"></div>
-        <script>w3.includeHTML();</script>
-    </body>
-    
+    <!-- Footer -->
+    <script src="../java.js"></script>
+    <div w3-include-html="footer_labs.html"></div>
+    <script>w3.includeHTML();</script>
+
+</body>
 </html>
