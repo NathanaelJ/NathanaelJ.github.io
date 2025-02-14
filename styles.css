@@ -671,7 +671,7 @@ textarea.form-input {
     transition: background 0.2s;
 }
 .project-link:hover {
-    background: #666;
+    background: var(--color-hover);
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
