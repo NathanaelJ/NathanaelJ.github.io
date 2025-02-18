@@ -342,19 +342,24 @@ p a{
 
 /* -------------- CUSTOM STYLES: ARTICLES (CUSTOM LIST STYLING) ------------- */
 /* Question list styling */
-.question-list {
-    list-style: none;
-    padding-left: 0;
+.indent-bullet li {
+    margin-left: 1em;
 }
-.question-list li {
-    display: list-item;
-    list-style: decimal;  /* Use native decimal numbering */
-    margin-left: 2em;
-    margin-bottom: 1em;
-    font-weight: normal;  /* Reset font weight for list item content */
-}
-.question-list li::marker {
+ol li {
     font-weight: bold;  /* Make just the number bold */
+}
+
+/* -------------- CUSTOM STYLES: ARTICLES (PROCESSING BOXES) ------------- */
+.processing-box {
+    display: flex;
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    width: 50%;
+    padding: 1em;
+    min-width: 20em;
 }
 
 
