@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
     <title>Nathanael Jenkins</title>
+
+    <!-- Global Javascript (include header and footer) -->
+    <script src="/java.js"></script>
 </head>
 <body>
     <!-- Header -->
-    <script src="/java.js"></script>
-        <div w3-include-html="/header.html"></div>
-        <script>
-            // First include the HTML
-            w3.includeHTML();
-            // Then load and run our header script
-            w3.includeHTML(function() {
-                // Run after header is loaded
-                highlightCurrentPage();
-            });
-        </script>
+    <div w3-include-html="/header.html"></div>
+    <script>
+        // First include the HTML
+        w3.includeHTML();
+        // Then load and run our header script
+        w3.includeHTML(function() {
+            // Run after header is loaded
+            highlightCurrentPage();
+        });
+    </script>
     <script src="/header_script.js"></script>
 
     <!-- Main -->
@@ -43,7 +45,6 @@
     </main>
 
     <!-- Footer -->
-    <script src="/java.js"></script>
     <div w3-include-html="/footer.html"></div>
     <script>w3.includeHTML();</script>
 

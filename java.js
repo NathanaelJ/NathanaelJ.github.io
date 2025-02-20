@@ -2,6 +2,8 @@
 /* SOURCE: https:/www.w3schools.com/lib/w3.js */
 /* Nathanael Jenkins 2021 */
 
+/* Javascript for including header and footer on all pages */
+
 "use strict";
 var w3 = {};
 
