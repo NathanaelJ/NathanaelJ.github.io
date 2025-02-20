@@ -19,22 +19,13 @@
 
         <!-- Global Javascript (include header and footer) -->
         <script src="/java.js"></script>
-        <script type="module" src="/global.js"></script>
+        <script src="/header_script.js"></script>
+        <script src="/global.js"></script>
     </head>
 
 
     <body>
         <div w3-include-html="/header.html"></div>
-        <script>
-            // First include the HTML
-            w3.includeHTML();
-            // Then load and run our header script
-            w3.includeHTML(function() {
-                // Run after header is loaded
-                highlightCurrentPage();
-            });
-        </script>
-        <script src="/header_script.js"></script>
         
         <main class="site-main">
             <div class="wrapper">
@@ -88,7 +79,15 @@
             </div>
         </main>
         
-        <div w3-include-html="/footer.html"></div>
-        <script>w3.includeHTML();</script>
+    <!-- Footer -->
+    <div w3-include-html="/footer.html"></div>
+
+    <!-- Load header and footer -->
+    <script>
+        includeHTML(function() {
+            highlightCurrentPage();
+            initializeScheme();
+        });
+    </script>
     </body>
 </html>
