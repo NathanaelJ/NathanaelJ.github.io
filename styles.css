@@ -736,6 +736,36 @@ textarea.form-input {
 
 
 /* -------------- CUSTOM STYLES: FOOTER ------------- */
+/* Footer container */
+.footer {
+    text-align: center;
+    margin-top: 3em;
+}
+/* Footer navigation row */
+.footer-nav-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;  /* Three columns: empty | content | toggle */
+    align-items: center;
+    padding: 0 var(--spacing-md);
+    margin-right: var(--spacing-md);
+    margin-bottom: 0;
+}
+/* Center contacts */
+.contacts {
+    grid-column: 2;  /* Place in middle column */
+    text-align: center;
+}
+/* Color mode toggle */
+.color-mode-footer {
+    grid-column: 3;  /* Place in last column */
+    justify-self: end;
+}
+/* Social links in bottom */
+.social-links-container {
+    text-align: center;
+    margin: var(--spacing-md);
+    margin-top: 0;
+}
 /* Logo sizing */
 .logo{
     height: 15px;
@@ -757,21 +787,6 @@ textarea.form-input {
     padding: 4px 4px;
     vertical-align: middle;
 }
-/* Footer default */
-.footer{
-    text-align: center;
-    margin-top: 3em;  /* Add space before footer */
-}
-/* Footer spacing */
-.footer {
-    text-align: center;
-    margin-top: 3em;  /* Add space before footer */
-}
-/* OR if the above doesn't target correctly, we can add it to the main content: */
-.site-main {
-    margin-bottom: 3em;  /* Add space after main content */
-}
-
 
 
 
@@ -794,7 +809,7 @@ a:hover {
 .name1:hover,
 .logo:hover,
 .social-links:hover {
-    background: none;
+    background: var(--color-hover);
 }
 /* Button-style hover */
 .project-link:hover,
@@ -859,24 +874,19 @@ a:hover {
 
 
 /* -------------- CUSTOM STYLES: DARK MODE SWITCHER ------------- */
-.color-mode-footer {
-    display: flex;
-    justify-content: right;
-    margin-right: var(--spacing-md);
-}
 .color-mode-button {
     display: flex;
     background: none;
     border: none;
     padding: var(--spacing-xs);
-    align-items: center;
-    justify-content: center;
-}
-.color-mode-button p {
-    transition: transform 0.3s ease;
 }
 .color-mode-button p:after {
-    content: " \1F4A1" /* Lightbulb icon for light/ dark mode */
+    content: "  \262F" /* Lightbulb icon for light/ dark mode */
+}
+.color-mode-button p {
+    font-size: var(--font-size-small);
+    transition: transform 0.3s ease;
+    text-align: center;
 }
 .color-mode-button:hover p {
     transform: scale(1.1);

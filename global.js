@@ -47,7 +47,7 @@ function updateSchemeIcon(mode, button) {
   while (txt.firstChild) {
     txt.removeChild(txt.firstChild);
   }
-  const txtContent = document.createTextNode(`Lighting: ${mode.charAt(0).toUpperCase() + mode.slice(1)}`);
+  const txtContent = document.createTextNode(`Toggle lighting: ${mode.charAt(0).toUpperCase() + mode.slice(1)}`);
   console.log(`Setting text to: ${txtContent}`);
   txt.appendChild(txtContent);
 }
