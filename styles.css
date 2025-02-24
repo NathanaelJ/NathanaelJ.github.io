@@ -892,3 +892,8 @@ a:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
+/* -------------- CUSTOM STYLES: DARK MODE WARNING ------------- */
+/* For pages where dark mode isn't working right yet */
+.darkModeWarning {
+    color: red;
+}
