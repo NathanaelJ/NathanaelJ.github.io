@@ -896,4 +896,5 @@ a:hover {
 /* For pages where dark mode isn't working right yet */
 .darkModeWarning {
     color: red;
+    background-color: white;
 }
