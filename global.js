@@ -39,6 +39,12 @@ function setScheme(mode) {
     document.documentElement.setAttribute('color-scheme', mode);
   }
   localStorage.setItem('color-scheme', mode);
+
+  // Show/ hide dark mode warnings
+  const warning = document.querySelector('.darkModeWarning');
+  if (warning) { // (Just an error check)
+    warning.style.display = document.documentElement.getAttribute('color-scheme') === 'dark' ? 'block' : 'none';
+  }
 }
 
 // Update the Scheme text
