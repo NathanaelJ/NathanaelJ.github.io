@@ -14,6 +14,12 @@
     --color-hover: #CCC;
     --color-button: #444;
     --color-button-hover: #666;
+    /* Color scale */
+    --color-scale-0: FireBrick;
+    --color-scale-1: DarkOrange;
+    --color-scale-2: #666;
+    --color-scale-3: Olive;
+    --color-scale-4: DarkGreen;
 
     /* Typography */
     --font-primary: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Calibri, Arial, Verdana, sans-serif;
@@ -54,6 +60,12 @@
     --color-hover: #666;
     --color-button: #FFF;
     --color-button-hover: #AAA;
+    /* Color scale */
+    --color-scale-0: Red;
+    --color-scale-1: Orange;
+    --color-scale-2: #AAA;
+    --color-scale-3: YellowGreen;
+    --color-scale-4: LimeGreen;
 }
 
 
@@ -374,6 +386,7 @@ ol li {
 /* -------------- CUSTOM STYLES: ARTICLES (PROCESSING BOXES) ------------- */
 .processing-box {
     display: flex;
+    flex-direction: column;
     margin: auto;
     border-radius: 8px;
     overflow: hidden;
@@ -382,6 +395,14 @@ ol li {
     width: 50%;
     padding: 1em;
     min-width: 20em;
+}
+.processing-box ol li {
+    font-weight: normal;
+    text-align: left;
+}
+.processing-box ol {
+    margin-left: 1em;
+    padding-left: 1em;
 }
 
 
