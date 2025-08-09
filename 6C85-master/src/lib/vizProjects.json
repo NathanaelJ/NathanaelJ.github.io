@@ -1,5 +1,0 @@
-[
-    {"title":"Boston BlueBikes Bonanza", "img":"/Thumbnails/BikeWatch.png", "subtitle":"Lab 8: Geospatial Visualizations", "description":"Visualization of BlueBike station traffic, bike routes, and isochrones in Boston.", "link":"../IfMyGrandmotherHadWheelsSheWouldHaveBeenABike/", "year":"2025"},
-    {"title":"Boston Housing Data: Speculation", "img":"/Thumbnails/DV_1.png", "subtitle":"A2: Exploratory Visual Analysis", "description":"Exploration of Boston housing data and the effect of speculation on house prices.", "link":"dataviz/A2", "year":"2025"},
-    {"title":"The COVID Spiral", "img":"/Thumbnails/DV_2.png", "subtitle":"A3: Visualization Critique and Redesign", "description":"Critique and redesign of a widely-discussed COVID-19 visualization", "link":"dataviz/A3", "year":"2025"}
-]
