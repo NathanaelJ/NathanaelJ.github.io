@@ -1,3 +1,7 @@
+<script>
+  const today = new Date().toLocaleDateString();
+</script>
+
 <svelte:head>
   <title>Academic Projects | N Jenkins</title>
 </svelte:head>
@@ -30,7 +34,7 @@
           <iframe class="pdf-viewer" title="Group Design Project Report" src="AcademicResources/GDP_Report.pdf"></iframe>
       </div>
 
-      <p><br/>Please cite this project:<br/>Jenkins, N. (2023). <i>SpaceHAVEN: Aerothermodynamic Analysis of a Hypersonic Rocket Nosecone.</i> [pdf] London: Imperial College London. Available at: http://nathanaelj.github.io/Projects/AcademicResources/GDP_Report.pdf [Accessed: <script> document.write(new Date().toLocaleDateString()); </script>]<br/><br/></p>
+      <p><br/>Please cite this project:<br/>Jenkins, N. (2023). <i>SpaceHAVEN: Aerothermodynamic Analysis of a Hypersonic Rocket Nosecone.</i> [pdf] London: Imperial College London. Available at: http://nathanaelj.github.io/Projects/AcademicResources/GDP_Report.pdf [Accessed: {today}]<br/><br/></p>
 
       <hr width="50%" size="1px" color="#555" z-index="1">
       <h3 style="margin-bottom: 0">GPU Parallelisation of a 2D Navier-Stokes Solver</h3>
@@ -42,7 +46,7 @@
           <iframe class="pdf-viewer" title="UROP Report" src="AcademicResources/UROP_Report.pdf"></iframe>
       </div>
 
-      <p><br/>Please cite this project:<br/>Jenkins, N. (2021). <i>GPU Parallelisation of a 2D Navier-Stokes Solver</i> [pdf] London: Imperial College London. Available at: http://nathanaelj.github.io/Projects/AcademicResources/UROP_Report.pdf [Accessed: <script> document.write(new Date().toLocaleDateString()); </script>]<br/><br/></p>
+      <p><br/>Please cite this project:<br/>Jenkins, N. (2021). <i>GPU Parallelisation of a 2D Navier-Stokes Solver</i> [pdf] London: Imperial College London. Available at: http://nathanaelj.github.io/Projects/AcademicResources/UROP_Report.pdf [Accessed: {today}]<br/><br/></p>
 
       <hr width="50%" size="1px" color="#555" z-index="1">
       <h3 style="margin-bottom: 0">Ion Propulsion</h3>
@@ -54,6 +58,6 @@
           <iframe class="pdf-viewer" title="Extended Project Report" src="AcademicResources/EPQ.pdf"></iframe>
       </div>
 
-      <p><br/>Please cite this project:<br/>Jenkins, N. (2019). <i>Is ion propulsion the future of air and space transport?</i> [pdf] Winchester: Peter Symonds College. Available at: http://nathanaelj.github.io/Projects/AcademicResources/EPQ.pdf [Accessed: <script> document.write(new Date().toLocaleDateString()); </script>]<br/><br/></p>
+      <p><br/>Please cite this project:<br/>Jenkins, N. (2019). <i>Is ion propulsion the future of air and space transport?</i> [pdf] Winchester: Peter Symonds College. Available at: http://nathanaelj.github.io/Projects/AcademicResources/EPQ.pdf [Accessed: {today}]<br/><br/></p>
   </div>
 </main>

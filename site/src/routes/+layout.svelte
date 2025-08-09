@@ -30,7 +30,6 @@
         
         <nav class="menu-right">
             <a href="{base}/." class="menu-links" class:current-page={routeId === "/"} id="home-link">Home</a>
-            <a href="{base}/dataviz" class="menu-links portfolio-only" class:current-page={routeId.includes("/dataviz")} id="portfolio-link">6.C85</a>
             
             <div class="dropdown">
                 <a class="menu-links" href="{base}/Projects" class:current-page={routeId.includes("/Projects")} id="projects-link">Projects</a>
