@@ -9,23 +9,31 @@
 
     <div class="projects-grid">
       <article class="project-card">
-        <img src="/Dogs/Minnie.jpeg" alt="Minnie the dog" class="project-image" style="height: 400px;" />
-        <figcaption>My cousin's dog, Minnie</figcaption>
+        <figure>
+          <img src="/Dogs/Minnie.jpeg" alt="Minnie the dog" class="project-image" style="height: 400px;" />
+          <figcaption>My cousin's dog, Minnie</figcaption>
+        </figure>
       </article>
 
       <article class="project-card">
-        <img src="/Dogs/Winnie.jpeg" alt="Winnie the dog (arch-nemesis of Minnie)" class="project-image" style="height: 400px;" />
-        <figcaption>My cousin's dog, Winnie (arch-nemesis of Minnie)</figcaption>
+        <figure>
+          <img src="/Dogs/Winnie.jpeg" alt="Winnie the dog (arch-nemesis of Minnie)" class="project-image" style="height: 400px;" />
+          <figcaption>My cousin's dog, Winnie (arch-nemesis of Minnie)</figcaption>
+        </figure>
       </article>
 
       <article class="project-card">
-        <img src="/Dogs/Emilio.jpeg" alt="My Prof's dog" class="project-image" style="height: 400px;" />
-        <figcaption>My prof. brought his dog to class</figcaption>
+        <figure>
+          <img src="/Dogs/Emilio.jpeg" alt="My Prof's dog" class="project-image" style="height: 400px;" />
+          <figcaption>My prof. brought his dog to class</figcaption>
+        </figure>
       </article>
 
       <article class="project-card">
-        <img src="/Dogs/Winchester.jpeg" alt="Busking dog" class="project-image" style="height: 400px;" />
-        <figcaption>A dog I saw on the street</figcaption>
+        <figure>
+          <img src="/Dogs/Winchester.jpeg" alt="Busking dog" class="project-image" style="height: 400px;" />
+          <figcaption>A dog I saw on the street</figcaption>
+        </figure>
       </article>
     </div>
 
