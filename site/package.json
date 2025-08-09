@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"prebuild": "npx elocuent -d static,src -o static/loc.csv",
+		"prebuild": "echo skipping loc generation",
 		"build": "vite build",
 		"preview": "vite preview"
 	},

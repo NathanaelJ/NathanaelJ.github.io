@@ -4,6 +4,8 @@
     import { colorScheme, cycleScheme } from '$lib/stores/colorScheme';
     import { onMount } from 'svelte';
 
+    $: routeId = $page?.route?.id || '';
+
     onMount(() => {
         // Listen for system scheme changes when in auto mode
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -24,15 +26,14 @@
     <div class="wrapper">
         <div class="title-block">
             <a href="{base}/." class="name1">Nathanael </a><a href="{base}/." class="name">Jenkins<br/></a>
-            <a href="{base}/dataviz" class="subtitle">6.C85 Lab Portfolio (with Svelte)</a>
         </div>
         
         <nav class="menu-right">
-            <a href="{base}/." class="menu-links" class:current-page={$page.route.id === "/"} id="home-link">Home</a>
-            <a href="{base}/dataviz" class="menu-links portfolio-only" class:current-page={$page.route.id.includes("/dataviz")} id="portfolio-link">6.C85</a>
+            <a href="{base}/." class="menu-links" class:current-page={routeId === "/"} id="home-link">Home</a>
+            <a href="{base}/dataviz" class="menu-links portfolio-only" class:current-page={routeId.includes("/dataviz")} id="portfolio-link">6.C85</a>
             
             <div class="dropdown">
-                <a class="menu-links" href="{base}/Projects" class:current-page={$page.route.id.includes("/Projects")} id="projects-link">Projects</a>
+                <a class="menu-links" href="{base}/Projects" class:current-page={routeId.includes("/Projects")} id="projects-link">Projects</a>
                 <div class="dropdown-content">
                     <a href="{base}/dataviz" id="dataviz-link">Data Visualization</a>
                     <a href="{base}/Projects/Thesis" id="FYP-link">Thesis</a>
@@ -41,8 +42,7 @@
                     <a href="{base}/Projects/Academic" id="OtherProj-link">Other</a>
                 </div>
             </div>
-            <a href="{base}/resume" class="menu-links" class:current-page={$page.route.id.includes("/resume")} id="resume-link">Resume</a>
-            <a href="{base}/meta" class="menu-links" class:current-page={$page.route.id.includes("/meta")} id="portfolio-link">Meta</a>
+            <a href="{base}/resume" class="menu-links" class:current-page={routeId.includes("/resume")} id="resume-link">Resume</a>
         </nav>
     </div>
     <hr class="rule" size="1px">
