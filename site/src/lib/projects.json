@@ -32,54 +32,6 @@
 "img":"/Thumbnails/GDP.png",
 "subtitle":"Undergraduate and high school projects",
 "description":"A collection of fun projects from my studies",
-"link":"Projects/Academic"},
+"link":"Projects/Academic"}
 
-{"title":"Placeholder 2022",
-"year":"2022",
-"img":"/Thumbnails/PLACEHOLDER.jpeg",
-"subtitle":"Placeholder Project",
-"description":"Placeholder Project",
-"link":"Projects"},
-
-{"title":"Placeholder 2021",
-"year":"2021",
-"img":"/Thumbnails/PLACEHOLDER.jpeg",
-"subtitle":"Placeholder Project",
-"description":"Placeholder Project",
-"link":"Projects"},
-
-{"title":"Placeholder 2021",
-"year":"2021",
-"img":"/Thumbnails/PLACEHOLDER.jpeg",
-"subtitle":"Placeholder Project",
-"description":"Placeholder Project",
-"link":"Projects"},
-
-{"title":"Placeholder 2020",
-"year":"2020",
-"img":"/Thumbnails/PLACEHOLDER.jpeg",
-"subtitle":"Placeholder Project",
-"description":"Placeholder Project",
-"link":"Projects"},
-
-{"title":"Placeholder 2020",
-"year":"2020",
-"img":"/Thumbnails/PLACEHOLDER.jpeg",
-"subtitle":"Placeholder Project",
-"description":"Placeholder Project",
-"link":"Projects"},
-
-{"title":"Placeholder 2019",
-"year":"2019",
-"img":"/Thumbnails/PLACEHOLDER.jpeg",
-"subtitle":"Placeholder Project",
-"description":"Placeholder Project",
-"link":"Projects"},
-
-{"title":"Placeholder 2018",
-"year":"2018",
-"img":"/Thumbnails/PLACEHOLDER.jpeg",
-"subtitle":"Placeholder Project",
-"description":"Placeholder Project",
-"link":"Projects"}
 ]
