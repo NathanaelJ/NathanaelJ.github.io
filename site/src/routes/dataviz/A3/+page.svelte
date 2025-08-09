@@ -45,8 +45,7 @@
                       alt="Original visualization of the COVID spiral"
                       style="width: 40%; height: auto; margin: auto; display:block; min-width: 300px;">
           </picture>
-          <figcaption>Original visualization of 'the COVID spiral' <a href="https://www.nytimes.com/2022/01/06/opinion/omicron-covid-us.html" target="_blank" rel="noreferrer noopener" class="citation">(Shaman J, 2022)</a>. 
-          </figcaption>
+          <figcaption>Original visualization of 'the COVID spiral' <a href="https://www.nytimes.com/2022/01/06/opinion/omicron-covid-us.html" target="_blank" rel="noreferrer noopener" class="citation">(Shaman J, 2022)</a>.</figcaption>
           
           <section id="C_read"> <!--    READ    -->
               <h5>Read: Visualization Overview</h5>
@@ -87,8 +86,7 @@
                           alt="Sketch of an redesigned visualization"
                           style="width: 60%; height: auto; margin: auto; display:block; min-width: 300px;">
               </picture>
-              <figcaption>Sketch 1: A similar spiral diagram, but with subtle changes to address the concerns raised in the critique. The basic visual encodings remain the same, but additional color encoding has been added, and formatting has been changed to reduce potential confusion.
-              </figcaption>
+              <figcaption>Sketch 1: A similar spiral diagram, but with subtle changes to address the concerns raised in the critique. The basic visual encodings remain the same, but additional color encoding has been added, and formatting has been changed to reduce potential confusion.</figcaption>
 
               <p><br/></p>
               <div class="processing-box">
@@ -123,8 +121,7 @@
                               alt="Sketch of an redesigned visualization"
                               style="width: 60%; height: auto; margin: auto; display:block; min-width: 300px;">
                   </picture>
-                  <figcaption>Sketch 2: This circular diagram resolves the issues involved with a spiral shape, but maintains the ease of comparing monthly behavior across years. It is styled to look like a virus, using labels that are styled to look like protein spikes, although it would benefit from some adjustments to its proportions. 
-                  </figcaption>
+                  <figcaption>Sketch 2: This circular diagram resolves the issues involved with a spiral shape, but maintains the ease of comparing monthly behavior across years. It is styled to look like a virus, using labels that are styled to look like protein spikes, although it would benefit from some adjustments to its proportions.</figcaption>
 
 
                   <p><br/></p>
@@ -160,8 +157,7 @@
                               alt="Sketch of an redesigned visualization"
                               style="width: 60%; height: auto; margin: auto; display:block; min-width: 300px;">
                   </picture>
-                  <figcaption>Sketch 3: A re-designed visualization using a more conventional rectilinear layout with color-coded boxes and a line graph style encoding.
-                  </figcaption>
+                  <figcaption>Sketch 3: A re-designed visualization using a more conventional rectilinear layout with color-coded boxes and a line graph style encoding.</figcaption>
 
 
                   <p><br/></p>
@@ -205,8 +201,7 @@
                       alt="Rendering of an redesigned visualization"
                       style="width: 100%; height: auto; margin: auto; display:block; min-width: 300px;">
           </picture>
-          <figcaption>Final visualization: A revised visualization that uses the 'virus-shaped' design from sketch 2, with additional refinements and additional data about the number of deaths. Illustrates COVID-19 cases and deaths reported per day as a 7-day moving average from 2020 until 6 January 2022 (the date of the original publication). The plots were produced using Matplotlib in Python, and postprocessing was completed using PowerPoint. Graphical data is based on Google COVID-19 Open Data <a href="https://health.google.com/covid-19/open-data/raw-data" target="_blank" rel="noreferrer noopener" class="citation">(Google, 2022)</a>, and annotations are based on the CDC COVID-19 Timeline <a href="https://www.cdc.gov/museum/timeline/covid19.html" target="_blank" rel="noreferrer noopener" class="citation">(CDC, 2022)</a>.
-          </figcaption>
+          <figcaption>Final visualization: A revised visualization that uses the 'virus-shaped' design from sketch 2, with additional refinements and additional data about the number of deaths. Illustrates COVID-19 cases and deaths reported per day as a 7-day moving average from 2020 until 6 January 2022 (the date of the original publication). The plots were produced using Matplotlib in Python, and postprocessing was completed using PowerPoint. Graphical data is based on Google COVID-19 Open Data <a href="https://health.google.com/covid-19/open-data/raw-data" target="_blank" rel="noreferrer noopener" class="citation">(Google, 2022)</a>, and annotations are based on the CDC COVID-19 Timeline <a href="https://www.cdc.gov/museum/timeline/covid19.html" target="_blank" rel="noreferrer noopener" class="citation">(CDC, 2022)</a>.</figcaption>
       </section>
 
 

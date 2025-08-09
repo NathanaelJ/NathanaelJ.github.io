@@ -98,35 +98,39 @@
             <p>First, the neighborhood zip code data was combined with the main dataset. The figure below illustrates how this relationship was validated using a text table. This revealed that some <b>zip codes were incorrectly classified</b> as 'Downtown', and some neighborhoods were only represented in one of the two datasets (e.g. the West End was recorded in the main dataset but did not correspond to any zip code). Using online information about which neighborhoods correspond to which zip codes, the zip code data was revised to correct these errors and ensure geographic visualizations remain accurate.</p>
             
             <br/><br/>
-            <div style="display: flex; justify-content: center; gap: 20px;">
-                <picture>
-                    <img src="A2/1_1_Zip_Matching.png" 
-                         alt="Validation of neighborhood data across two datasets"
-                         style="width: 100%; height: auto;">
-                </picture>
-                <picture>
-                    <img src="A2/1_2_Zip_Matching_Fixed.png" 
-                         alt="Validation of neighborhood data across two datasets"
-                         style="width: 100%; height: auto;">
-                </picture>
-            </div>
-            <figcaption>Tables illustrating which neighborhoods were included in each part of the dataset. While most neighborhoods are present in both datasets, some manual adjustments were needed to ensure complete coverage. Two neighborhoods (Back Bay and Mission Hill) remain excluded from the main dataset.
-                <b>Left:</b> Original zip code data which included several neighborhoods that were only represented in one dataset, and some zip codes incorrectly classified as 'Downtown'.
-                <b>Right:</b> Revised zip code data, with at least one zip code per neighborhood. Both lists are ordered by the smallest zip code in each neighborhood.</figcaption>
+            <figure>
+                <div style="display: flex; justify-content: center; gap: 20px;">
+                    <picture>
+                        <img src="A2/1_1_Zip_Matching.png" 
+                             alt="Validation of neighborhood data across two datasets"
+                             style="width: 100%; height: auto;">
+                    </picture>
+                    <picture>
+                        <img src="A2/1_2_Zip_Matching_Fixed.png" 
+                             alt="Validation of neighborhood data across two datasets"
+                             style="width: 100%; height: auto;">
+                    </picture>
+                </div>
+                <figcaption>Tables illustrating which neighborhoods were included in each part of the dataset. While most neighborhoods are present in both datasets, some manual adjustments were needed to ensure complete coverage. Two neighborhoods (Back Bay and Mission Hill) remain excluded from the main dataset.
+                    <b>Left:</b> Original zip code data which included several neighborhoods that were only represented in one dataset, and some zip codes incorrectly classified as 'Downtown'.
+                    <b>Right:</b> Revised zip code data, with at least one zip code per neighborhood. Both lists are ordered by the smallest zip code in each neighborhood.</figcaption>
+            </figure>
 
             <p><b>Back Bay and Mission Hill neighborhoods do not correspond to data in the main dataset.</b> This could be because the neighborhood data is based on 2020 census block groups, while the main dataset goes back to 2004 and neighborhood definitions may have changed over time. In some property assessment metadata <a href="https://data.boston.gov/dataset/property-assessment" target="_blank" rel="noreferrer noopener" class="citation">(Boston Government, 2004-2024)</a>, Back Bay is associated with Beacon Hill, and Mission Hill is associated with Jamaica Plain, although it is unclear if the corresponding data has been aggregated into other neighborhoods. Back Bay and Mission Hill shall be excluded from geographic visualizations. Since the zip codes around those neighborhoods are included in the dataset, this shouldn't reduce the insights we can garner.<br/><br/></p>
 
             <p>The figure below illustrates <b>which geographic areas are covered by this dataset</b> and highlights the 'missing' neighborhoods. Central Boston is close to the North East extreme of the data set, which does not contain data on other surrounding cities including Cambridge and Somerville. Subtle green spots near the downtown region indicate <b>zip codes that correspond to specific points</b>, such as 02283. These are included in the Downtown neighborhood for the purposes of data analysis, as their locations lie within Downdown regions.</p>
 
             <br/><br/>
-            <div style="display: flex; justify-content: center;">
-                <picture>
-                    <img src="A2/1_5_Zip_Coverage.png" 
-                         alt="Data Coverage by Zip Code"
-                         style="width: 75%; height: auto; padding-left: 12.5%">
-                </picture>
-            </div>
-            <figcaption>Zip codes included in this dataset. The Back Bay and Mission Hill names are not referenced in this dataset, suggesting that the corresponding data may have been categorized under adjacent neighborhoods.</figcaption>
+            <figure>
+                <div style="display: flex; justify-content: center;">
+                    <picture>
+                        <img src="A2/1_5_Zip_Coverage.png" 
+                             alt="Data Coverage by Zip Code"
+                             style="width: 75%; height: auto; padding-left: 12.5%">
+                    </picture>
+                </div>
+                <figcaption>Zip codes included in this dataset. The Back Bay and Mission Hill names are not referenced in this dataset, suggesting that the corresponding data may have been categorized under adjacent neighborhoods.</figcaption>
+            </figure>
 
             <div class="processing-box">
                 <p><b>Dataset 1 Processing:</b>
@@ -138,26 +142,30 @@
             <p>Property data in this dataset is represented in the corporate ownership and owner occupancy rates. The figures below illustrate the data for these metrics in each neighborhood. This <b>validates that the data is present as expected, and values are reasonable</b>. Over time, <b>corporate ownership has increased across all neighborhoods, while owner occupancy has slightly decreased</b>. As expected, corporate ownership rates increase closer to the city center, while owner occupancy decreases.</p>
 
             <br/><br/>
-            <div style="display: flex; justify-content: center;">
-                <picture>
-                    <img src="A2/1_3_Corp_Occ.png" 
-                         alt="Corporate ownership and owner occupancy rates over time in Boston neighborhoods"
-                         style="width: 75%; height: auto; padding-left: 12.5%">
-                </picture>
-            </div>
-            <figcaption>Univariate time-series data for corporate ownership rate (<b>left</b>) and owner occupancy rate (<b>right</b>) in each neighborhood. Data is present for every neighborhood, every year, and the trends broadly follow expectations that corporate ownership has increased over the last 20 years, while owner occupancy has decreased. Percentages are in line with expectations (and lie between 0% and 100%, as a useful sense-check).
-            </figcaption>
+            <figure>
+                <div style="display: flex; justify-content: center;">
+                    <picture>
+                        <img src="A2/1_3_Corp_Occ.png" 
+                             alt="Corporate ownership and owner occupancy rates over time in Boston neighborhoods"
+                             style="width: 75%; height: auto; padding-left: 12.5%">
+                    </picture>
+                </div>
+                <figcaption>Univariate time-series data for corporate ownership rate (<b>left</b>) and owner occupancy rate (<b>right</b>) in each neighborhood. Data is present for every neighborhood, every year, and the trends broadly follow expectations that corporate ownership has increased over the last 20 years, while owner occupancy has decreased. Percentages are in line with expectations (and lie between 0% and 100%, as a useful sense-check).
+                </figcaption>
+            </figure>
 
             <br/><br/>
-            <div style="display: flex; justify-content: center;">
-                <picture>
-                    <img src="A2/1_7_Corp_Occ_Map.png" 
-                         alt="Aver age corporate ownership and owner occupancy rates in Boston neighborhoods"
-                         style="width: 75%; height: auto; padding-left: 12.5%">
-                </picture>
-            </div>
-            <figcaption>Corporate ownership rate (<b>left</b>) and owner occupancy rate (<b>right</b>) in each neighborhood, averaged from 2004-2024. The distributions meet expectations that corporate ownership is inversely related to owner occupancy, and increases closer to the city center.
-            </figcaption>
+            <figure>
+                <div style="display: flex; justify-content: center;">
+                    <picture>
+                        <img src="A2/1_7_Corp_Occ_Map.png" 
+                             alt="Aver age corporate ownership and owner occupancy rates in Boston neighborhoods"
+                             style="width: 75%; height: auto; padding-left: 12.5%">
+                    </picture>
+                </div>
+                <figcaption>Corporate ownership rate (<b>left</b>) and owner occupancy rate (<b>right</b>) in each neighborhood, averaged from 2004-2024. The distributions meet expectations that corporate ownership is inversely related to owner occupancy, and increases closer to the city center.
+                </figcaption>
+            </figure>
 
             <div class="processing-box">
                 <p><b>Dataset 1 Processing:</b>
@@ -169,14 +177,16 @@
             <p>Finally, for dataset 1, the 2020 census data was validated using the figure below. Each census variable is defined in each neighborhood; the figure below illustrates ethnicity data but other metrics were also tested. This validates that the <b>census data is defined in each neighborhood, and values are again reasonable</b>. Nothing unexpected stands out from the census data, and it is easy to identify which demographics dominate in each neighborhood. By dividing by the total population in each neighborhood, it was easier to assess the distribution of demographics, since the raw values are weighted by total neighborhood population.</p>
 
             <br/><br/>
-            <div style="display: flex; justify-content: center;">
-                <picture>
-                    <img src="A2/1_6_Census.png"
-                         alt="Census demographic data by neighborhood"
-                         style="width: 75%; height: auto; padding-left: 12.5%">
-                </picture>
-            </div>
-            <figcaption>A summary of demographic information collected in each neighborhood in the 2020 census. Total population of each ethnic background as a percentage of neighborhood population. These maps approximately meet expectations, and similar visualizations can be made for other demographic variables. Color scales have been made consistent for easier comparison between demographics; this makes it clear that AIAN and 'Other' demographics are rare across all neighborhoods (this is expected since those demographics are more rare nation-wide). The hispanic population is most concentrated in a single neighborhood (East Boston), while other demographics are  more evenly distributed across the city.</figcaption>
+            <figure>
+                <div style="display: flex; justify-content: center;">
+                    <picture>
+                        <img src="A2/1_6_Census.png"
+                             alt="Census demographic data by neighborhood"
+                             style="width: 75%; height: auto; padding-left: 12.5%">
+                    </picture>
+                </div>
+                <figcaption>A summary of demographic information collected in each neighborhood in the 2020 census. Total population of each ethnic background as a percentage of neighborhood population. These maps approximately meet expectations, and similar visualizations can be made for other demographic variables. Color scales have been made consistent for easier comparison between demographics; this makes it clear that AIAN and 'Other' demographics are rare across all neighborhoods (this is expected since those demographics are more rare nation-wide). The hispanic population is most concentrated in a single neighborhood (East Boston), while other demographics are  more evenly distributed across the city.</figcaption>
+            </figure>
 
             <div class="processing-box">
                 <p><b>Dataset 1 Processing:</b>
@@ -208,14 +218,16 @@
             </ul>
 
             <br/>
-            <div style="display: flex; justify-content: center;">
-                <picture>
-                    <img src="A2/2_1_FilteredMap.png"
-                         alt="Map of property sales locations in Boston with filtered points highlighted"
-                         style="width: 75%; height: auto; padding-left: 12.5%">
-                </picture>
-            </div>
-            <figcaption>Map of property sales location data from 2000-2023 with erroneous points highlighted in red; these points are filtered out in spatial analysis. The erroneous points were identified manually and are located in different locations to the registered address. Excludes 89 'null island' locations, with invalid latitude and longitude values.</figcaption>
+            <figure>
+                <div style="display: flex; justify-content: center;">
+                    <picture>
+                        <img src="A2/2_1_FilteredMap.png"
+                             alt="Map of property sales locations in Boston with filtered points highlighted"
+                             style="width: 75%; height: auto; padding-left: 12.5%">
+                    </picture>
+                </div>
+                <figcaption>Map of property sales location data from 2000-2023 with erroneous points highlighted in red; these points are filtered out in spatial analysis. The erroneous points were identified manually and are located in different locations to the registered address. Excludes 89 'null island' locations, with invalid latitude and longitude values.</figcaption>
+            </figure>
 
             <p>Finally, zooming in on the filtered map, the dataset appears to be complete for most properties in central Boston, but <b>areas further away from the city center are incomplete</b>. There are too few records in neighborhoods like Roxbury and South Boston to reflect 20 years worth of sales. Therefore, <b>data outside of the North End, Beacon Hill, Back Bay, and South End should be treated with care</b>, since many sales are likely to be missing.
 

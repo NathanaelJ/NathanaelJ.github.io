@@ -27,7 +27,7 @@
       <div class="image-container">
           <img src="ModelResources/AGM-88E.png" alt="AIM-9X">
       </div>
-      <iframe src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99fe2216d93cd2eeb4?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+      <iframe title="AGM-88E 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99fe2216d93cd2eeb4?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
       
       <hr width="50%" size="1px" color="#555" z-index="1">
       <h3 id="AIM-120">AIM-120A AMRAAM</h3>
@@ -40,7 +40,7 @@
       <div class="image-container">
           <img src="ModelResources/AIM-120.png" alt="AIM-120A">
       </div>
-      <iframe src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99c3d53eb532ffd487?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+      <iframe title="AIM-120 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99c3d53eb532ffd487?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
       
       <hr width="50%" size="1px" color="#555" z-index="1">
       <h3 id="AIM-9X">AIM-9X Sidewinder</h3>
@@ -53,7 +53,7 @@
       <div class="image-container">
           <img src="ModelResources/AIM-9X.png" alt="AIM-9X">
       </div>
-      <iframe src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99bec7167df3224421?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+      <iframe title="AIM-9X 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99bec7167df3224421?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
       
       <hr width="50%" size="1px" color="#555" z-index="1">
       <h3 id="Astra-Mk1">Astra-Mk1</h3>
@@ -66,7 +66,7 @@
       <div class="image-container">
           <img src="ModelResources/Astra.png" alt="Astra Mk.1">
       </div>
-      <iframe src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c994ef803610224a623?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+      <iframe title="Astra Mk.1 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c994ef803610224a623?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
       
       <hr width="50%" size="1px" color="#555" z-index="1">
       <h3 id="F-106B">F-106B Delta Dart</h3>
@@ -79,6 +79,6 @@
       <div class="image-container">
           <img src="ModelResources/F-106B.png" alt="F-106B">
       </div>
-      <iframe src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99edbd1c273b58baca?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+      <iframe title="F-106B 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99edbd1c273b58baca?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
   </div>
 </main>
