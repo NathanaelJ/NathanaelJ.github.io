@@ -73,7 +73,8 @@
     /* Glass morphism - MIT Red themed */
     --glass-bg: rgba(255, 255, 255, 0.15);
     --glass-border: rgba(163, 31, 52, 0.2);
-    --glass-shadow: 0 8px 32px 0 rgba(163, 31, 52, 0.15);
+    /* --glass-shadow: 0 8px 32px 0 rgba(163, 31, 52, 0.15); */
+    --glass-shadow: 0 8px 32px 0 var(--color-hover);
 }
 
 /* -------------- GLOBAL STYLES ------------- */
@@ -249,7 +250,7 @@ body {
     margin-bottom: var(--spacing-4);
 }
 
-.intro-text a {
+.intro-text a, .page-header a {
     color: var(--color-accent);
     text-decoration: none;
     font-weight: 500;
@@ -257,7 +258,7 @@ body {
     position: relative;
 }
 
-.intro-text a::after {
+.intro-text a::after, .page-header a::after {
     content: '';
     position: absolute;
     bottom: -2px;
@@ -268,11 +269,11 @@ body {
     transition: width 0.3s ease;
 }
 
-.intro-text a:hover::after {
+.intro-text a:hover::after, .page-header a:hover::after {
     width: 100%;
 }
 
-.intro-text a:hover {
+.intro-text a:hover, .page-header a:hover {
     color: var(--color-accent-2);
     background: none;
 }
@@ -393,19 +394,71 @@ p {
     margin-bottom: var(--spacing-4);
 }
 
-.project-link {
-    display: inline-block;
-    padding: var(--spacing-3) var(--spacing-6);
-    background: var(--color-accent);
-    color: var(--color-background) !important;
+/* Project content link styling - matching homepage behavior */
+.project-content a {
+    color: var(--color-accent);
     text-decoration: none;
-    border-radius: var(--border-radius);
     font-weight: 500;
     transition: all 0.2s ease;
+    position: relative;
+}
+
+.project-content a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.project-content a:hover::after {
+    width: 100%;
+}
+
+.project-content a:hover {
+    color: var(--color-accent-2);
+    background: none;
+}
+
+/* Enhanced project link - unified styling inspired by apple-button */
+.project-link {
+    background: var(--color-accent) !important;
+    color: white !important;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-3) var(--spacing-6);
+    font-family: inherit;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.project-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.project-link:hover::before {
+    left: 100%;
 }
 
 .project-link:hover {
-    background: var(--color-accent-2);
+    background: var(--color-accent-2) !important;
+    color: white !important;
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
 }
@@ -1195,10 +1248,6 @@ html {
     z-index: -1;
 }
 
-.page-header:hover::before {
-    opacity: 1;
-}
-
 .page-header h1 {
     font-family: var(--font-serif);
     font-weight: 600;
@@ -1281,10 +1330,6 @@ html {
     z-index: -1;
 }
 
-.resume-section:hover::before {
-    opacity: 1;
-}
-
 .resume-section h5 {
     font-family: var(--font-serif);
     font-weight: 600;
@@ -1362,10 +1407,6 @@ html {
     z-index: -1;
 }
 
-.error-container:hover::before {
-    opacity: 1;
-}
-
 .error-container h1 {
     font-family: var(--font-serif);
     font-weight: 600;
@@ -1419,44 +1460,36 @@ html {
     line-height: 1.6;
 }
 
-/* Enhanced project link */
-.project-link {
-    display: inline-block;
-    background: var(--color-accent);
-    color: white;
-    padding: var(--spacing-3) var(--spacing-6);
-    border-radius: var(--border-radius);
+/* Project content link styling - matching homepage behavior */
+.project-content a {
+    color: var(--color-accent);
     text-decoration: none;
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     position: relative;
-    overflow: hidden;
 }
 
-.project-link::before {
+.project-content a::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: -100%;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.project-content a:hover::after {
     width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, 
-        transparent, 
-        rgba(255, 255, 255, 0.2), 
-        transparent
-    );
-    transition: left 0.5s ease;
 }
 
-.project-link:hover::before {
-    left: 100%;
+.project-content a:hover {
+    color: var(--color-accent-2);
+    background: none;
 }
 
-.project-link:hover {
-    background: var(--color-accent-2);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(163, 31, 52, 0.3);
-}
+
 
 /* Resume list styling */
 .resume-list {
@@ -1580,10 +1613,6 @@ html {
     z-index: -1;
 }
 
-.project-section:hover::before {
-    opacity: 1;
-}
-
 .project-section h3 {
     font-family: var(--font-serif);
     font-weight: 600;
@@ -1606,6 +1635,35 @@ html {
     color: var(--color-text-secondary);
     line-height: 1.6;
     margin-bottom: var(--spacing-4);
+}
+
+/* Project section link styling - matching homepage behavior */
+.project-section a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.project-section a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.project-section a:hover::after {
+    width: 100%;
+}
+
+.project-section a:hover {
+    color: var(--color-accent-2);
+    background: none;
 }
 
 /* Enhanced horizontal rules */
@@ -1669,10 +1727,6 @@ html {
     z-index: -1;
 }
 
-.image-container:hover::before, .video-container:hover::before {
-    opacity: 1;
-}
-
 .image-container img, .video-container img {
     max-width: 100%;
     height: auto;
@@ -1682,6 +1736,35 @@ html {
 
 .image-container:hover img, .video-container:hover img {
     transform: scale(1.02);
+}
+
+/* Image and video container link styling - matching homepage behavior */
+.image-container a, .video-container a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.image-container a::after, .video-container a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.image-container a:hover::after, .video-container a:hover::after {
+    width: 100%;
+}
+
+.image-container a:hover, .video-container a:hover {
+    color: var(--color-accent-2);
+    background: none;
 }
 
 /* PDF containers */
@@ -1696,6 +1779,18 @@ html {
     position: relative;
     overflow: hidden;
     box-shadow: var(--glass-shadow);
+}
+
+/* Remove duplicate styling when PDF container is inside a project section */
+.project-section .pdf-container {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: var(--spacing-4) 0;
+    box-shadow: none;
 }
 
 .pdf-container::before {
@@ -1715,8 +1810,9 @@ html {
     z-index: -1;
 }
 
-.pdf-container:hover::before {
-    opacity: 1;
+/* Remove pseudo-element when PDF container is inside a project section */
+.project-section .pdf-container::before {
+    display: none;
 }
 
 .pdf-viewer {
@@ -1811,10 +1907,6 @@ html {
     z-index: -1;
 }
 
-.citation-section:hover::before {
-    opacity: 1;
-}
-
 .citation-section p {
     color: var(--color-text-secondary);
     font-style: italic;
@@ -1873,4 +1965,442 @@ html {
     color: white;
     transform: translateX(4px);
     box-shadow: 0 4px 8px rgba(163, 31, 52, 0.3);
+}
+
+/* Dataviz specific styles */
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-6) 0;
+}
+
+.toc-list ul {
+    list-style: none;
+    padding-left: var(--spacing-6);
+    margin: var(--spacing-2) 0;
+}
+
+.toc-list li {
+    margin: var(--spacing-2) 0;
+}
+
+.toc-list a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-2);
+    border-radius: var(--border-radius);
+}
+
+.toc-list a:hover {
+    background: rgba(163, 31, 52, 0.1);
+    transform: translateX(4px);
+}
+
+/* Dataviz section containers - similar to project-section */
+.dataviz-section {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-6);
+    margin: var(--spacing-8) 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s ease;
+}
+
+.dataviz-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(163, 31, 52, 0.05), 
+        rgba(163, 31, 52, 0.1), 
+        rgba(163, 31, 52, 0.05)
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.dataviz-section h2,
+.dataviz-section h3,
+.dataviz-section h4 {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-4);
+    position: relative;
+}
+
+.dataviz-section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: var(--spacing-2);
+}
+
+.dataviz-section h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: var(--spacing-6);
+}
+
+.dataviz-section h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: var(--spacing-4);
+}
+
+.dataviz-section p {
+    margin-bottom: var(--spacing-4);
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+.dataviz-section ul,
+.dataviz-section ol {
+    margin: var(--spacing-4) 0;
+    padding-left: var(--spacing-6);
+}
+
+.dataviz-section li {
+    margin: var(--spacing-2) 0;
+    line-height: 1.6;
+}
+
+/* Content boxes for specific dataviz elements */
+.content-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-4);
+    margin: var(--spacing-4) 0;
+    position: relative;
+}
+
+.content-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(163, 31, 52, 0.02), 
+        rgba(163, 31, 52, 0.05), 
+        rgba(163, 31, 52, 0.02)
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+/* Image and figure containers for dataviz */
+.dataviz-image-container {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-4);
+    margin: var(--spacing-6) 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--glass-shadow);
+}
+
+.dataviz-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: calc(var(--border-radius) - 4px);
+    transition: transform 0.3s ease;
+}
+
+.dataviz-image-container:hover img {
+    transform: scale(1.02);
+}
+
+.dataviz-image-container figcaption {
+    margin-top: var(--spacing-3);
+    color: var(--color-text-secondary);
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Code and technical content boxes */
+.technical-box {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(163, 31, 52, 0.2);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-4);
+    margin: var(--spacing-4) 0;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.technical-box code {
+    background: rgba(163, 31, 52, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: var(--color-accent);
+}
+
+/* Summary and conclusion sections */
+.summary-section {
+    border: 1px solid rgba(163, 31, 52, 0.2);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-6);
+    margin: var(--spacing-8) 0;
+    position: relative;
+}
+
+.summary-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(163, 31, 52, 0.02), 
+        rgba(163, 31, 52, 0.05)
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.summary-section h3 {
+    color: var(--color-accent);
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: var(--spacing-2);
+    margin-bottom: var(--spacing-4);
+}
+
+.processing-box {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-4);
+    margin: var(--spacing-6) 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--glass-shadow);
+}
+
+.processing-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(163, 31, 52, 0.05), 
+        rgba(163, 31, 52, 0.1), 
+        rgba(163, 31, 52, 0.05)
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.processing-box p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.processing-box ol, .processing-box ul {
+    margin: var(--spacing-2) 0;
+    padding-left: var(--spacing-6);
+}
+
+.processing-box li {
+    margin: var(--spacing-1) 0;
+}
+
+.indent-bullet {
+    list-style: none;
+    padding-left: 2.5rem;
+}
+
+.indent-bullet li {
+    margin: var(--spacing-2) 0;
+    position: relative;
+}
+
+.indent-bullet li::before {
+    content: '•';
+    color: var(--color-accent);
+    font-weight: bold;
+    position: absolute;
+    left: -1rem;
+    top: 0;
+}
+
+.citation {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-style: italic;
+}
+
+.citation:hover {
+    text-decoration: underline;
+}
+
+.darkModeWarning {
+    background: rgba(255, 193, 7, 0.1);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-4);
+    margin: var(--spacing-4) 0;
+    color: #856404;
+}
+
+/* Color scale for rating systems */
+.color-scale-0 { color: #dc3545; }
+.color-scale-1 { color: #fd7e14; }
+.color-scale-2 { color: #ffc107; }
+.color-scale-3 { color: #20c997; }
+.color-scale-4 { color: #198754; }
+
+/* Form styles for contact page */
+.form-group {
+    margin-bottom: var(--spacing-4);
+}
+
+.form-input {
+    width: 100%;
+    padding: var(--spacing-3);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    background: var(--glass-bg);
+    color: var(--color-text);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(163, 31, 52, 0.1);
+}
+
+.form-input::placeholder {
+    color: var(--color-text-secondary);
+}
+
+.submit-button-container {
+    text-align: center;
+    margin-top: var(--spacing-6);
+}
+
+.submit-button {
+    background: var(--color-accent);
+    color: white;
+    border: none;
+    padding: var(--spacing-3) var(--spacing-6);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.submit-button:hover {
+    background: #a31f34;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Figure and image styles for dataviz */
+figure {
+    margin: var(--spacing-6) 0;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: var(--color-text-secondary);
+    margin-top: var(--spacing-2);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+figcaption a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}
+
+/* Section styling for dataviz */
+section {
+    margin: var(--spacing-6) 0;
+}
+
+section h3 {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-4);
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: var(--spacing-2);
+}
+
+section h5 {
+    color: var(--color-text);
+    margin: var(--spacing-4) 0 var(--spacing-2) 0;
+    font-size: 1.1rem;
+}
+
+section h6 {
+    color: var(--color-text-secondary);
+    margin: var(--spacing-3) 0 var(--spacing-2) 0;
+    font-size: 1rem;
+}
+
+/* HR styling for dataviz */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        transparent, 
+        var(--color-accent), 
+        transparent
+    );
+    margin: var(--spacing-6) 0;
+}
+
+/* List styling for dataviz */
+ul, ol {
+    margin: var(--spacing-4) 0;
+    padding-left: var(--spacing-6);
+}
+
+li {
+    margin: var(--spacing-2) 0;
+    line-height: 1.6;
+}
+
+/* Link styling within dataviz content */
+section a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+section a:hover {
+    text-decoration: underline;
+    color: #a31f34;
 }

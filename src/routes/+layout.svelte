@@ -22,7 +22,7 @@
             <a href="{base}/." class="menu-links" class:current-page={routeId === "/"} id="home-link">Home</a>
             
             <div class="dropdown">
-                <a class="menu-links" href="{base}/Projects" class:current-page={routeId.includes("/Projects")} id="projects-link">Projects</a>
+                <a class="menu-links" href="{base}/Projects" class:current-page={routeId.includes("/Projects") || routeId.includes("dataviz")} id="projects-link">Projects</a>
                 <div class="dropdown-content">
                     {#each projects as project}
                         <a href="{base}/{project.link}" id="{project.title.toLowerCase().replace(/\s+/g, '-')}-link">{project.button_title}</a>

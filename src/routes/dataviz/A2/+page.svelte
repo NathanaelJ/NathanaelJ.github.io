@@ -6,8 +6,7 @@
     <div class="wrapper">
         <!--    A2    -->
         <h1>Exploratory Visual Analysis</h1>
-        <h2>Speculation: The Impact of Investors on Boston Housing<br/><br/></h2>
-        <h2><a href="mailto:naj20@mit.edu">Nathanael Jenkins, | naj20@mit.edu</a><br/><br/></h2>
+        <h2>Speculation: The Impact of Investors on Boston Housing</h2>
         <!-- <p class="wrapper">Text goes here <a href="https://imperialrocketry.com" target="_blank" rel="noreferrer noopener">Links go here.</a><br/><br/></p> -->
         
         <!--    Contents    -->
@@ -35,8 +34,7 @@
         </section>
 
         <!--    Section 1    -->
-        <hr width="50%" size="1px" color="#555" z-index="1">
-        <section id="prelim"> <!-- INITIAL QUESTIONS -->
+        <section id="prelim" class="dataviz-section"> <!-- INITIAL QUESTIONS -->
         <h3>Preliminary Questions</h3>
             <ol start="1">
                 <li>How far-reaching are the effects of speculation? Is it concentrated in Downtown Boston?</li>
@@ -78,11 +76,10 @@
 
 
         <!--    Section 2    -->
-        <hr width="50%" size="1px" color="#555" z-index="1">
-        <section id="overview">
+        <section id="overview" class="dataviz-section">
         <h3>Stage 1: Dataset Overview</h3>
         
-        <section id="D1"> <!-- DATASET OVERVIEW -->
+        <section id="D1" class="content-box"> <!-- DATASET OVERVIEW -->
         <h5>Dataset 1: Corporate Ownership and Owner Occupancy Rates in Boston Neighborhoods with Census, 2004-2024 <i>(MAPC, 2025)</i></h5>
             <h6>Metadata</h6>
             <p>The metadata for this dataset provides important context:</p>
@@ -97,7 +94,6 @@
             <h6>Dataset Relationships and Neighborhood Zip Codes</h6>
             <p>First, the neighborhood zip code data was combined with the main dataset. The figure below illustrates how this relationship was validated using a text table. This revealed that some <b>zip codes were incorrectly classified</b> as 'Downtown', and some neighborhoods were only represented in one of the two datasets (e.g. the West End was recorded in the main dataset but did not correspond to any zip code). Using online information about which neighborhoods correspond to which zip codes, the zip code data was revised to correct these errors and ensure geographic visualizations remain accurate.</p>
             
-            <br/><br/>
             <figure>
                 <div style="display: flex; justify-content: center; gap: 20px;">
                     <picture>
@@ -116,11 +112,10 @@
                     <b>Right:</b> Revised zip code data, with at least one zip code per neighborhood. Both lists are ordered by the smallest zip code in each neighborhood.</figcaption>
             </figure>
 
-            <p><b>Back Bay and Mission Hill neighborhoods do not correspond to data in the main dataset.</b> This could be because the neighborhood data is based on 2020 census block groups, while the main dataset goes back to 2004 and neighborhood definitions may have changed over time. In some property assessment metadata <a href="https://data.boston.gov/dataset/property-assessment" target="_blank" rel="noreferrer noopener" class="citation">(Boston Government, 2004-2024)</a>, Back Bay is associated with Beacon Hill, and Mission Hill is associated with Jamaica Plain, although it is unclear if the corresponding data has been aggregated into other neighborhoods. Back Bay and Mission Hill shall be excluded from geographic visualizations. Since the zip codes around those neighborhoods are included in the dataset, this shouldn't reduce the insights we can garner.<br/><br/></p>
+            <p><b>Back Bay and Mission Hill neighborhoods do not correspond to data in the main dataset.</b> This could be because the neighborhood data is based on 2020 census block groups, while the main dataset goes back to 2004 and neighborhood definitions may have changed over time. In some property assessment metadata <a href="https://data.boston.gov/dataset/property-assessment" target="_blank" rel="noreferrer noopener" class="citation">(Boston Government, 2004-2024)</a>, Back Bay is associated with Beacon Hill, and Mission Hill is associated with Jamaica Plain, although it is unclear if the corresponding data has been aggregated into other neighborhoods. Back Bay and Mission Hill shall be excluded from geographic visualizations. Since the zip codes around those neighborhoods are included in the dataset, this shouldn't reduce the insights we can garner.</p>
 
             <p>The figure below illustrates <b>which geographic areas are covered by this dataset</b> and highlights the 'missing' neighborhoods. Central Boston is close to the North East extreme of the data set, which does not contain data on other surrounding cities including Cambridge and Somerville. Subtle green spots near the downtown region indicate <b>zip codes that correspond to specific points</b>, such as 02283. These are included in the Downtown neighborhood for the purposes of data analysis, as their locations lie within Downdown regions.</p>
 
-            <br/><br/>
             <figure>
                 <div style="display: flex; justify-content: center;">
                     <picture>
@@ -141,7 +136,6 @@
             <h6>Property Data</h6>
             <p>Property data in this dataset is represented in the corporate ownership and owner occupancy rates. The figures below illustrate the data for these metrics in each neighborhood. This <b>validates that the data is present as expected, and values are reasonable</b>. Over time, <b>corporate ownership has increased across all neighborhoods, while owner occupancy has slightly decreased</b>. As expected, corporate ownership rates increase closer to the city center, while owner occupancy decreases.</p>
 
-            <br/><br/>
             <figure>
                 <div style="display: flex; justify-content: center;">
                     <picture>
@@ -154,7 +148,6 @@
                 </figcaption>
             </figure>
 
-            <br/><br/>
             <figure>
                 <div style="display: flex; justify-content: center;">
                     <picture>
@@ -176,7 +169,6 @@
             <h6>Census Data</h6>
             <p>Finally, for dataset 1, the 2020 census data was validated using the figure below. Each census variable is defined in each neighborhood; the figure below illustrates ethnicity data but other metrics were also tested. This validates that the <b>census data is defined in each neighborhood, and values are again reasonable</b>. Nothing unexpected stands out from the census data, and it is easy to identify which demographics dominate in each neighborhood. By dividing by the total population in each neighborhood, it was easier to assess the distribution of demographics, since the raw values are weighted by total neighborhood population.</p>
 
-            <br/><br/>
             <figure>
                 <div style="display: flex; justify-content: center;">
                     <picture>
@@ -194,10 +186,10 @@
             </div>
         </section>
 
-        <p><br/><br/><br/></p>
 
 
-        <section id="D2"> <!-- DATASET 2 -->
+
+        <section id="D2" class="content-box"> <!-- DATASET 2 -->
             <h5>Dataset 2: Residential Sales Data in the City of Boston, 2000-2023 <i>(The Warren Group, 2025)</i></h5>
 
             <h6>Metadata</h6>
@@ -217,7 +209,6 @@
                 <li>Some properties built before 1901: 107 records of properties built before 1901 were incorrectly located in Dedham. Fanueil Hall was also found to have a 'year build' recorded as 1990, but it was actually built in 1742. The building underwent major renovations in 1990, so these records are likely to be associated with those renovations.</li>
             </ul>
 
-            <br/>
             <figure>
                 <div style="display: flex; justify-content: center;">
                     <picture>
@@ -307,7 +298,6 @@
             
             Data on the internal floor area of properties required cleaning up; 4 values were zero (suggesting that the area was unknown, or the property was not enclosed like a parking space). Dividing property price by the internal area produces a <b>'price per square foot'</b> value; this parameter revealed some properties with spurious values, up to $7,333 per sqft in the case of a $1.1 million property with an, evidently incorrect, floor area of 150 sqft. Grouping the price per square foot into $250/sqft size bins, and filtering out bins that contain less than 100 records, we can product the figure below. This fits the expected normal distribution, and color shading again shows how the price per square foot has increased over time. Analysis of the filtered properties with abnormally high prices per square foot could help to reveal the most high-value properties in Boston, but most of them appear to simply contain errors.
 
-            <br/><br/>
             <div style="display: flex; justify-content: center;">
                 <picture>
                     <img src="A2/2_5_Intsqft.png"
@@ -319,8 +309,6 @@
 
             The number of rooms in each property is another useful metric that could warrant further analysis. To save time, the numbers of bedrooms, bathrooms, and total rooms were not explored here.
             
-            
-            <br/><br/>
             <div class="processing-box">
                 <p><b>Dataset 1 Processing:</b>
                 <br/>5. Filter out properties with non-residential use codes (leaving usecodes 101-105, and a few others).
@@ -337,7 +325,6 @@
             <h6>Stakeholder Data</h6>
             Many metrics are provided that can help understand the identities and motivations of parties involved in each sale. Based on the preliminary questions, this analysis shall focus on whether the buyer is an <b>investor or a non-investor</b>. The figure below illustrates how the number of purchases vary with distance from the Old State House for investor and non-investor type purchases. Perhaps unexpectedly, the number of investor-purchased properties is substantially lower than the number of non-investor purchases, and the distribution is relatively flat, suggesting that investors are happy to purchase properties up to at least 2 miles from the city center, although this dataset does not include information about sales further away and there is some decrease in investor purchases between 2 and 3.5 miles (although this corresponds to a decrease in total property purchases, likely corresponding to a decrease in property density and the lack of data North of the city).
 
-            <br/><br/>
             <div style="display: flex; justify-content: center;">
                 <picture>
                     <img src="A2/2_6_Investors.png"
@@ -347,7 +334,6 @@
             </div>
             <figcaption>Distribution of the number of investor-type purchases with distance from the Old State House (representative of the city center). The number of investor-purchased properties is substantially lower than the number of non-investor purchases, and the distribution is relatively flat, suggesting that investors are happy to purchase properties up to at least 2 miles from the city center. Beyond 2 miles from the city, the dataset is lacking complete data in all directions.</figcaption>
 
-            <br/><br/>
             <div class="processing-box">
                 <p><b>Dataset 1 Processing:</b>
                 <br/>12. Aggregate investor-type data into a binary variables for whether the buyer/ seller was an investor or not.
@@ -357,23 +343,14 @@
         </section>
         </section>
 
-
-
-
-
-
-
         <!--    Section 3    -->
-        <p><br/><br/><br/></p>
-        <hr width="50%" size="1px" color="#555" z-index="1">
-        <section id="targeted"></section>
+        <section id="targeted" class="dataviz-section">
         <h3>Stage 2: Targeted Investigation</h3>
 
-        <section id="Q1"> <!-- TARGETED INVESTIGATION -->
+        <section id="Q1" class="content-box"> <!-- TARGETED INVESTIGATION -->
         <h5>1. How far-reaching are the effects of speculation? Is it concentrated in Downtown Boston?</h5>
         We are concerned here with <i>where</i> investors are purchasing properties. Starting with the <b>dataset 1</b>, we can explore corporate ownership rates (as illustrated in the 'overview' section and repeated below) to begin to understand where investors are most active. It is clear from the figure below that <b>corporate ownership is much more prevalent closer to central Boston</b>, with rates nearly 5x higher in the city center than the outskirts. <b>The highest concentrations of corporate ownership are not in the Downtown neighborhood, but in neighborhoods slightly further from the city center.</b>
 
-        <br/><br/>
         <div style="display: flex; justify-content: center;">
             <picture>
                 <img src="A2/3_2_1.png"
@@ -390,12 +367,10 @@
             </p>
         </div>
 
-        <p><br/>
-        <b>A follow-up question based on this result is; how have these corporate ownership rates affects property prices in these areas?</b> The two datasets used in this analysis <b>do not contain sufficient information to address this follow-up question</b> (since price data is only available for the most central neighborhoods). However, as we explored in the 'overview' section, corporate ownership is inversely related to owner occupancy, suggesting that corporate ownership does affect the ability of local residents to purchase property in a neighborhood.<br/><br/>
+        <p><b>A follow-up question based on this result is; how have these corporate ownership rates affects property prices in these areas?</b> The two datasets used in this analysis <b>do not contain sufficient information to address this follow-up question</b> (since price data is only available for the most central neighborhoods). However, as we explored in the 'overview' section, corporate ownership is inversely related to owner occupancy, suggesting that corporate ownership does affect the ability of local residents to purchase property in a neighborhood.</p>
 
-        <b>Another related follow up question is; do neighborhood demographics affect speculation (or vice-versa)?</b> Inspecting the census data visualized in the 'overview' section, no clear correlation between corporate ownership and neighborhood demographic is evident, except that the <b>highest rates of corporate ownership occur in neighborhoods which have a higher proportion of white people</b>, illustrated below. Since neighborhoods with high proportions of white populations are spread across areas with both high and low corporate ownership rates, it is difficult to determine whether speculation attracts white populations, forces out other demographics, or if this is simply a coincidence -- correlation without causation.
+        <p><b>Another related follow up question is; do neighborhood demographics affect speculation (or vice-versa)?</b> Inspecting the census data visualized in the 'overview' section, no clear correlation between corporate ownership and neighborhood demographic is evident, except that the <b>highest rates of corporate ownership occur in neighborhoods which have a higher proportion of white people</b>, illustrated below. Since neighborhoods with high proportions of white populations are spread across areas with both high and low corporate ownership rates, it is difficult to determine whether speculation attracts white populations, forces out other demographics, or if this is simply a coincidence -- correlation without causation.</p>
 
-        <br/><br/>
         <div style="display: flex; justify-content: center;">
             <picture>
                 <img src="A2/3_2_1_0.png"
@@ -439,7 +414,7 @@
 
 
 
-        <section id="Q2"> <!-- QUESTION 2 -->
+        <section id="Q2" class="content-box"> <!-- QUESTION 2 -->
         <h5>2. How do corporate owners change their neighborhoods?</h5>
         <p>Dataset 1 is most relevant to this question, although the lack of census data from years other than 2020 makes it difficult to assess how corporate ownership changes communities <i>over time</i>. While we could draw conclusions based on the 2020 census and corporate ownership data, that would risk conflating causality with correlation and is an unwise methodology. <b>This is not a question that can be answered properly using these datasets.</b> As explained in the follow-up to question 1, we can see that neighborhoods with the highest corporate ownership rates also have large proportions of white residents, but this tells us little about causation.</p>
 
@@ -454,7 +429,7 @@
 
 
 
-        <section id="Q3"> <!-- QUESTION 3 -->   
+        <section id="Q3" class="content-box"> <!-- QUESTION 3 -->   
         <h5>3. Are luxury investment properties the primary cause of housing shortages and high prices in Boston?</h5>
         <p>We shall consider luxury investment properties to be <b>those which are not primarily developed or sold for the purpose of providing shelter and a primary residence to the owners</b>. This question focuses on whether properties built specifically for the purpose of investment are using up space that could be used for affordable and owner-occupied homes. While owner occupancy data from dataset 1 can provide insights about the distribution of investment properties, it does not provide sufficient information about new-build properties to help answer this question. Therefore, we shall focus on <b>dataset 2</b> for this analysis.<br/><br/>
 
@@ -540,7 +515,7 @@
 
 
 
-        <section id="Q4"> <!-- QUESTION 4 -->
+        <section id="Q4" class="content-box"> <!-- QUESTION 4 -->
         <h5>4. Is there a discrepancy between investment value and owner-occupied property value?</h5>
         <p>This question concerns whether properties in Boston are more valuable to investors than to locals. Since it concerns price information, we shall use <b>dataset 2</b>. Since investor property valuations are important, we shall <b>not</b> immediately filter out investor-investor sales (for this analysis only). Spurious records with average annual values exceeding $5000 per square foot per year were excluded, since these properties were found to have spurious values for intersqft and/ or price.<br/><br/>
 
@@ -582,8 +557,7 @@
         </section>
 
         <!--    Section 4    -->
-        <hr width="50%" size="1px" color="#555" z-index="1">
-        <section id="Conc">
+        <section id="Conc" class="summary-section">
         <h3>Lessons Learned</h3>
         <p>Regarding speculation in Boston, this data has revealed:
         <ul>

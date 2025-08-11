@@ -6,11 +6,7 @@
   <div class="wrapper">
       <div class="page-header fade-in-up liquid-glass">
           <h1>Imperial College London Rocketry</h1>
-          <p>The Altitude Record Team at Imperial College London Rocketry</p>
-      </div>
-      
-      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.2s;">
-          <p>The Altitude Record Team (ART) is a project within <a href="https://imperialrocketry.com" target="_blank" rel="noreferrer noopener">Imperial College London Rocketry (ICLR)</a> which exists to break <a href="https://ukra.ork.uk" target="_blank" rel="noreferrer noopener">United Kingdom Rocketry Association (UKRA)</a> altitude records. The team formed in 2019, with its first two launches in early 2021. Three further launches took place over the 2021-22 academic year, including our first record-breaking flight. As of 2024, the team is continuing to work towards more altitude records using advanced rocket technology.</p>
+          <p>The Altitude Record Team (ART) is a project within <a href="https://imperialrocketry.com" target="_blank" rel="noreferrer noopener">Imperial College London Rocketry (ICLR)</a> which exists to break <a href="https://ukra.ork.uk" target="_blank" rel="noreferrer noopener">United Kingdom Rocketry Association (UKRA)</a> altitude records. The team formed in 2019, with its first two launches in early 2021. Three further launches took place over the 2021-22 academic year, including our first record-breaking flight. As of 2024, the team is continuing to work towards more altitude records using advanced rocket technology.<br/><br/></p>
           
           <p>I led the aerodynamics and simulations sub-team, using computational methods to model and optimise the behaviour of our rocket. We used packages including <a href="https://openrocket.info" target="_blank" rel="noreferrer noopener">OpenRocket</a>, <a href="https://www.plm.automation.siemens.com/global/en/products/simcenter/STAR-CCM.html" target="_blank" rel="noreferrer noopener">StarCCM+</a>, and <a href="https://engineering.esteco.com/modefrontier/" target="_blank" rel="noreferrer noopener">ESTECO modeFrontier</a>.</p>
       </div>

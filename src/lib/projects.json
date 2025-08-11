@@ -15,12 +15,12 @@
 "description":"Development of a physics-based simulation tool for aircraft lightning zoning.",
 "link":"Projects/Thesis"},
 
-{"title":"CAD Models",
+{"title":"Missile Models",
 "button_title":"Missile Models",
 "year":"2023",
 "img":"/Thumbnails/Modelling.png",
-"subtitle":"Missile and aircraft models",
-"description":"Sizing and modelling of various missiles and aircraft.",
+"subtitle":"CAD models of various missiles",
+"description":"Sizing and modelling of various missiles.",
 "link":"Projects/Modelling"},
 
 {"title":"ICL Rocketry",

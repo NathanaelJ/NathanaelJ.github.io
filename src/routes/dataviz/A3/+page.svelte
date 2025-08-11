@@ -6,9 +6,7 @@
   <div class="wrapper">
       <!--    A3    -->
       <h1>Visualization Critique and Redesign</h1>
-      <h2>COVID-19 Modeling<br/><br/></h2>
-      <h2><a href="mailto:naj20@mit.edu">Nathanael Jenkins, | naj20@mit.edu</a><br/><br/></h2>
-      <p class="darkModeWarning"><b>Warning! Dark mode is active.</b> I recommend reading this article using light mode (toggle at the bottom of the page), since images in this report do not display well on a dark background.<br/><br/></p>
+      <h2>COVID-19 Modeling</h2>
 
       <!--    Contents    -->
       <!-- <hr width="50%" size="1px" color="#555" z-index="1"> -->
@@ -36,8 +34,7 @@
 
 
       <!--    Section 1    -->
-      <hr width="50%" size="1px" color="#555" z-index="1">
-      <section id="critique"> <!-- CRITIQUE -->
+      <section id="critique" class="dataviz-section"> <!-- CRITIQUE -->
       <h3>Visualization Critique</h3>
           <!-- ORIGINAL IMAGE -->
           <picture>
@@ -47,7 +44,7 @@
           </picture>
           <figcaption>Original visualization of 'the COVID spiral' <a href="https://www.nytimes.com/2022/01/06/opinion/omicron-covid-us.html" target="_blank" rel="noreferrer noopener" class="citation">(Shaman J, 2022)</a>.</figcaption>
           
-          <section id="C_read"> <!--    READ    -->
+          <section id="C_read" class="content-box"> <!--    READ    -->
               <h5>Read: Visualization Overview</h5>
                   <p>From this visualization, I identified the following insights:
                   <ul>
@@ -61,7 +58,7 @@
                   </ul>
           </section>
 
-          <section id="C_critique"> <!--    CRITIQUE    -->
+          <section id="C_critique" class="content-box"> <!--    CRITIQUE    -->
               <h5>Critique: Visualization Analysis</h5>
                   <p>The context of this visualization is <u><a href="https://www.nytimes.com/2022/01/06/opinion/omicron-covid-us.html" target="_blank" rel="noreferrer noopener" style="font-weight: normal;">an article</a></u> about the rapid spread of the Omicron variant in January 2022 and how it could behave in the future. The author discusses how case numbers have risen at an unprecedented rate, but he also discusses the important difference between cases, hospitalizations, and deaths. Overall, this visualization does a good job of conveying the key point that Omicron was spreading faster than any other variant; placing this data at the top <b>does highlight the intended message to the audience</b>, while the spiral, and the arrows next to the year labels, <b>guide the audience to read the design from the center</b>, working outwards. Previous outbreak 'waves' are identifiable and the visualization is relatively <b>free of clutter</b>. However, the <b>title fails to explain</b> how 'cases' were defined (is it reports, positive tests, or hospitalizations?); since the audience is non-expert, this is not necessarily bad. The <b>encoding of case numbers</b> as a position on a common scale is effective and the <b>angular scale for month</b> allows readers to compare trends over years while placing data for each month side-by-side for easier comparison.<br/><br/>
 
@@ -75,11 +72,10 @@
 
 
       <!--    Section 2    -->
-      <hr width="50%" size="1px" color="#555" z-index="1">
-      <section id="sketching"> <!-- CRITIQUE -->
+      <section id="sketching" class="dataviz-section"> <!-- CRITIQUE -->
       <h3>Redesign: Sketching</h3>
       
-          <section id="S1"> <!--    SKETCH 1    -->
+          <section id="S1" class="content-box"> <!--    SKETCH 1    -->
           <h5>Sketch 1: Similar Format, Subtle Changes</h5>
               <picture>
                   <img src="A3/2_Sketch1.png" 
@@ -114,7 +110,7 @@
               <p><br/></p>
           </section>
 
-          <section id="S2"> <!--    SKETCH 2    -->
+          <section id="S2" class="content-box"> <!--    SKETCH 2    -->
               <h5>Sketch 2: Similar Encoding, Virus-Shapes Visualization</h5>
                   <picture>
                       <img src="A3/2_Sketch2.png" 
@@ -150,7 +146,7 @@
                                           <!-- For each sketch, bullet point your rationale for your design decisions. What was your motivation behind generating this sketch? What were you hoping it would communicate? What worked well and what didn’t? What would you like to explore in the next sketch? -->
           </section>
 
-          <section id="S3"> <!--    SKETCH 3    -->
+          <section id="S3" class="content-box"> <!--    SKETCH 3    -->
               <h5>Sketch 3: More conventional encoding</h5>
                   <picture>
                       <img src="A3/2_Sketch3.png" 
@@ -193,8 +189,7 @@
 
 
       <!--    Section 3    -->
-      <hr width="50%" size="1px" color="#555" z-index="1">
-      <section id="viz">
+      <section id="viz" class="dataviz-section">
           <h3>Redesign: Final Visualization</h3>
           <picture>
               <img src="A3/3_FinalViz.jpg" 
@@ -206,14 +201,13 @@
 
 
       <!--    Section 34   -->
-      <hr width="50%" size="1px" color="#555" z-index="1">
-      <section id="writeup">
+      <section id="writeup" class="summary-section">
           <h3>Final Write-Up</h3>
           <p>
               This visualization aims to <b>communicate more points</b> from the article discussion and present a <b>balanced view</b> of the potential impacts of Omicron. It highlights the unprecedented spread of the variant, but the <b>addition of death data</b> balances the extreme spike in case numbers. To easily discern between cases and deaths, <b>icons</b> compliment text labels. The visualization aims <b>engage the non-expert audience by using virus-shaped graphs</b>. The <b>cyclical date encoding</b> has been kept, allowing for easy comparison between different years and <b>color</b> is used to encode each year, instead of the potentially confusing spiral. The color encoding also helps to highlight data from 2022 (bright red), however this scheme could be confusing for <b>colorblind readers</b>. I also wanted this visualization to provide more context to the reader, so added <b>labels with key events</b> based on CDC records. This is a trade-off, since it adds more clutter to the visualization, but it helps the reader to understand how previous outbreaks behaved, which better frames the concerns about Omicron. The <b>month dividers</b> have been separated and arranged in a more clock-like fashion, with a longer divider at the top where the year changes.
               <br/><br/>
               This design addressed many of my critiques, especially <b>removing the confusing spiral encoding and providing more context</b>. The <b>legend</b> more clearly explains how 'cases' and 'deaths' are defined. Mention of 7-day averaging is removed from the plot, but included in the caption (since it is unlikely to be of concern to the layperson). All months are labeled, and the additional event labels help provide context, at the cost of a more busy-looking graph (which likely requires <i>more</i> <b>attentive processing</b> than the original). The <b>circular axes</b> remain more difficult to interpret than a conventional linear axis, but this choice enabled the virus-shaped effect. <b>Occlusion</b> does make it more difficult to interpret the data, especially when case and death numbers are small, although these regions are not particularly important. The different scales, while annotated, are also not immediately clear to the reader, who might be inclined to think that deaths exceeded cases; in reality, the number of deaths is 100 times smaller than the number of cases, so deaths would not be visible if both graphs used the same scale.
-              <br/><br/></p>
+              </p>
       </section>
 
   </div>

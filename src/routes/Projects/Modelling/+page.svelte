@@ -5,24 +5,20 @@
 <main class="site-main">
   <div class="wrapper">
       <div class="page-header fade-in-up liquid-glass">
-          <h1>CAD Models</h1>
-          <h2>An assortment of missiles and aircraft</h2>
-      </div>
-      
-      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.2s;">
-          <p>To fill some of my free time over holidays, I use open-source data (predominantly photos) to create 3D-CAD models. Given manufacturers are understandably keen to keep the details about their hardware under wraps, this was an exercise in extracting data from the limited pool available online.</p>
+          <h1>Missile Models</h1>
+          <p>To fill some of my free time over holidays, I use open-source data (predominantly photos) to create 3D-CAD models. Given manufacturers are understandably keen to keep the details about their hardware under wraps, this was an exercise in extracting data from the limited pool available online.<br/><br/></p>
           
-          <p>All of the data relating to these models was taken from publicly available data, predominantly photos published by militaries or manufacturers. While I've done my best to create models which are as accurate as possible, some discrepancy is inevitable. Markings have been based on those found in photographs, although not all written text has been included and some text has been replaced with a relevant Bible verse.</p>
+          <p>All of the data relating to these models was taken from publicly available data, predominantly photos published by militaries or manufacturers. While I've done my best to create models which are as accurate as possible, some discrepancy is inevitable. Markings have been based on those found in photographs, although not all written text has been included and some text has been replaced with a relevant Bible verse.<br/><br/></p>
           
-          <p>I'm often frustrated by high download costs for seemingly simple CAD models so want to make these models available for hobbyists for free. If using for a commercial purpose, I'd appreciate if it you could <a href="mailto:naj20@ic.ac.uk">get in contact</a> with me first.</p>
+          <p>I'm often frustrated by high download costs for seemingly simple CAD models so want to make these models available for hobbyists for free. If using for a commercial purpose, I'd appreciate if it you could <a href="mailto:naj20@ic.ac.uk">get in contact</a> with me first.<br/><br/></p>
           
-          <div class="nav-links liquid-glass">
+          <!-- <div class="nav-links liquid-glass"> -->
               <p><a href="#AGM-88E">AGM-88E AARGM</a><br/>
               <a href="#AIM-120">AIM-120A AMRAAM</a><br/>
               <a href="#AIM-9X">AIM-9X Sidewinder</a><br/>
               <a href="#Astra-Mk1">Astra-Mk1</a><br/>
               <a href="#F-106B">F-106B Delta Dart</a></p>
-          </div>
+          <!-- </div> -->
       </div>
       
       <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.4s;">

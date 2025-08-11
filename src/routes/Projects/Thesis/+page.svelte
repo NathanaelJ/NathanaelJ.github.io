@@ -9,18 +9,17 @@
 <main class="site-main">
   <div class="wrapper">
       <div class="page-header fade-in-up liquid-glass">
-          <h1>Masters' Thesis</h1>
-          <h2>Numerical simulation of the lightning swept stroke for zoning unconventional aircraft.</h2>
-      </div>
+          <h1>Masters Thesis</h1>
+      <!-- </div>
       
-      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.2s;">
+      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.2s;"> -->
           <p>For my masters' thesis, I developed a physics-based model for the 'swept-stroke' phase of lightning strikes on aircraft under the supervision of Prof. Guerra-Garcia in the <a href="apg.mit.edu">MIT Aerospace Plasma Group.</a> The work is summarised in my master's thesis and published in several papers which will be linked below as they are released publicly.</p>
       </div>
       
-      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.4s;">
-          <div class="pdf-container">
+      <div class="pdf-container project-section fade-in-up liquid-glass" style="animation-delay: 0.4s;">
+          <!-- <div class="pdf-container"> -->
               <iframe class="pdf-viewer" title="Thesis" src="FYPResources/NJenkins Thesis Final.pdf"></iframe>
-          </div>
+          <!-- </div> -->
       </div>
 
       <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.6s;">

@@ -11,20 +11,13 @@
     <div class="wrapper">
         <div class="page-header fade-in-up">
             <h1>6.C85: Interactive Data Visualisation and Society</h1>
-            <p>This portfolio contains my class work from an MIT class on data visualization and society.</p>
+            <p>This contains my class work from the MIT class on <a href="https://vis-society.github.io/final-project/showcase/" target="_blank" rel="noopener">interactive data visualization and society</a> (Fall 2024).</p>
         </div>
 
         <div class="projects-grid">
             {#each vizProjects as p}
                 <ProjectCard data={p} />
             {/each}
-
-            <article class="project-card">
-                <img src="/Thumbnails/PLACEHOLDER.jpeg" alt="Project thumbnail" class="project-image">
-                <div class="project-content">
-                    <h2>More coming soon...</h2>
-                </div>
-            </article>
         </div>
     </div>
 </main>

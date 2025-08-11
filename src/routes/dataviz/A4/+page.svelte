@@ -6,8 +6,7 @@
     <div class="wrapper">
         <!--    A4    -->
         <h1>Persuasive or Deceptive Visualization</h1>
-        <h2>Civilian Complaints to the NYPD<br/><br/></h2>
-        <h2><a href="mailto:naj20@mit.edu">Nathanael Jenkins, | naj20@mit.edu</a><br/><br/></h2>
+        <h2>Civilian Complaints to the NYPD</h2>
 
         <!--    Contents    -->
         <!-- <hr width="50%" size="1px" color="#555" z-index="1"> -->
@@ -27,18 +26,16 @@
 
 
         <!--    Section 1    -->
-        <hr width="50%" size="1px" color="#555" z-index="1">
-        <section id="proposition"> <!-- PROPOSITION -->
+        <section id="proposition" class="dataviz-section"> <!-- PROPOSITION -->
         <h3>Proposition: White NYPD officers disproportionately mistreat black civilians, especially officers who repeatedly receive complaints.</h3>
         </section>
 
 
 
         <!--    Section 2    -->
-        <hr width="50%" size="1px" color="#555" z-index="1">
-        <section id="viz"> <!-- VISUALIZATIONS -->
+        <section id="viz" class="dataviz-section"> <!-- VISUALIZATIONS -->
         <h3>Visualizations</h3>
-            <section id="V_viz1"> <!--    VIZ 1 (FOR)    -->
+            <section id="V_viz1" class="content-box"> <!--    VIZ 1 (FOR)    -->
                 <h5>Visualization Supporting the Proposition</h5>
                 <figure>
                     <picture>
@@ -63,8 +60,6 @@
                     </figcaption>
                 </figure>
 
-
-                    <p><br/></p>
                     <div class="processing-box" style="width: 100%;">
                         <p><b>Decisions and Rationale</b><br/>
                             <ol>
@@ -84,10 +79,9 @@
                                     <span style="color: var(--color-scale-2);"><b>-0.5</b> <i>Somewhat deceptive</i></span></li>
                             </ol>
                     </div>
-                    <p><br/></p>
             </section>
 
-            <section id="V_viz2"> <!--    VIZ 2 (AGAINST)    -->
+            <section id="V_viz2" class="content-box"> <!--    VIZ 2 (AGAINST)    -->
                 <h5>Visualization Against the Proposition</h5>
                     <figure>
                         <picture>
@@ -109,11 +103,9 @@
                         </picture>
                         
                         <figcaption>Visualization of NYPD complaints data <a href="https://projects.propublica.org/datastore/#civilian-complaints-against-new-york-city-police-officers" class="citation">(ProPublica, from NYC CCRB, 2020)</a> with additional demographic data on the New York City prison population <a href="https://www.criminaljustice.ny.gov/crimnet/ojsa/comparison-population-arrests-prison-demographics/2019%20Population%20Arrests%20Prison%20by%20Race.pdf" class="citation">(New York Division of Criminal Justice Services, 2020)</a> and police demographic data <a href="https://www.nyc.gov/site/ccrb/policy/data-transparency-initiative-mos.page" class="citation">(NYPD, 2020)</a>. Cards higlight false accusations against white officers, often from black complainants. The line chart shows how more unsubstantiated complaints are made against white (and asian) officers than their counterparts (adjusted for the number of officers of each ethnicity), suggesting that civilians are more likely to complain about a white officer than a black officer, and suggesting that civilian bias against white officers could be the cause of the disparity in complaint data, rather than officer bias. The animated heatmap illustrates how, when adjusted for socio-economic factors by using prison population, there is no correlation between the complainant ethnicity and the number of complaints; although white officers receive an excessive number of complaints from people of all racial backgrounds.
-                        </figcaption>
-                    </figure>
+                                            </figcaption>
+                </figure>
 
-
-                    <p><br/></p>
                     <div class="processing-box" style="width: 100%;">
                         <p><b>Decisions and Rationale</b><br/>
                             <ol>
@@ -133,17 +125,11 @@
                                         <span style="color: var(--color-scale-3);"><b>1.0</b> <i>Somewhat earnest</i></span></li>
                             </ol>
                     </div>
-                    <p><br/></p>
             </section>
         </section>
 
-
-
-
-
         <!--    Section 3   -->
-        <hr width="50%" size="1px" color="#555" z-index="1">
-        <section id="writeup">
+        <section id="writeup" class="summary-section">
             <h3>Final Write-Up</h3>
             <p>
                 Overall, this task helped me to understand how data can be manipulated to support opposing views and I found it interesting that I could justify different analysis methods that yield opposite conclusions. If anything, I feel that <b>this data is actually inadequate for answering the proposition</b>, but sufficient for <i>looking like</i> it presents a clear answer. In reality, our presuppositions about race, police, and crime are more likely to frame how we view the data than any implicit truth in the visualizations. This proposition requires a more qualitative analysis to understand the relationships between police, civilians, and ethnic groups.<br/><br/>
