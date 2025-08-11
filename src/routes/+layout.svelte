@@ -1,25 +1,8 @@
 <script>
     import { base } from '$app/paths';
     import { page } from "$app/stores";
-    import { colorScheme, cycleScheme } from '$lib/stores/colorScheme';
-    import { onMount } from 'svelte';
 
     $: routeId = $page?.route?.id || '';
-
-    onMount(() => {
-        // Listen for system scheme changes when in auto mode
-        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        const handleChange = (e) => {
-            if ($colorScheme === 'auto') {
-                document.documentElement.removeAttribute('color-scheme');
-                if (e.matches) {
-                    document.documentElement.setAttribute('color-scheme', 'dark');
-                }
-            }
-        };
-        mediaQuery.addEventListener('change', handleChange);
-        return () => mediaQuery.removeEventListener('change', handleChange);
-    });
 </script>
 
 <header class="site-header">
@@ -58,11 +41,7 @@
             <!--<a class="menu-links" href="tel:07960264171">+44(0) 7960 264171</a>-->
         </nav>
 
-        <div class="color-mode-footer">
-            <button class="color-mode-button" on:click={cycleScheme} aria-label="Toggle color scheme" title="Toggle color scheme">
-                <p>{$colorScheme.charAt(0).toUpperCase() + $colorScheme.slice(1)}</p>
-            </button>
-        </div>
+        
     </div>
 
     <nav class="social-links-container">

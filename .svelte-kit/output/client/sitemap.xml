@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http:/www.google.com/schemas/sitemap/0.84" xmlns:xsi="http:/www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http:/www.sitemaps.org/schemas/sitemap/0.9 http:/www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+		<url>
+			<loc>https:/nathanaelj.github.io</loc>
+			<changefreq>yearly</changefreq>
+		</url>
+
+		<url>
+			<loc>https:/nathanaelj.github.io/projects.html</loc>
+			<changefreq>yearly</changefreq>
+		</url>
+
+		<url>
+			<loc>https:/nathanaelj.github.io/Projects/Academic.html</loc>
+			<changefreq>yearly</changefreq>
+		</url>
+
+		<url>
+			<loc>https:/nathanaelj.github.io/Projects/ICLR.html</loc>
+			<changefreq>yearly</changefreq>
+		</url>
+        
+        <url>
+            <loc>https:/nathanaelj.github.io/Projects/Modelling.html</loc>
+            <changefreq>yearly</changefreq>
+        </url>
+
+		<url>
+            <loc>https:/nathanaelj.github.io/Projects/FYP.html</loc>
+            <changefreq>yearly</changefreq>
+        </url>
+
+		<url>
+            <loc>https:/nathanaelj.github.io/portfolio.html</loc>
+            <changefreq>yearly</changefreq>
+        </url>
+
+		<url>
+            <loc>https:/nathanaelj.github.io/portfolio/A2.html</loc>
+            <changefreq>yearly</changefreq>
+        </url>
+
+		<url>
+			<loc>https:/nathanaelj.github.io/resume.html</loc>
+			<changefreq>monthly</changefreq>
+		</url>
+
+	</urlset>
+

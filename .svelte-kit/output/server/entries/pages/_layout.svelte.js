@@ -1,0 +1,23 @@
+import { c as create_ssr_component, b as subscribe, e as escape } from "../../chunks/ssr.js";
+import { b as base } from "../../chunks/paths.js";
+import { p as page } from "../../chunks/stores.js";
+const _layout_svelte_svelte_type_style_lang = "";
+const css = {
+  code: ".menu-links.svelte-9md9pm.svelte-9md9pm,.menu-links.svelte-9md9pm.svelte-9md9pm:visited{display:inline-block;font-size:var(--font-size-large);color:var(--color-text-primary);margin:0 0.5vw;padding:var(--spacing-xs) var(--spacing-xs);border-bottom:var(--border-width-thin) solid var(--color-border)}.dropdown.svelte-9md9pm.svelte-9md9pm{position:relative;display:inline-block}.dropdown-content.svelte-9md9pm.svelte-9md9pm{opacity:0;transition:visibility 1s, opacity 0.25s;visibility:hidden;position:fixed;z-index:2}.dropdown-content.svelte-9md9pm a.svelte-9md9pm{display:block;color:var(--color-text-primary);background:var(--color-hover);padding:var(--spacing-xs) var(--spacing-xs);min-width:100%;overflow:auto;text-decoration:none}.menu-right.svelte-9md9pm.svelte-9md9pm{display:block;float:right;text-align:center}.dropdown-content.svelte-9md9pm a.svelte-9md9pm:hover{background-color:var(--color-text-primary);color:var(--color-hover);cursor:pointer}.dropdown.svelte-9md9pm:hover .dropdown-content.svelte-9md9pm,.dropdown-content.svelte-9md9pm.svelte-9md9pm:hover{opacity:1;transition:visibility 0s, opacity 0.25s;visibility:visible}.dropdown.svelte-9md9pm:hover .menu-links.svelte-9md9pm{background-color:var(--color-hover);border-bottom-color:var(--color-accent);border-bottom-width:var(--border-width-thick)}.menu-links.svelte-9md9pm.svelte-9md9pm:hover{background-color:var(--color-hover);border-bottom-color:var(--color-accent);border-bottom-width:var(--border-width-thickest);cursor:pointer}.menu-links.current-page.svelte-9md9pm.svelte-9md9pm{border-bottom-color:var(--color-accent-2);border-bottom-width:var(--border-width-thickest)}.menu-links.current-page.svelte-9md9pm.svelte-9md9pm:hover{border-bottom-width:var(--border-width-thickest)}",
+  map: null
+};
+const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let routeId;
+  let $page, $$unsubscribe_page;
+  $$unsubscribe_page = subscribe(page, (value) => $page = value);
+  $$result.css.add(css);
+  routeId = $page?.route?.id || "";
+  $$unsubscribe_page();
+  return `<header class="site-header"><div class="wrapper"><div class="title-block" data-svelte-h="svelte-kdlndj"><a href="${escape(base, true) + "/."}" class="name1">Nathanael </a><a href="${escape(base, true) + "/."}" class="name">Jenkins<br></a></div> <nav class="menu-right svelte-9md9pm"><a href="${escape(base, true) + "/."}" class="${["menu-links svelte-9md9pm", routeId === "/" ? "current-page" : ""].join(" ").trim()}" id="home-link" data-svelte-h="svelte-bk6eyb">Home</a> <div class="dropdown svelte-9md9pm"><a class="${[
+    "menu-links svelte-9md9pm",
+    routeId.includes("/Projects") ? "current-page" : ""
+  ].join(" ").trim()}" href="${escape(base, true) + "/Projects"}" id="projects-link" data-svelte-h="svelte-15v3gjy">Projects</a> <div class="dropdown-content svelte-9md9pm" data-svelte-h="svelte-41ufrg"><a href="${escape(base, true) + "/dataviz"}" id="dataviz-link" class="svelte-9md9pm">Data Visualization</a> <a href="${escape(base, true) + "/Projects/Thesis"}" id="FYP-link" class="svelte-9md9pm">Thesis</a> <a href="${escape(base, true) + "/Projects/Modelling"}" id="modeling-link" class="svelte-9md9pm">CAD Models</a> <a href="${escape(base, true) + "/Projects/ICLR"}" id="ICLR-link" class="svelte-9md9pm">Rocketry</a> <a href="${escape(base, true) + "/Projects/Academic"}" id="OtherProj-link" class="svelte-9md9pm">Other</a></div></div> <a href="${escape(base, true) + "/resume"}" class="${["menu-links svelte-9md9pm", routeId.includes("/resume") ? "current-page" : ""].join(" ").trim()}" id="resume-link" data-svelte-h="svelte-v7ghps">Resume</a></nav></div> <hr class="rule" size="1px"></header> ${slots.default ? slots.default({}) : ``} <footer class="footer" data-svelte-h="svelte-ch6s3w"><hr class="rule" size="1px"> <div class="footer-nav-row"><nav class="contacts"><a class="menu-links svelte-9md9pm" style="border-bottom: none;" href="mailto:naj20@mit.edu">naj20@mit.edu</a> </nav></div> <nav class="social-links-container"><a class="social-links" href="https://www.linkedin.com/in/n-jenkins/" target="_blank" rel="noreferrer noopener"><img class="logo" src="/resources-General/In.png" alt="LinkedIn"> LinkedIn</a> <a class="social-links" href="https://github.com/NathanaelJ" target="_blank" rel="noreferrer noopener"><img class="logo" src="/resources-General/Git.png" alt="GitHub"> GitHub</a></nav> </footer>`;
+});
+export {
+  Layout as default
+};
