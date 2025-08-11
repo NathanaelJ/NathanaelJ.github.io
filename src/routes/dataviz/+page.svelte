@@ -9,8 +9,10 @@
 
 <main class="site-main">
     <div class="wrapper">
-        <h1>6.C85: Interactive Data Visualisation and Society</h1>
-        <p>This portfolio contains my class work from an MIT class on data visualization and society.</p>
+        <div class="page-header fade-in-up">
+            <h1>6.C85: Interactive Data Visualisation and Society</h1>
+            <p>This portfolio contains my class work from an MIT class on data visualization and society.</p>
+        </div>
 
         <div class="projects-grid">
             {#each vizProjects as p}
@@ -26,17 +28,3 @@
         </div>
     </div>
 </main>
-
-<style>
-    /* Project card item */
-    .project-card {
-        background: var(--color-background);
-        border-radius: 8px;
-        overflow: hidden;
-        transition: transform 0.2s;
-        box-shadow: 0 2px 5px var(--color-border);
-    }
-    .project-card:hover {
-        transform: translateY(-5px);
-    }
-</style>

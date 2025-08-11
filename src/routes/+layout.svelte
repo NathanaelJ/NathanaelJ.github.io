@@ -1,6 +1,7 @@
 <script>
     import { base } from '$app/paths';
     import { page } from "$app/stores";
+    import projects from '$lib/projects.json';
 
     $: routeId = $page?.route?.id || '';
 </script>
@@ -23,11 +24,9 @@
             <div class="dropdown">
                 <a class="menu-links" href="{base}/Projects" class:current-page={routeId.includes("/Projects")} id="projects-link">Projects</a>
                 <div class="dropdown-content">
-                    <a href="{base}/dataviz" id="dataviz-link">Data Visualization</a>
-                    <a href="{base}/Projects/Thesis" id="FYP-link">Thesis</a>
-                    <a href="{base}/Projects/Modelling" id="modeling-link">CAD Models</a>
-                    <a href="{base}/Projects/ICLR" id="ICLR-link">Rocketry</a>
-                    <a href="{base}/Projects/Academic" id="OtherProj-link">Other</a>
+                    {#each projects as project}
+                        <a href="{base}/{project.link}" id="{project.title.toLowerCase().replace(/\s+/g, '-')}-link">{project.button_title}</a>
+                    {/each}
                 </div>
             </div>
             <a href="{base}/resume" class="menu-links" class:current-page={routeId.includes("/resume")} id="resume-link">Resume</a>
@@ -40,13 +39,6 @@
 
 <footer class="footer">
     <hr class="rule">
-
-    <div class="footer-nav-row">
-        <nav class="contacts">
-            <a class="menu-links" style="border-bottom: none;" href="mailto:naj20@mit.edu">naj20@mit.edu</a>
-            <!--<a class="menu-links" href="tel:07960264171">+44(0) 7960 264171</a>-->
-        </nav>
-    </div>
 
     <nav class="social-links-container">
         <a class="social-links" href="https://www.linkedin.com/in/n-jenkins/" target="_blank" rel="noreferrer noopener"><img class="logo" src="/resources-General/In.png" alt="LinkedIn"/> LinkedIn</a>

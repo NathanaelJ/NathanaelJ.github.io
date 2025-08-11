@@ -14,17 +14,3 @@
         <a href="{base}/{data.link}" class="project-link">View Project</a>
     </div>
 </article>
-
-<style>
-    /* Project card item */
-    .project-card {
-        background: var(--color-background);
-        border-radius: 8px;
-        overflow: hidden;
-        transition: transform 0.2s;
-        box-shadow: 0 2px 5px var(--color-border);
-    }
-    .project-card:hover {
-        transform: translateY(-5px);
-    }
-</style>

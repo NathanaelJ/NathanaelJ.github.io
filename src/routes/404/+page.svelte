@@ -4,8 +4,10 @@
 
 <main class="site-main">
   <div class="wrapper">
-    <h1>404: Page Not Found</h1>
-    <p>Oops! Looks like you're lost. Here are some dogs to cheer you up:</p>
+    <div class="error-container fade-in-up">
+      <h1>404: Page Not Found</h1>
+      <p>Oops! Looks like you're lost. Here are some dogs to cheer you up:</p>
+    </div>
 
     <div class="projects-grid">
       <article class="project-card">
@@ -37,11 +39,10 @@
       </article>
     </div>
 
-    <p style="text-align: center; margin-top: 2em;">
-      <a href="/">Return to Homepage</a>
-    </p>
+    <div class="text-center" style="margin-top: 2em;">
+      <a href="/" class="project-link">Return to Homepage</a>
+    </div>
   </div>
-  
 </main>
 
 

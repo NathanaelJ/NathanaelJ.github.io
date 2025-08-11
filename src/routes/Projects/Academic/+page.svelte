@@ -8,56 +8,66 @@
 
 <main class="site-main">
   <div class="wrapper">
-      <h1>Academic Projects</h1>
-      <h2>A collection of projects from my undergraduate and high school studies<br/><br/></h2>
-
-      <hr width="50%" size="1px" color="#555" z-index="1">
-      <h3 style="margin-bottom: 0">Hypersonic Computational Fluid Dynamics</h3>
-      <h2>Group Design Project at Imperial College London<br/><br/></h2>
-      
-      <p>Summer term in the 3rd year of an Aeronautics degree at Imperial brings the infamous (maybe even notorious) 'Group Design Project'. Students are placed in large teams, mine being 27 in number, and given a broad task simulating a real industrial project. I was tasked with performing an aerodynamic analysis on rocket nosecone designs. As well as analytical methods, I used computational fluid dynamics (CFD) to predict the behaviour of the nosecone. To properly model a hypersonic flow, several considerations must be made, including application of 'adaptive mesh refinement'. This is explained in the report shown below, which can be downloaded by<a href="AcademicResources/GDP_Report.pdf"> clicking here.</a><br/><br/>
-      As well as conducting the aerodynamic analysis, I used <a href="https://www.blender.org" target="_blank" rel="noreferrer noopener">Blender</a> and <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noreferrer noopener">Davinci Resolve</a> to create a short animation for our group presentations.<br/><br/></p>
-      
-      <div class="video-container">
-        <!-- svelte-ignore a11y-media-has-caption -->
-        <figure>
-            <video controls>
-                <source src="AcademicResources/FAD_Video.mp4" type="video/mp4">
-                Sorry! I upload my videos as mp4... it looks like your browser can't handle that.
-            </video>
-            <figcaption>Group Design Project Video</figcaption>
-        </figure>
-      </div>
-      <p><br><br></p>
-      
-      <div class="pdf-container">
-          <iframe class="pdf-viewer" title="Group Design Project Report" src="AcademicResources/GDP_Report.pdf"></iframe>
+      <div class="page-header fade-in-up liquid-glass">
+          <h1>Academic Projects</h1>
+          <h2>A collection of projects from my undergraduate and high school studies</h2>
       </div>
 
-      <p><br/>Please cite this project:<br/>Jenkins, N. (2023). <i>SpaceHAVEN: Aerothermodynamic Analysis of a Hypersonic Rocket Nosecone.</i> [pdf] London: Imperial College London. Available at: http://nathanaelj.github.io/Projects/AcademicResources/GDP_Report.pdf [Accessed: {today}]<br/><br/></p>
-
-      <hr width="50%" size="1px" color="#555" z-index="1">
-      <h3 style="margin-bottom: 0">GPU Parallelisation of a 2D Navier-Stokes Solver</h3>
-      <h2>'Undergraduate Research Opportunity' at Imperial College London<br/><br/></h2>
+      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.2s;">
+          <h3 style="margin-bottom: 0">Hypersonic Computational Fluid Dynamics</h3>
+          <h2>Group Design Project at Imperial College London</h2>
+          
+          <p>Summer term in the 3rd year of an Aeronautics degree at Imperial brings the infamous (maybe even notorious) 'Group Design Project'. Students are placed in large teams, mine being 27 in number, and given a broad task simulating a real industrial project. I was tasked with performing an aerodynamic analysis on rocket nosecone designs. As well as analytical methods, I used computational fluid dynamics (CFD) to predict the behaviour of the nosecone. To properly model a hypersonic flow, several considerations must be made, including application of 'adaptive mesh refinement'. This is explained in the report shown below, which can be downloaded by<a href="AcademicResources/GDP_Report.pdf"> clicking here.</a></p>
+          
+          <p>As well as conducting the aerodynamic analysis, I used <a href="https://www.blender.org" target="_blank" rel="noreferrer noopener">Blender</a> and <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noreferrer noopener">Davinci Resolve</a> to create a short animation for our group presentations.</p>
+      </div>
       
-      <p>Under the supervision of <a href="https://www.turbulencesimulation.com" target="_blank" rel="noreferrer noopener">Sylvain Laizet</a>, I completed a research project exploring parallelism in Computational Fluid Dynamics (CFD). The project evaluated the performance of a framework called <a href="https://github.com/illuhad/hipSYCL" target="_blank" rel="noreferrer noopener">hipSYCL</a>, which is designed to enable high-performance heterogeneous computing (this is a fancy way of saying 'using all of the hardware in a computer at once'). The full project report is shown below and can be downloaded by<a href="AcademicResources/UROP_Report.pdf"> clicking here.</a><br><br></p>
+      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.4s;">
+          <div class="video-container">
+            <!-- svelte-ignore a11y-media-has-caption -->
+            <figure>
+                <video controls>
+                    <source src="AcademicResources/FAD_Video.mp4" type="video/mp4">
+                    Sorry! I upload my videos as mp4... it looks like your browser can't handle that.
+                </video>
+                <figcaption>Group Design Project Video</figcaption>
+            </figure>
+          </div>
+          
+          <div class="pdf-container">
+              <iframe class="pdf-viewer" title="Group Design Project Report" src="AcademicResources/GDP_Report.pdf"></iframe>
+          </div>
 
-      <div class="pdf-container">
-          <iframe class="pdf-viewer" title="UROP Report" src="AcademicResources/UROP_Report.pdf"></iframe>
+          <p>Please cite this project:</p>
+          <p>Jenkins, N. (2023). <i>SpaceHAVEN: Aerothermodynamic Analysis of a Hypersonic Rocket Nosecone.</i> [pdf] London: Imperial College London. Available at: http://nathanaelj.github.io/Projects/AcademicResources/GDP_Report.pdf [Accessed: {today}]</p>
       </div>
 
-      <p><br/>Please cite this project:<br/>Jenkins, N. (2021). <i>GPU Parallelisation of a 2D Navier-Stokes Solver</i> [pdf] London: Imperial College London. Available at: http://nathanaelj.github.io/Projects/AcademicResources/UROP_Report.pdf [Accessed: {today}]<br/><br/></p>
+      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.6s;">
+          <h3 style="margin-bottom: 0">GPU Parallelisation of a 2D Navier-Stokes Solver</h3>
+          <h2>'Undergraduate Research Opportunity' at Imperial College London</h2>
+          
+          <p>Under the supervision of <a href="https://www.turbulencesimulation.com" target="_blank" rel="noreferrer noopener">Sylvain Laizet</a>, I completed a research project exploring parallelism in Computational Fluid Dynamics (CFD). The project evaluated the performance of a framework called <a href="https://github.com/illuhad/hipSYCL" target="_blank" rel="noreferrer noopener">hipSYCL</a>, which is designed to enable high-performance heterogeneous computing (this is a fancy way of saying 'using all of the hardware in a computer at once'). The full project report is shown below and can be downloaded by<a href="AcademicResources/UROP_Report.pdf"> clicking here.</a></p>
 
-      <hr width="50%" size="1px" color="#555" z-index="1">
-      <h3 style="margin-bottom: 0">Ion Propulsion</h3>
-      <h2>Extended Project Qualification at Peter Symonds College<br/><br/></h2>
-      
-      <p>Alongside A-Level studies, I conducted a research project in electric propulsion, exploring the question, 'is ion propulsion the future of space and air travel?'. While ion propulsion currently powers many unmanned spacecraft, it has not yet been made viable for atmospheric vehicles. This is a result of the way in which it generates thrust being extremely efficient but incredibly weak. You can read the detailed report below, or download the report by<a href="AcademicResources/EPQ.pdf" download> clicking here.</a><br><br></p>
+          <div class="pdf-container">
+              <iframe class="pdf-viewer" title="UROP Report" src="AcademicResources/UROP_Report.pdf"></iframe>
+          </div>
 
-      <div class="pdf-container">
-          <iframe class="pdf-viewer" title="Extended Project Report" src="AcademicResources/EPQ.pdf"></iframe>
+          <p>Please cite this project:</p>
+          <p>Jenkins, N. (2021). <i>GPU Parallelisation of a 2D Navier-Stokes Solver</i> [pdf] London: Imperial College London. Available at: http://nathanaelj.github.io/Projects/AcademicResources/UROP_Report.pdf [Accessed: {today}]</p>
       </div>
 
-      <p><br/>Please cite this project:<br/>Jenkins, N. (2019). <i>Is ion propulsion the future of air and space transport?</i> [pdf] Winchester: Peter Symonds College. Available at: http://nathanaelj.github.io/Projects/AcademicResources/EPQ.pdf [Accessed: {today}]<br/><br/></p>
+      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.8s;">
+          <h3 style="margin-bottom: 0">Ion Propulsion</h3>
+          <h2>Extended Project Qualification at Peter Symonds College</h2>
+          
+          <p>Alongside A-Level studies, I conducted a research project in electric propulsion, exploring the question, 'is ion propulsion the future of space and air travel?'. While ion propulsion currently powers many unmanned spacecraft, it has not yet been made viable for atmospheric vehicles. This is a result of the way in which it generates thrust being extremely efficient but incredibly weak. You can read the detailed report below, or download the report by<a href="AcademicResources/EPQ.pdf" download> clicking here.</a></p>
+
+          <div class="pdf-container">
+              <iframe class="pdf-viewer" title="Extended Project Report" src="AcademicResources/EPQ.pdf"></iframe>
+          </div>
+
+          <p>Please cite this project:</p>
+          <p>Jenkins, N. (2019). <i>Is ion propulsion the future of air and space transport?</i> [pdf] Winchester: Peter Symonds College. Available at: http://nathanaelj.github.io/Projects/AcademicResources/EPQ.pdf [Accessed: {today}]</p>
+      </div>
   </div>
 </main>

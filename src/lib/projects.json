@@ -1,12 +1,14 @@
 [
 {"title":"Data Visualizations",
+"button_title":"Data Visualization",
 "year":"2024",
 "img":"/Thumbnails/DV_1.png",
 "subtitle":"6.C85: Interactive Data Visualisation and Society",
 "description":"MIT class work using interactive data visualization to analyse the Boston housing market.",
 "link":"dataviz"},
 
-{"title":"Masters' Thesis",
+{"title":"Masters Thesis",
+"button_title":"Masters Thesis",
 "year":"2024",
 "img":"/Thumbnails/FYP.png",
 "subtitle":"Numerical modelling of the lightning swept stroke",
@@ -14,6 +16,7 @@
 "link":"Projects/Thesis"},
 
 {"title":"CAD Models",
+"button_title":"Missile Models",
 "year":"2023",
 "img":"/Thumbnails/Modelling.png",
 "subtitle":"Missile and aircraft models",
@@ -21,6 +24,7 @@
 "link":"Projects/Modelling"},
 
 {"title":"ICL Rocketry",
+"button_title":"ICL Rocketry",
 "year":"2023",
 "img":"/Thumbnails/ASTRA.png",
 "subtitle":"Altitude Record Team",
@@ -28,6 +32,7 @@
 "link":"Projects/ICLR"},
 
 {"title":"Academic Projects",
+"button_title":"Other Projects",
 "year":"2022",
 "img":"/Thumbnails/GDP.png",
 "subtitle":"Undergraduate and high school projects",
