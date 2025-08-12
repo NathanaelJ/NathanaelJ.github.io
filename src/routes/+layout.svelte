@@ -44,4 +44,9 @@
         <a class="social-links" href="https://www.linkedin.com/in/n-jenkins/" target="_blank" rel="noreferrer noopener"><img class="logo" src="/resources-General/In.png" alt="LinkedIn"/> LinkedIn</a>
         <a class="social-links" href="https://github.com/NathanaelJ" target="_blank" rel="noreferrer noopener"><img class="logo" src="/resources-General/Git.png" alt="GitHub"/> GitHub</a>
     </nav>
+
+    <div class="footer-right">
+        <p>&copy; Nathanael Jenkins, 2025</p>
+        <p>improved using <a href="https://cursor.com/" target="_blank" rel="noreferrer noopener">Cursor</a></p>
+    </div>
 </footer>
