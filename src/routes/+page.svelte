@@ -27,7 +27,7 @@
 
     <div style="text-align: center; margin: var(--spacing-16) 0;">
         <p style="margin-bottom: var(--spacing-6);">Feel free to reach out about my research</p>
-        <a href="mailto:naj20@mit.edu" class="apple-button">naj20@mit.edu</a>
+        <a href="mailto:naj20@mit.edu" class="apple-button" style="text-decoration: none;">naj20@mit.edu</a>
     </div>
 </main>
 
