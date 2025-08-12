@@ -14,7 +14,7 @@
       
       <p>All of the data relating to these models was taken from publicly available data, predominantly photos published by militaries or manufacturers. While I've done my best to create models which are as accurate as possible, differences are inevitable.<br/><br/></p>
       
-      <p>I'm often frustrated by high download costs for seemingly simple CAD models so want to make these models available for hobbyists for free. For commercial use, please <a href="mailto:naj20@ic.ac.uk">contact me</a> first.<br/><br/></p>
+      <p>I'm often frustrated by high download costs for seemingly simple CAD models so want to make these models available for hobbyists for free. For commercial use, please <a href="mailto:naj20@mit.edu">contact me</a> first.<br/><br/></p>
       
       <p>
         {#each missiles as missile}

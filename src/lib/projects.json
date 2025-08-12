@@ -1,4 +1,14 @@
 [
+{"title":"PhD Research",
+"button_title":"PhD Research",
+"year":"2025",
+"img":"/Thumbnails/PhD.png",
+"subtitle":"Physics-based simulations of aircraft lightning strikes",
+"description":"Developing tools for aircraft lightning protection design.",
+"link":"Projects/PhD",
+"dropdown":true
+},
+
 {"title":"Data Visualizations",
 "button_title":"Data Visualization",
 "year":"2024",

@@ -15,7 +15,11 @@ export const nodes = [
 	() => import('./nodes/11'),
 	() => import('./nodes/12'),
 	() => import('./nodes/13'),
-	() => import('./nodes/14')
+	() => import('./nodes/14'),
+	() => import('./nodes/15'),
+	() => import('./nodes/16'),
+	() => import('./nodes/17'),
+	() => import('./nodes/18')
 ];
 
 export const server_loads = [];
@@ -25,15 +29,19 @@ export const dictionary = {
 		"/404": [3],
 		"/Projects": [4],
 		"/Projects/Academic": [5],
-		"/Projects/ICLR": [6],
-		"/Projects/Modelling": [7],
-		"/Projects/Thesis": [8],
-		"/dataviz": [9],
-		"/dataviz/A2": [10],
-		"/dataviz/A3": [11],
-		"/dataviz/A4": [12],
-		"/dataviz/contact": [13],
-		"/resume": [14]
+		"/Projects/Academic/EPQ": [6],
+		"/Projects/Academic/GDP": [7],
+		"/Projects/Academic/UROP": [8],
+		"/Projects/Aircraft": [9],
+		"/Projects/ICLR": [10],
+		"/Projects/Modelling": [11],
+		"/Projects/PhD": [12],
+		"/Projects/Thesis": [13],
+		"/dataviz": [14],
+		"/dataviz/A2": [15],
+		"/dataviz/A3": [16],
+		"/dataviz/A4": [17],
+		"/resume": [18]
 	};
 
 export const hooks = {

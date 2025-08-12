@@ -1,6 +1,73 @@
-import { c as create_ssr_component } from "../../../../chunks/ssr.js";
+import { c as create_ssr_component, d as each, e as escape, v as validate_component } from "../../../../chunks/ssr.js";
+import { M as MissileModel } from "../../../../chunks/MissileModel.js";
+const missiles = [
+  {
+    id: "AGM-88E",
+    name: "AGM-88E AARGM",
+    description: "",
+    downloads: {
+      step: "ModelResources/AGM-88E.step",
+      stl: "ModelResources/AGM-88E.stl",
+      obj: "ModelResources/AGM-88E.obj",
+      pdf: "ModelResources/AGM-88E.pdf"
+    },
+    image: "ModelResources/AGM-88E.png",
+    alt: "AGM-88E AARGM"
+  },
+  {
+    id: "AIM-120",
+    name: "AIM-120A AMRAAM",
+    description: "",
+    downloads: {
+      step: "ModelResources/AIM-120.step",
+      stl: "ModelResources/AIM-120.stl",
+      obj: "ModelResources/AIM-120.obj",
+      pdf: "ModelResources/AIM-120.pdf"
+    },
+    image: "ModelResources/AIM-120.png",
+    alt: "AIM-120A AMRAAM"
+  },
+  {
+    id: "AIM-9X",
+    name: "AIM-9X Sidewinder",
+    description: "The launch rail in this model is based on the design used for attachment to the F-16 (under-wing). Different geometries are used for other aircraft. This missile is sometimes mounted at the wing tips (e.g. F-18D). 3D files include the launch rail; dimensioned drawings show the missile body only.",
+    downloads: {
+      step: "ModelResources/AIM-9X.step",
+      stl: "ModelResources/AIM-9X.stl",
+      obj: "ModelResources/AIM-9X.obj",
+      pdf: "ModelResources/AIM-9X.pdf"
+    },
+    image: "ModelResources/AIM-9X.png",
+    alt: "AIM-9X Sidewinder"
+  },
+  {
+    id: "Astra-Mk1",
+    name: "Astra-Mk1",
+    description: "3D files include the launch rail; dimensioned drawings show the missile body only.",
+    downloads: {
+      step: "ModelResources/Astra.step",
+      stl: "ModelResources/Astra.stl",
+      obj: "ModelResources/Astra.obj",
+      pdf: "ModelResources/Astra.pdf"
+    },
+    image: "ModelResources/Astra.png",
+    alt: "Astra Mk.1"
+  }
+];
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${$$result.head += `<!-- HEAD_svelte-c6lhp8_START -->${$$result.title = `<title>Modelling | N Jenkins</title>`, ""}<!-- HEAD_svelte-c6lhp8_END -->`, ""} <main class="site-main" data-svelte-h="svelte-rnx65m"><div class="wrapper"><h1>CAD Models</h1> <h2>An assortment of missiles and aircraft<br><br></h2> <p>To fill some of my free time over holidays, I use open-source data (predominantly photos) to create 3D-CAD models. Given manufacturers are understandably keen to keep the details about their hardware under wraps, this was an exercise in extracting data from the limited pool available online.<br><br>All of the data relating to these models was taken from publicly available data, predominantly photos published by militaries or manufacturers. While I&#39;ve done my best to create models which are as accurate as possible, some discrepancy is inevitable. Markings have been based on those found in photographs, although not all written text has been included and some text has been replaced with a relevant Bible verse.<br><br>I&#39;m often frustrated by high download costs for seemingly simple CAD models so want to make these models available for hobbyists for free. If using for a commercial purpose, I&#39;d appreciate if it you could <a href="mailto:naj20@ic.ac.uk">get in contact</a> with me first.<br><br></p> <p><a href="#AGM-88E">AGM-88E AARGM</a><br> <a href="#AIM-120">AIM-120A AMRAAM</a><br> <a href="#AIM-9X">AIM-9X Sidewinder</a><br> <a href="#Astra-Mk1">Astra-Mk1</a><br> <a href="#F-106B">F-106B Delta Dart</a><br> <br><br></p> <hr width="50%" size="1px" color="#555" z-index="1"> <h3 id="AGM-88E">AGM-88E AARGM</h3> <p><a href="ModelResources/AGM-88E.step" download>Download STEP</a> <br><a href="ModelResources/AGM-88E.stl" download>Download STL (Binary)</a> <br><a href="ModelResources/AGM-88E.obj" download>Download OBJ</a> <br><a href="ModelResources/AGM-88E.pdf" download>Download drawing (PDF)</a><br><br></p> <div class="image-container"><img src="ModelResources/AGM-88E.png" alt="AIM-9X"></div> <iframe title="AGM-88E 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99fe2216d93cd2eeb4?mode=embed" width="70%" height="600" style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe> <hr width="50%" size="1px" color="#555" z-index="1"> <h3 id="AIM-120">AIM-120A AMRAAM</h3> <p><a href="ModelResources/AIM-120.step" download>Download STEP</a> <br><a href="ModelResources/AIM-120.stl" download>Download STL (Binary)</a> <br><a href="ModelResources/AIM-120.obj" download>Download OBJ</a> <br><a href="ModelResources/AIM-120.pdf" download>Download drawing (PDF)</a><br><br></p> <div class="image-container"><img src="ModelResources/AIM-120.png" alt="AIM-120A"></div> <iframe title="AIM-120 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99c3d53eb532ffd487?mode=embed" width="70%" height="600" style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe> <hr width="50%" size="1px" color="#555" z-index="1"> <h3 id="AIM-9X">AIM-9X Sidewinder</h3> <p>The launch rail in this model is based on the design used for attachment to the F-16 (under-wing). Different geometries are used for other aircraft. This missile is sometimes mounted at the wing tips (e.g. F-18D). 3D files include the launch rail; dimensioned drawings show the missile body only.<br> <br><a href="ModelResources/AIM-9X.step" download>Download STEP</a> <br><a href="ModelResources/AIM-9X.stl" download>Download STL (Binary)</a> <br><a href="ModelResources/AIM-9X.obj" download>Download OBJ</a> <br><a href="ModelResources/AIM-9X.pdf" download>Download drawing (PDF)</a><br><br></p> <div class="image-container"><img src="ModelResources/AIM-9X.png" alt="AIM-9X"></div> <iframe title="AIM-9X 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99bec7167df3224421?mode=embed" width="70%" height="600" style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe> <hr width="50%" size="1px" color="#555" z-index="1"> <h3 id="Astra-Mk1">Astra-Mk1</h3> <p>3D files include the launch rail; dimensioned drawings show the missile body only.<br> <br><a href="ModelResources/Astra.step" download>Download STEP</a> <br><a href="ModelResources/Astra.stl" download>Download STL (Binary)</a> <br><a href="ModelResources/Astra.obj" download>Download OBJ</a> <br><a href="ModelResources/Astra.pdf" download>Download drawing (PDF)</a><br><br></p> <div class="image-container"><img src="ModelResources/Astra.png" alt="Astra Mk.1"></div> <iframe title="Astra Mk.1 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c994ef803610224a623?mode=embed" width="70%" height="600" style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe> <hr width="50%" size="1px" color="#555" z-index="1"> <h3 id="F-106B">F-106B Delta Dart</h3> <p>Colours and decals have not (yet) been applied to this model. The engine has been hollowed out since this model was used for fluid dynamics simulations.<br> <br><a href="ModelResources/F-106B.step" download>Download STEP</a> <br><a href="ModelResources/F-106B.stl" download>Download STL (Binary)</a> <br><a href="ModelResources/F-106B.obj" download>Download OBJ</a> <br><a href="ModelResources/F-106B.pdf" download>Download drawing (PDF)</a><br><br></p> <div class="image-container"><img src="ModelResources/F-106B.png" alt="F-106B"></div> <iframe title="F-106B 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99edbd1c273b58baca?mode=embed" width="70%" height="600" style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe></div></main>`;
+  return `${$$result.head += `<!-- HEAD_svelte-c6lhp8_START -->${$$result.title = `<title>Modelling | N Jenkins</title>`, ""}<!-- HEAD_svelte-c6lhp8_END -->`, ""} <main class="site-main modelling-page"><div class="wrapper"><div class="page-header fade-in-up liquid-glass"><h1 data-svelte-h="svelte-1p0azqq">Missile Models</h1> <p data-svelte-h="svelte-bpn97k">All of the data relating to these models was taken from publicly available data, predominantly photos published by militaries or manufacturers. While I&#39;ve done my best to create models which are as accurate as possible, differences are inevitable.<br><br></p> <p data-svelte-h="svelte-1u1gg8u">I&#39;m often frustrated by high download costs for seemingly simple CAD models so want to make these models available for hobbyists for free. For commercial use, please <a href="mailto:naj20@mit.edu">contact me</a> first.<br><br></p> <p>${each(missiles, (missile) => {
+    return `<a href="${"#" + escape(missile.id, true)}">${escape(missile.name)}</a><br>`;
+  })}</p></div> ${each(missiles, (missile, index) => {
+    return `${validate_component(MissileModel, "MissileModel").$$render(
+      $$result,
+      {
+        missile,
+        animationDelay: (index + 1) * 0.2 + 0.4 + "s"
+      },
+      {},
+      {}
+    )}`;
+  })}</div></main>`;
 });
 export {
   Page as default

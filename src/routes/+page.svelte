@@ -17,7 +17,7 @@
 
     <div class="intro-container fade-in-up" style="animation-delay: 0.2s;">
         <div class="intro-text">
-            <p>I specialize in physics simulations and my current research explores simulation tools for aircraft lightning protection. You can find out more about my research <a href="{base}/Projects/Thesis">here</a>.</p>
+            <p>I specialize in physics simulations and my current research explores simulation tools for aircraft lightning protection. You can find out more about my research <a href="{base}/Projects/PhD">here</a>.</p>
         </div>
         <figure>
             <img src="/resources-General/CFD_Dark.gif" class="introimg" alt="Animated Taylor-Green vortex">

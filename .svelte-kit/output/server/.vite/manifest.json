@@ -8,14 +8,13 @@
     "isEntry": true,
     "src": ".svelte-kit/generated/server/internal.js"
   },
-  "ProjectCard.css": {
-    "file": "_app/immutable/assets/_page.cf1e1a1c.css",
-    "src": "ProjectCard.css"
+  "_MissileModel.js": {
+    "file": "chunks/MissileModel.js",
+    "imports": [
+      "_ssr.js"
+    ]
   },
   "_ProjectCard.js": {
-    "css": [
-      "_app/immutable/assets/_page.cf1e1a1c.css"
-    ],
     "file": "chunks/ProjectCard.js",
     "imports": [
       "_ssr.js",
@@ -31,6 +30,9 @@
   },
   "_paths.js": {
     "file": "chunks/paths.js"
+  },
+  "_projects.js": {
+    "file": "chunks/projects.js"
   },
   "_ssr.js": {
     "file": "chunks/ssr.js"
@@ -60,19 +62,13 @@
     "isEntry": true,
     "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js"
   },
-  "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout.08ec65af.css",
-    "src": "src/routes/+layout.css"
-  },
   "src/routes/+layout.svelte": {
-    "css": [
-      "_app/immutable/assets/_layout.08ec65af.css"
-    ],
     "file": "entries/pages/_layout.svelte.js",
     "imports": [
       "_ssr.js",
       "_paths.js",
-      "_stores.js"
+      "_stores.js",
+      "_projects.js"
     ],
     "isEntry": true,
     "src": "src/routes/+layout.svelte"
@@ -89,7 +85,8 @@
   "src/routes/404/+page.svelte": {
     "file": "entries/pages/404/_page.svelte.js",
     "imports": [
-      "_ssr.js"
+      "_ssr.js",
+      "_paths.js"
     ],
     "isEntry": true,
     "src": "src/routes/404/+page.svelte"
@@ -98,6 +95,7 @@
     "file": "entries/pages/Projects/_page.svelte.js",
     "imports": [
       "_ssr.js",
+      "_projects.js",
       "_ProjectCard.js"
     ],
     "isEntry": true,
@@ -106,10 +104,48 @@
   "src/routes/Projects/Academic/+page.svelte": {
     "file": "entries/pages/Projects/Academic/_page.svelte.js",
     "imports": [
-      "_ssr.js"
+      "_ssr.js",
+      "_ProjectCard.js",
+      "_projects.js"
     ],
     "isEntry": true,
     "src": "src/routes/Projects/Academic/+page.svelte"
+  },
+  "src/routes/Projects/Academic/EPQ/+page.svelte": {
+    "file": "entries/pages/Projects/Academic/EPQ/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_paths.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/Projects/Academic/EPQ/+page.svelte"
+  },
+  "src/routes/Projects/Academic/GDP/+page.svelte": {
+    "file": "entries/pages/Projects/Academic/GDP/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_paths.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/Projects/Academic/GDP/+page.svelte"
+  },
+  "src/routes/Projects/Academic/UROP/+page.svelte": {
+    "file": "entries/pages/Projects/Academic/UROP/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_paths.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/Projects/Academic/UROP/+page.svelte"
+  },
+  "src/routes/Projects/Aircraft/+page.svelte": {
+    "file": "entries/pages/Projects/Aircraft/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_MissileModel.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/Projects/Aircraft/+page.svelte"
   },
   "src/routes/Projects/ICLR/+page.svelte": {
     "file": "entries/pages/Projects/ICLR/_page.svelte.js",
@@ -122,27 +158,31 @@
   "src/routes/Projects/Modelling/+page.svelte": {
     "file": "entries/pages/Projects/Modelling/_page.svelte.js",
     "imports": [
-      "_ssr.js"
+      "_ssr.js",
+      "_MissileModel.js"
     ],
     "isEntry": true,
     "src": "src/routes/Projects/Modelling/+page.svelte"
   },
+  "src/routes/Projects/PhD/+page.svelte": {
+    "file": "entries/pages/Projects/PhD/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_paths.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/Projects/PhD/+page.svelte"
+  },
   "src/routes/Projects/Thesis/+page.svelte": {
     "file": "entries/pages/Projects/Thesis/_page.svelte.js",
     "imports": [
-      "_ssr.js"
+      "_ssr.js",
+      "_paths.js"
     ],
     "isEntry": true,
     "src": "src/routes/Projects/Thesis/+page.svelte"
   },
-  "src/routes/dataviz/+page.css": {
-    "file": "_app/immutable/assets/_page.cf1e1a1c.css",
-    "src": "ProjectCard.css"
-  },
   "src/routes/dataviz/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.cf1e1a1c.css"
-    ],
     "file": "entries/pages/dataviz/_page.svelte.js",
     "imports": [
       "_ssr.js",
@@ -174,14 +214,6 @@
     ],
     "isEntry": true,
     "src": "src/routes/dataviz/A4/+page.svelte"
-  },
-  "src/routes/dataviz/contact/+page.svelte": {
-    "file": "entries/pages/dataviz/contact/_page.svelte.js",
-    "imports": [
-      "_ssr.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/dataviz/contact/+page.svelte"
   },
   "src/routes/resume/+page.svelte": {
     "file": "entries/pages/resume/_page.svelte.js",
