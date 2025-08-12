@@ -1,0 +1,102 @@
+<script>import { base } from '$app/paths';</script>
+
+<svelte:head>
+  <title>Resume | N Jenkins</title>
+</svelte:head>
+
+<main class="site-main">
+    <div class="wrapper">
+        <div class="page-header fade-in-up">
+            <h1>Resume</h1>
+            <p></p>
+            <a href="{base}/resources-CV/NJenkins Resume.pdf" class="project-link" download>Download PDF</a>
+        </div>
+
+        <div class="resume-section fade-in-up" style="animation-delay: 0.2s;">
+            <h5>Education</h5>
+            <ul class="resume-list">
+                <li>
+                    <div class="position-line">
+                        <span class="position">PhD in Aeronautics and Astronautics</span>
+                        <span class="date-range">2024 - </span>
+                    </div>
+                    <div class="institution"><a href="https://aeroastro.mit.edu/" target="_blank" rel="noreferrer noopener">Massachusetts Institute of Technology</a></div>
+                    <div class="description">Simulating aircraft lightning strikes in the Aerospace Plasma Group.</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position">MEng Aeronautical Engineering a Year Abroad (1st class honors)</span>
+                        <span class="date-range">2020 - 2024</span>
+                    </div>
+                    <div class="institution"><a href="https://www.imperial.ac.uk/aeronautics/" target="_blank" rel="noreferrer noopener">Imperial College London</a>, Massachusetts Institute of Technology (final year)</div>
+                    <div class="description">Overall grade: 80% (GPA 5.0). Awarded the BAE Systems Prize for the best individual research project.</div>
+                    <div class="description">Sponsored by the Institution of Mechanical Engineers (IMechE) 'James Clayton' Undergraduate Scholarship</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position">A-Levels in Maths, Further Maths, Physics, Product Design (A*, A*, A*, A*)</span>
+                        <span class="date-range">2018 - 2020</span>
+                    </div>
+                    <div class="institution"><a href="https://www.psc.ac.uk/" target="_blank" rel="noreferrer noopener">Peter Symonds' College</a>, Winchester</div>
+                    <div class="description">Authored a grade A* extended project qualification on the future of ion propulsion for air and space transport</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="resume-section fade-in-up" style="animation-delay: 0.4s;">
+            <h5>Experience</h5>
+            <ul class="resume-list">
+                <li>
+                    <div class="position-line">
+                        <span class="position">Student Partner</span>
+                        <span class="date-range">10/2024 - </span>
+                    </div>
+                    <div class="institution"><a href="https://www.giant.vc/" target="_blank" rel="noreferrer noopener">Giant Ventures</a>, London (UK)</div>
+                    <div class="description">Identifying and referring exceptional ventures to a global firm focused on technology, health, and climate</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position">Graduate Student, Aeronautics and Astronautics</span>
+                        <span class="date-range">08/2024 - </span>
+                    </div>
+                    <div class="institution"><a href="https://aeroastro.mit.edu/" target="_blank" rel="noreferrer noopener">MIT Department of Aeronautics and Astronautics</a>, Cambridge (USA)</div>
+                    <div class="description">Developing physics-based simulation tools for lightning strikes to aircraft and wind turbines</div>
+                    <div class="description">Collaborate with industry partners through conferences and participation in international standards committees</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position">Summer Intern, Simulation & Modeling</span>
+                        <span class="date-range">06/2022 - 08/2022</span>
+                    </div>
+                    <div class="institution"><a href="https://www.mbdainc.com" target="_blank" rel="noreferrer noopener">MBDA Missile Systems</a>, Stevenage (UK)</div>
+                    <div class="description">Evaluated and implemented an alternative programming paradigm in a high-fidelity dynamic model</div>
+                    <div class="description">Identified a solution to a long-term project which protected company IP while meeting client requirements</div>
+                    <div class="description">Verified change sets, utilizing more than 2,000 core-hours on an industrial high-performance cluster</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position">Undergraduate Researcher (UROP) </span>
+                        <span class="date-range">06/2021 - 08/2021</span>
+                    </div>
+                    <div class="institution"><a href="https://www.imperial.ac.uk/aeronautics/" target="_blank" rel="noreferrer noopener">Imperial College London</a>, Dr Sylvain Laizet (Supervisor)</div>
+                    <div class="description">Implemented and profiled a novel C++ framework for high-performance heterogeneous computing</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position">Lead Aerodynamics and Simulations Engineer </span>
+                        <span class="date-range">10/2020 - 08/2023</span>
+                    </div>
+                    <div class="institution"><a href="https://imperialrocketry.com" target="_blank" rel="noreferrer noopener">Imperial College London Rocketry</a>, Altitude Record Team</div>
+                    <div class="description">Conducted computational fluid dynamics (CFD) studies on high-powered supersonic rockets using StarCCM+</div>
+                    <div class="description">Negotiated sponsorship with ESTECO, acquiring licenses to modeFrontier optimization software</div>
+                    <div class="description">Integrated modeFrontier into engineering workflows, increasing rocket altitude by 3% and breaking a UK record</div>
+                </li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center;">
+            <a href="mailto:naj20@mit.edu" class="project-link">naj20@mit.edu</a>
+        </div>
+
+    </div>
+</main>

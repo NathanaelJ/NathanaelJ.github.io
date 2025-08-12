@@ -1,0 +1,7 @@
+[
+    {"title":"Hollowvale", "img":"/Thumbnails/Hollowvale.png", "subtitle":"Final Project: Visualizing Speculation in Boston Housing Markets", "description":"A group project creating a tool for policymakers to understand the impact of speculation on specific municipailities in Greater Boston", "link":"external:https://hollowvale.vercel.app", "year":"2025"},
+    {"title":"Civilian Complaints to the NYPD", "img":"/Thumbnails/DV_3.png", "subtitle":"A4: Persuasive or Deceptive Visualization", 
+    "description":"Using visualiaztions to draw opposite conclusions from the same data", "link":"dataviz/A4", "year":"2025"},
+    {"title":"The COVID Spiral", "img":"/Thumbnails/DV_2.png", "subtitle":"A3: Visualization Critique and Redesign", "description":"Critique and redesign of a widely-discussed COVID-19 visualization", "link":"dataviz/A3", "year":"2025"},
+    {"title":"Speculation in Boston", "img":"/Thumbnails/DV_1.png", "subtitle":"A2: Exploratory Visual Analysis", "description":"Exploration of Boston housing data and the effect of speculation on house prices.", "link":"dataviz/A2", "year":"2025"}
+]

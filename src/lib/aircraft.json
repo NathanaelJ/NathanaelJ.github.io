@@ -1,0 +1,80 @@
+[
+  {
+    "id": "RAM1",
+    "name": "RAM 1: Small Transport Jet",
+    "description": "",
+    "link": "https://airshow.openvsp.org/vsp/MF3LYK6uewre88GZ6AtM",
+    "downloads": {
+      "stp": "AircraftResources/RAM1/RAM1.stp",
+      "stl": "AircraftResources/RAM1/RAM1.stl",
+      "obj": "AircraftResources/RAM1/RAM1.obj"
+    },
+    "image": "AircraftResources/RAM1/RAM1.png",
+    "alt": "RAM 1: Small Transport Jet"
+  },
+  {
+    "id": "RAM2",
+    "name": "RAM 2: Large Transport Jet",
+    "description": "",
+    "link": "https://airshow.openvsp.org/vsp/AIM94tGYzgoGaU61inPi",
+    "downloads": {
+      "stp": "AircraftResources/RAM2/RAM2.stp",
+      "stl": "AircraftResources/RAM2/RAM2.stl",
+      "obj": "AircraftResources/RAM2/RAM2.obj"
+    },
+    "image": "AircraftResources/RAM2/RAM2.png",
+    "alt": "RAM 2: Large Transport Jet"
+  },
+  {
+    "id": "RAM3",
+    "name": "RAM 3: Transport Prop",
+    "description": "",
+    "link": "https://airshow.openvsp.org/vsp/F22NcQbEY0dhW1Mo32EM",
+    "downloads": {
+      "stp": "AircraftResources/RAM3/RAM3.stp",
+      "stl": "AircraftResources/RAM3/RAM3.stl",
+      "obj": "AircraftResources/RAM3/RAM3.obj"
+    },
+    "image": "AircraftResources/RAM3/RAM3.png",
+    "alt": "RAM 3: Transport Prop"
+  },
+  {
+    "id": "RAM4",
+    "name": "RAM 4: Transport Helicopter",
+    "description": "",
+    "link": "https://airshow.openvsp.org/vsp/mY3Ea0Yle3SAOds9kPDf",
+    "downloads": {
+      "stp": "AircraftResources/RAM4/RAM4.stp",
+      "stl": "AircraftResources/RAM4/RAM4.stl",
+      "obj": "AircraftResources/RAM4/RAM4.obj"
+    },
+    "image": "AircraftResources/RAM4/RAM4.png",
+    "alt": "RAM 4: Transport Helicopter"
+  },
+  {
+    "id": "RAM5",
+    "name": "RAM 5: Blended Wing Concept",
+    "description": "",
+    "link": "https://airshow.openvsp.org/vsp/eDwg65Fo54BE9UuNEiZz",
+    "downloads": {
+      "stp": "AircraftResources/RAM5/RAM5.stp",
+      "stl": "AircraftResources/RAM5/RAM5.stl",
+      "obj": "AircraftResources/RAM5/RAM5.obj"
+    },
+    "image": "AircraftResources/RAM5/RAM5.png",
+    "alt": "RAM 5: Blended Wing Concept"
+  },
+  {
+    "id": "RAM6",
+    "name": "RAM 6: eVTOL Concept",
+    "description": "",
+    "link": "https://airshow.openvsp.org",
+    "downloads": {
+      "stp": "AircraftResources/RAM6/RAM6.stp",
+      "stl": "AircraftResources/RAM6/RAM6.stl",
+      "obj": "AircraftResources/RAM6/RAM6.obj"
+    },
+    "image": "AircraftResources/RAM6/RAM6.png",
+    "alt": "RAM 6: eVTOL Concept"
+  }
+]

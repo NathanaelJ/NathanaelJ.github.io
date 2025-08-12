@@ -1,0 +1,54 @@
+[
+  {
+    "id": "AGM-88E",
+    "name": "AGM-88E AARGM",
+    "description": "",
+    "downloads": {
+      "step": "ModelResources/AGM-88E.step",
+      "stl": "ModelResources/AGM-88E.stl",
+      "obj": "ModelResources/AGM-88E.obj",
+      "pdf": "ModelResources/AGM-88E.pdf"
+    },
+    "image": "ModelResources/AGM-88E.png",
+    "alt": "AGM-88E AARGM"
+  },
+  {
+    "id": "AIM-120",
+    "name": "AIM-120A AMRAAM",
+    "description": "",
+    "downloads": {
+      "step": "ModelResources/AIM-120.step",
+      "stl": "ModelResources/AIM-120.stl",
+      "obj": "ModelResources/AIM-120.obj",
+      "pdf": "ModelResources/AIM-120.pdf"
+    },
+    "image": "ModelResources/AIM-120.png",
+    "alt": "AIM-120A AMRAAM"
+  },
+  {
+    "id": "AIM-9X",
+    "name": "AIM-9X Sidewinder",
+    "description": "The launch rail in this model is based on the design used for attachment to the F-16 (under-wing). Different geometries are used for other aircraft. This missile is sometimes mounted at the wing tips (e.g. F-18D). 3D files include the launch rail; dimensioned drawings show the missile body only.",
+    "downloads": {
+      "step": "ModelResources/AIM-9X.step",
+      "stl": "ModelResources/AIM-9X.stl",
+      "obj": "ModelResources/AIM-9X.obj",
+      "pdf": "ModelResources/AIM-9X.pdf"
+    },
+    "image": "ModelResources/AIM-9X.png",
+    "alt": "AIM-9X Sidewinder"
+  },
+  {
+    "id": "Astra-Mk1",
+    "name": "Astra-Mk1",
+    "description": "3D files include the launch rail; dimensioned drawings show the missile body only.",
+    "downloads": {
+      "step": "ModelResources/Astra.step",
+      "stl": "ModelResources/Astra.stl",
+      "obj": "ModelResources/Astra.obj",
+      "pdf": "ModelResources/Astra.pdf"
+    },
+    "image": "ModelResources/Astra.png",
+    "alt": "Astra Mk.1"
+  }
+]

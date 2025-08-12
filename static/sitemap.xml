@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	<url>
+		<loc>https://nathanaelj.github.io/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/Projects</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/Projects/Aircraft</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/Projects/ICLR</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/Projects/Modelling</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/Projects/Thesis</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/Projects/PhD</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/Projects/Academic</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/Projects/Academic/EPQ</loc>
+		<changefreq>yearly</changefreq>
+		<priority>0.7</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/Projects/Academic/UROP</loc>
+		<changefreq>yearly</changefreq>
+		<priority>0.7</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/Projects/Academic/GDP</loc>
+		<changefreq>yearly</changefreq>
+		<priority>0.7</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/dataviz</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/dataviz/A2</loc>
+		<changefreq>yearly</changefreq>
+		<priority>0.7</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/dataviz/A3</loc>
+		<changefreq>yearly</changefreq>
+		<priority>0.7</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/dataviz/A4</loc>
+		<changefreq>yearly</changefreq>
+		<priority>0.7</priority>
+	</url>
+
+	<url>
+		<loc>https://nathanaelj.github.io/resume</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+</urlset>
+
