@@ -9,7 +9,7 @@
         <div class="page-header fade-in-up">
             <h1>Resume</h1>
             <p></p>
-            <a href="{base}/resources-CV/NJenkins-CV.pdf" class="project-link" download>Download PDF</a>
+            <a href="{base}/resources-CV/NJenkins Resume.pdf" class="project-link" download>Download PDF</a>
         </div>
 
         <div class="resume-section fade-in-up" style="animation-delay: 0.2s;">

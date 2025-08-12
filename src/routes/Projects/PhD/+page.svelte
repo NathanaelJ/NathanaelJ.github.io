@@ -12,7 +12,7 @@
       <div class="page-header fade-in-up liquid-glass">
           <h1>PhD Research</h1>
 
-          <p>How often do planes get struck by lightning? And what happens when they do? TEXT GOES HERE<br/><br/> <!-- LINK TO MASTERS PROJECT HERE -->
+          <p>I'm developing computer simulations of lightning strikes on aircraft with a focus on rotorcraft (helicopters and their cousins). This page will be updated with more information as soon as I get around to writing it...<br/><br/> <!-- LINK TO MASTERS PROJECT HERE -->
           </p>
       </div>
 
