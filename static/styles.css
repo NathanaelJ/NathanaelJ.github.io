@@ -2552,3 +2552,111 @@ section a:hover {
     text-decoration: underline;
     color: #a31f34;
 }
+
+/* Aircraft Grid Layout */
+.aircraft-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-6);
+    margin: var(--spacing-8) 0;
+}
+
+/* Aircraft Card Styling */
+.aircraft-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.aircraft-card:hover {
+    /* Hover effects removed for less distraction */
+}
+
+.aircraft-card .image-container {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: none;
+    flex-shrink: 0;
+}
+
+.aircraft-card .image-container::before {
+    display: none;
+}
+
+.aircraft-card .image-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.aircraft-card .card-content {
+    padding: var(--spacing-6);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.aircraft-card h3 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    color: var(--color-accent);
+    margin: 0 0 var(--spacing-4) 0;
+    font-size: var(--font-size-xl);
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: var(--spacing-2);
+}
+
+.aircraft-card p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-4);
+    flex-grow: 1;
+}
+
+.aircraft-card .download-buttons {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2);
+}
+
+.aircraft-card .download-btn {
+    width: 100%;
+    text-align: center;
+    padding: var(--spacing-3) var(--spacing-4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .aircraft-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-4);
+    }
+    
+    .aircraft-card .image-container img {
+        height: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .aircraft-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

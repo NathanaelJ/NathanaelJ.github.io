@@ -2,7 +2,7 @@
   {
     "id": "F-106B",
     "name": "F-106 Delta Dart",
-    "description": "This was modeled after the F-106B Delta Dart, using open-source data.",
+    "description": "This was modeled after the F-106B Delta Dart, using open-source data. It is used in <a href='https://ieeexplore.ieee.org/document/10792439' target='_blank' rel='noreferrer noopener'>this paper.</a>",
     "downloads": {
       "step": "ModelResources/F-106B.step",
       "stl": "ModelResources/F-106B.stl",

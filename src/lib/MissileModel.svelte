@@ -7,7 +7,7 @@
   <h3 id="{missile.id}">{missile.name}</h3>
   
   {#if missile.description}
-    <p>{missile.description}</p>
+    <p>{@html missile.description}</p>
   {/if}
   
   <div class="download-buttons">
