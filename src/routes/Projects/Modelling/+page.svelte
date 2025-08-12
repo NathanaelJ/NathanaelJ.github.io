@@ -1,97 +1,33 @@
+<script>
+  import MissileModel from '$lib/MissileModel.svelte';
+  import missiles from '$lib/missiles.json';
+</script>
+
 <svelte:head>
   <title>Modelling | N Jenkins</title>
 </svelte:head>
 
-<main class="site-main">
+<main class="site-main modelling-page">
   <div class="wrapper">
-      <div class="page-header fade-in-up liquid-glass">
-          <h1>Missile Models</h1>
-          <p>To fill some of my free time over holidays, I use open-source data (predominantly photos) to create 3D-CAD models. Given manufacturers are understandably keen to keep the details about their hardware under wraps, this was an exercise in extracting data from the limited pool available online.<br/><br/></p>
-          
-          <p>All of the data relating to these models was taken from publicly available data, predominantly photos published by militaries or manufacturers. While I've done my best to create models which are as accurate as possible, some discrepancy is inevitable. Markings have been based on those found in photographs, although not all written text has been included and some text has been replaced with a relevant Bible verse.<br/><br/></p>
-          
-          <p>I'm often frustrated by high download costs for seemingly simple CAD models so want to make these models available for hobbyists for free. If using for a commercial purpose, I'd appreciate if it you could <a href="mailto:naj20@ic.ac.uk">get in contact</a> with me first.<br/><br/></p>
-          
-          <!-- <div class="nav-links liquid-glass"> -->
-              <p><a href="#AGM-88E">AGM-88E AARGM</a><br/>
-              <a href="#AIM-120">AIM-120A AMRAAM</a><br/>
-              <a href="#AIM-9X">AIM-9X Sidewinder</a><br/>
-              <a href="#Astra-Mk1">Astra-Mk1</a><br/>
-              <a href="#F-106B">F-106B Delta Dart</a></p>
-          <!-- </div> -->
-      </div>
+    <div class="page-header fade-in-up liquid-glass">
+      <h1>Missile Models</h1>
       
-      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.4s;">
-          <h3 id="AGM-88E">AGM-88E AARGM</h3>
-          <p>
-          <a href="ModelResources/AGM-88E.step" download>Download STEP</a>
-          <br/><a href="ModelResources/AGM-88E.stl" download>Download STL (Binary)</a>
-          <br/><a href="ModelResources/AGM-88E.obj" download>Download OBJ</a>
-          <br/><a href="ModelResources/AGM-88E.pdf" download>Download drawing (PDF)</a></p>
-          
-          <div class="image-container liquid-glass">
-              <img src="ModelResources/AGM-88E.png" alt="AIM-9X">
-          </div>
-          <iframe title="AGM-88E 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99fe2216d93cd2eeb4?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-      </div>
+      <p>All of the data relating to these models was taken from publicly available data, predominantly photos published by militaries or manufacturers. While I've done my best to create models which are as accurate as possible, differences are inevitable.<br/><br/></p>
       
-      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.6s;">
-          <h3 id="AIM-120">AIM-120A AMRAAM</h3>
-          <p>
-          <a href="ModelResources/AIM-120.step" download>Download STEP</a>
-          <br/><a href="ModelResources/AIM-120.stl" download>Download STL (Binary)</a>
-          <br/><a href="ModelResources/AIM-120.obj" download>Download OBJ</a>
-          <br/><a href="ModelResources/AIM-120.pdf" download>Download drawing (PDF)</a></p>
-          
-          <div class="image-container liquid-glass">
-              <img src="ModelResources/AIM-120.png" alt="AIM-120A">
-          </div>
-          <iframe title="AIM-120 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99c3d53eb532ffd487?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-      </div>
+      <p>I'm often frustrated by high download costs for seemingly simple CAD models so want to make these models available for hobbyists for free. For commercial use, please <a href="mailto:naj20@ic.ac.uk">contact me</a> first.<br/><br/></p>
       
-      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.8s;">
-          <h3 id="AIM-9X">AIM-9X Sidewinder</h3>
-          <p>The launch rail in this model is based on the design used for attachment to the F-16 (under-wing). Different geometries are used for other aircraft. This missile is sometimes mounted at the wing tips (e.g. F-18D). 3D files include the launch rail; dimensioned drawings show the missile body only.</p>
-          
-          <p><a href="ModelResources/AIM-9X.step" download>Download STEP</a>
-          <br/><a href="ModelResources/AIM-9X.stl" download>Download STL (Binary)</a>
-          <br/><a href="ModelResources/AIM-9X.obj" download>Download OBJ</a>
-          <br/><a href="ModelResources/AIM-9X.pdf" download>Download drawing (PDF)</a></p>
-          
-          <div class="image-container liquid-glass">
-              <img src="ModelResources/AIM-9X.png" alt="AIM-9X">
-          </div>
-          <iframe title="AIM-9X 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99bec7167df3224421?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-      </div>
-      
-      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 1.0s;">
-          <h3 id="Astra-Mk1">Astra-Mk1</h3>
-          <p>3D files include the launch rail; dimensioned drawings show the missile body only.</p>
-          
-          <p><a href="ModelResources/Astra.step" download>Download STEP</a>
-          <br/><a href="ModelResources/Astra.stl" download>Download STL (Binary)</a>
-          <br/><a href="ModelResources/Astra.obj" download>Download OBJ</a>
-          <br/><a href="ModelResources/Astra.pdf" download>Download drawing (PDF)</a></p>
-          
-          <div class="image-container liquid-glass">
-              <img src="ModelResources/Astra.png" alt="Astra Mk.1">
-          </div>
-          <iframe title="Astra Mk.1 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c994ef803610224a623?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-      </div>
-      
-      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 1.2s;">
-          <h3 id="F-106B">F-106B Delta Dart</h3>
-          <p>Colours and decals have not (yet) been applied to this model. The engine has been hollowed out since this model was used for fluid dynamics simulations.</p>
-          
-          <p><a href="ModelResources/F-106B.step" download>Download STEP</a>
-          <br/><a href="ModelResources/F-106B.stl" download>Download STL (Binary)</a>
-          <br/><a href="ModelResources/F-106B.obj" download>Download OBJ</a>
-          <br/><a href="ModelResources/F-106B.pdf" download>Download drawing (PDF)</a></p>
-          
-          <div class="image-container liquid-glass">
-              <img src="ModelResources/F-106B.png" alt="F-106B">
-          </div>
-          <iframe title="F-106B 3D viewer" src="https://myhub.autodesk360.com/ue2f9a509/shares/public/SHd38bfQT1fb47330c99edbd1c273b58baca?mode=embed" width="70%" height=600 style="padding-left:15%;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-      </div>
+      <p>
+        {#each missiles as missile}
+          <a href="#{missile.id}">{missile.name}</a><br/>
+        {/each}
+      </p>
+    </div>
+    
+    {#each missiles as missile, index}
+      <MissileModel 
+        {missile} 
+        animationDelay="{(index + 1) * 0.2 + 0.4}s"
+      />
+    {/each}
   </div>
 </main>

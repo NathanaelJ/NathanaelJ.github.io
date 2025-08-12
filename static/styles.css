@@ -1840,6 +1840,82 @@ html {
     box-shadow: none;
 }
 
+/* Modelling page specific styling - remove borders and shadows from images */
+.modelling-page .image-container {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: var(--spacing-6) 0;
+    box-shadow: none;
+}
+
+.modelling-page .image-container::before {
+    display: none;
+}
+
+.modelling-page .image-container img {
+    border-radius: 0;
+    transition: none;
+}
+
+.modelling-page .image-container:hover img {
+    transform: none;
+}
+
+/* Download buttons styling for missile models */
+.download-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-3);
+    margin: var(--spacing-4) 0;
+}
+
+.download-btn {
+    display: inline-block;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--border-radius);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 500;
+}
+
+.download-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(163, 31, 52, 0.05), 
+        rgba(163, 31, 52, 0.1), 
+        rgba(163, 31, 52, 0.05)
+    );
+    border-radius: var(--border-radius);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.download-btn:hover::before {
+    opacity: 1;
+}
+
+.download-btn:hover {
+    background: none;
+    color: var(--color-accent);
+    transform: translateY(-2px);
+    text-shadow: 0 2px 4px rgba(163, 31, 52, 0.2);
+    box-shadow: 0 4px 12px rgba(163, 31, 52, 0.15);
+}
+
 .pdf-container::before {
     content: '';
     position: absolute;
