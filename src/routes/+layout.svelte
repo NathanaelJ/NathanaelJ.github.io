@@ -24,7 +24,7 @@
             <div class="dropdown">
                 <a class="menu-links" href="{base}/Projects" class:current-page={routeId.includes("/Projects") || routeId.includes("dataviz")} id="projects-link">Projects</a>
                 <div class="dropdown-content">
-                    {#each projects as project}
+                    {#each projects.filter(project => project.dropdown) as project}
                         <a href="{base}/{project.link}" id="{project.title.toLowerCase().replace(/\s+/g, '-')}-link">{project.button_title}</a>
                     {/each}
                 </div>

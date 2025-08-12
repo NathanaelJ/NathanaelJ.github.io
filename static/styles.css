@@ -1768,6 +1768,26 @@ html {
     transition: none;
 }
 
+/* Video scaling within video containers */
+.video-container video {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+}
+
+.video-container figure {
+    margin: 0;
+    padding: 0;
+}
+
+.video-container figcaption {
+    margin-top: var(--spacing-3);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    font-style: italic;
+}
+
 .image-container:hover img, .video-container:hover img {
     transform: none;
 }
