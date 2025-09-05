@@ -1,3 +1,7 @@
+<script>
+  import { base } from '$app/paths';
+</script>
+
 <svelte:head>
   <title>6.C85 Assignment 2 | N Jenkins</title>
 </svelte:head>
@@ -97,12 +101,12 @@
             <figure>
                 <div style="display: flex; justify-content: center; gap: 20px;">
                     <picture>
-                        <img src="A2/1_1_Zip_Matching.png" 
+                        <img src="{base}/dataviz/A2/1_1_Zip_Matching.png" 
                              alt="Validation of neighborhood data across two datasets"
                              style="width: 100%; height: auto;">
                     </picture>
                     <picture>
-                        <img src="A2/1_2_Zip_Matching_Fixed.png" 
+                        <img src="{base}/dataviz/A2/1_2_Zip_Matching_Fixed.png" 
                              alt="Validation of neighborhood data across two datasets"
                              style="width: 100%; height: auto;">
                     </picture>
@@ -119,7 +123,7 @@
             <figure>
                 <div style="display: flex; justify-content: center;">
                     <picture>
-                        <img src="A2/1_5_Zip_Coverage.png" 
+                        <img src="{base}/dataviz/A2/1_5_Zip_Coverage.png" 
                              alt="Data Coverage by Zip Code"
                              style="width: 75%; height: auto; padding-left: 12.5%">
                     </picture>
@@ -139,7 +143,7 @@
             <figure>
                 <div style="display: flex; justify-content: center;">
                     <picture>
-                        <img src="A2/1_3_Corp_Occ.png" 
+                        <img src="{base}/dataviz/A2/1_3_Corp_Occ.png" 
                              alt="Corporate ownership and owner occupancy rates over time in Boston neighborhoods"
                              style="width: 75%; height: auto; padding-left: 12.5%">
                     </picture>
@@ -151,7 +155,7 @@
             <figure>
                 <div style="display: flex; justify-content: center;">
                     <picture>
-                        <img src="A2/1_7_Corp_Occ_Map.png" 
+                        <img src="{base}/dataviz/A2/1_7_Corp_Occ_Map.png" 
                              alt="Aver age corporate ownership and owner occupancy rates in Boston neighborhoods"
                              style="width: 75%; height: auto; padding-left: 12.5%">
                     </picture>
@@ -172,7 +176,7 @@
             <figure>
                 <div style="display: flex; justify-content: center;">
                     <picture>
-                        <img src="A2/1_6_Census.png"
+                        <img src="{base}/dataviz/A2/1_6_Census.png"
                              alt="Census demographic data by neighborhood"
                              style="width: 75%; height: auto; padding-left: 12.5%">
                     </picture>
@@ -212,7 +216,7 @@
             <figure>
                 <div style="display: flex; justify-content: center;">
                     <picture>
-                        <img src="A2/2_1_FilteredMap.png"
+                        <img src="{base}/dataviz/A2/2_1_FilteredMap.png"
                              alt="Map of property sales locations in Boston with filtered points highlighted"
                              style="width: 75%; height: auto; padding-left: 12.5%">
                     </picture>
@@ -226,7 +230,7 @@
             <div style="display: flex; justify-content: center;">
             <figure>
                 <picture>
-                    <img src="A2/2_2_MapZoomed.png"
+                    <img src="{base}/dataviz/A2/2_2_MapZoomed.png"
                          alt="Filtered map of property sales locations in Boston"
                          style="width: 75%; height: auto; padding-left: 12.5%">
                 </picture>
@@ -264,7 +268,7 @@
             <div style="display: flex; justify-content: center;">
                 <figure>
                 <picture>
-                    <img src="A2/2_3_Prices.png"
+                    <img src="{base}/dataviz/A2/2_3_Prices.png"
                          alt="Property sale prices in Boston from 2004-2024"
                          style="width: 75%; height: auto; padding-left: 12.5%">
                 </picture>
@@ -287,7 +291,7 @@
             <br/>
             <div style="display: flex; justify-content: center;">
                 <picture>
-                    <img src="A2/2_4_Age_and_Year.png"
+                    <img src="{base}/dataviz/A2/2_4_Age_and_Year.png"
                          alt="Boston property ages at time of sale, and year of sale data"
                          style="width: 100%; height: auto; padding-left: 0%">
                 </picture>
@@ -300,7 +304,7 @@
 
             <div style="display: flex; justify-content: center;">
                 <picture>
-                    <img src="A2/2_5_Intsqft.png"
+                    <img src="{base}/dataviz/A2/2_5_Intsqft.png"
                          alt="Distribution of price per square foot for property sales in Boston"
                          style="width: 75%; height: auto; padding-left: 12.5%">
                 </picture>
@@ -327,7 +331,7 @@
 
             <div style="display: flex; justify-content: center;">
                 <picture>
-                    <img src="A2/2_6_Investors.png"
+                    <img src="{base}/dataviz/A2/2_6_Investors.png"
                          alt="Identities of property buyers and sellers in Boston"
                          style="width: 75%; height: auto; padding-left: 12.5%">
                 </picture>
@@ -353,7 +357,7 @@
 
         <div style="display: flex; justify-content: center;">
             <picture>
-                <img src="A2/3_2_1.png"
+                <img src="{base}/dataviz/A2/3_2_1.png"
                         alt="Identities of property buyers and sellers in Boston"
                         style="width: 75%; height: auto; padding-left: 12.5%">
             </picture>
@@ -373,7 +377,7 @@
 
         <div style="display: flex; justify-content: center;">
             <picture>
-                <img src="A2/3_2_1_0.png"
+                <img src="{base}/dataviz/A2/3_2_1_0.png"
                         alt="Corporate ownership and white population percentages side-by-side"
                         style="width: 75%; height: auto; padding-left: 12.5%">
             </picture>
@@ -386,7 +390,7 @@
         <br/><br/>
         <div style="display: flex; justify-content: center;">
             <picture>
-                <img src="A2/3_1_2.png"
+                <img src="{base}/dataviz/A2/3_1_2.png"
                         alt="Identities of property buyers and sellers in Boston"
                         style="width: 75%; height: auto; padding-left: 12.5%">
             </picture>
@@ -445,7 +449,7 @@
         <br/><br/>
         <div style="display: flex; justify-content: center;">
             <picture>
-                <img src="A2/3_3_0.png"
+                <img src="{base}/dataviz/A2/3_3_0.png"
                         alt="New-build property sales separated by price"
                         style="width: 75%; height: auto; padding-left: 12.5%">
             </picture>
@@ -459,7 +463,7 @@
         <br/><br/>
         <div style="display: flex; justify-content: center;">
             <picture>
-                <img src="A2/3_3_1.png"
+                <img src="{base}/dataviz/A2/3_3_1.png"
                         alt="New-build property sales separated by residence type"
                         style="width: 75%; height: auto; padding-left: 12.5%">
             </picture>
@@ -471,7 +475,7 @@
         <br/><br/>
         <div style="display: flex; justify-content: center;">
             <picture>
-                <img src="A2/3_3_2.png"
+                <img src="{base}/dataviz/A2/3_3_2.png"
                         alt="Proportion of total property sales each year that were less than two years old, and the subset that are not primary residences."
                         style="width: 75%; height: auto; padding-left: 12.5%">
             </picture>
@@ -483,7 +487,7 @@
         <br/><br/>
         <div style="display: flex; justify-content: center;">
             <picture>
-                <img src="A2/3_3_3.png"
+                <img src="{base}/dataviz/A2/3_3_3.png"
                         alt="Map of newly built property sales in Boston, separated by percieved value"
                         style="width: 75%; height: auto; padding-left: 12.5%">
             </picture>
@@ -524,7 +528,7 @@
         <br/><br/>
         <div style="display: flex; justify-content: center;">
             <picture>
-                <img src="A2/3_4_1.png"
+                <img src="{base}/dataviz/A2/3_4_1.png"
                         alt="Average sales price per sqft and average annual value per sqft over time (2000-2023), split by investor-type purchases, with different plots for data including or excluding investor-investor sales."
                         style="width: 75%; height: auto; padding-left: 12.5%">
             </picture>

@@ -1,3 +1,7 @@
+<script>
+  import { base } from '$app/paths';
+</script>
+
 <svelte:head>
   <title>Rocketry | N Jenkins</title>
 </svelte:head>
@@ -37,7 +41,7 @@
         <p>This is a family of test-bed rockets used to verify systems in preparation for record-breaking flights. Three successful flights took place during my tenure, testing progressively more advanced systems. The family has continued to be used for increasingly complex test flights.</p>
         
         <div class="image-container liquid-glass">
-            <img src="ICLRResources/ASTRA.png" alt="ASTRA Family">
+            <img src="{base}/Projects/ICLRResources/ASTRA.png" alt="ASTRA Family">
         </div>
     </div>
 
@@ -48,7 +52,7 @@
         <p><b>APEX I</b> reached 9333ft (3845m) with a single motor, breaking the previous record of 9199ft. It travelled at supersonic speeds (Mach 1.55) thanks to its highly optimised design.</p>
         
         <div class="image-container liquid-glass">
-            <img src="ICLRResources/APEXI.png" alt="APEX I">
+            <img src="{base}/Projects/ICLRResources/APEXI.png" alt="APEX I">
         </div>
     </div>
   </div>

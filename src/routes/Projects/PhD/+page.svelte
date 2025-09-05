@@ -21,7 +21,7 @@
 
         <p>About 90% of aircraft lightning strikes are initiated by the aircraft. The lightning channel grows from sharp protrusions on the aircraft until it reaches clouds and the ground, at which point a powerful 'return stroke' occurs. In less than a millisecond, the high current in the return stroke heats the lightning channel to more than 30,000ºc (hotter than the surface of the sun)! The sudden heating makes the air expand, making the sound of thunder. The aircraft continues to fly through the lightning channel, which is swept along the surface, in a phenomenon known as the swept stroke. Additional return strokes occur during the swept stroke, leaving a distinctive pattern of damage over the aircraft surface.</p>
         <div class="image-container liquid-glass">
-          <img src="PhDResources/Strike_Mech.png" alt="Aircraft Lightning Strike Mechanism">
+          <img src="{base}/Projects/PhDResources/Strike_Mech.png" alt="Aircraft Lightning Strike Mechanism">
         </div>
 
         <p>Lightning strikes cause two kinds of damage to aircraft: (1) direct effects, and (2) indirect effects. Direct effects are caused by the intense heat and pressure of the lightning channel which can burn holes in the aircraft surface, ignite flammable materials, and has even been known to vaporise internal wiring. Indirect effects are caused by the intense electromagnetic fields around a lightning channel, which can disable or even destroy internal electronics. Lightning protection systems must prevent both kinds of damage.</p>
@@ -35,7 +35,7 @@
         <p>As of 2025, we have developed computational methods for simulating the initiation and swept stroke phases of lightning strikes. Our simulation tools produce zoning diagrams which are the industry standard for deciding which components of an aircraft are the most (and least) vulnerable to lightning strikes. This allows engineers to safely optimize the lightning protection system so that it is safe, but not excessive. The process is visualized in the diagram below.</p>
 
         <div class="image-container liquid-glass">
-          <img src="PhDResources/Workflow_Ani.gif" alt="Simulation-Based Zoning Workflow">
+          <img src="{base}/Projects/PhDResources/Workflow_Ani.gif" alt="Simulation-Based Zoning Workflow">
         </div>
 
         <p>Watch this space for future updates...</p>

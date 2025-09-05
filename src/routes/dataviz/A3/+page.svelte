@@ -1,3 +1,7 @@
+<script>
+  import { base } from '$app/paths';
+</script>
+
 <svelte:head>
   <title>6.C85 Assignment 3 | N Jenkins</title>
 </svelte:head>
@@ -38,7 +42,7 @@
       <h3>Visualization Critique</h3>
           <!-- ORIGINAL IMAGE -->
           <picture>
-              <img src="A3/1_Original.png" 
+              <img src="{base}/dataviz/A3/1_Original.png" 
                       alt="Original visualization of the COVID spiral"
                       style="width: 40%; height: auto; margin: auto; display:block; min-width: 300px;">
           </picture>
@@ -78,7 +82,7 @@
           <section id="S1" class="content-box"> <!--    SKETCH 1    -->
           <h5>Sketch 1: Similar Format, Subtle Changes</h5>
               <picture>
-                  <img src="A3/2_Sketch1.png" 
+                  <img src="{base}/dataviz/A3/2_Sketch1.png" 
                           alt="Sketch of an redesigned visualization"
                           style="width: 60%; height: auto; margin: auto; display:block; min-width: 300px;">
               </picture>
@@ -113,7 +117,7 @@
           <section id="S2" class="content-box"> <!--    SKETCH 2    -->
               <h5>Sketch 2: Similar Encoding, Virus-Shapes Visualization</h5>
                   <picture>
-                      <img src="A3/2_Sketch2.png" 
+                      <img src="{base}/dataviz/A3/2_Sketch2.png" 
                               alt="Sketch of an redesigned visualization"
                               style="width: 60%; height: auto; margin: auto; display:block; min-width: 300px;">
                   </picture>
@@ -149,7 +153,7 @@
           <section id="S3" class="content-box"> <!--    SKETCH 3    -->
               <h5>Sketch 3: More conventional encoding</h5>
                   <picture>
-                      <img src="A3/2_Sketch3.png" 
+                      <img src="{base}/dataviz/A3/2_Sketch3.png" 
                               alt="Sketch of an redesigned visualization"
                               style="width: 60%; height: auto; margin: auto; display:block; min-width: 300px;">
                   </picture>
@@ -192,7 +196,7 @@
       <section id="viz" class="dataviz-section">
           <h3>Redesign: Final Visualization</h3>
           <picture>
-              <img src="A3/3_FinalViz.jpg" 
+              <img src="{base}/dataviz/A3/3_FinalViz.jpg" 
                       alt="Rendering of an redesigned visualization"
                       style="width: 100%; height: auto; margin: auto; display:block; min-width: 300px;">
           </picture>

@@ -1,3 +1,7 @@
+<script>
+  import { base } from '$app/paths';
+</script>
+
 <svelte:head>
   <title>6.C85 Assignment 4 | N Jenkins</title>
 </svelte:head>
@@ -39,19 +43,19 @@
                 <h5>Visualization Supporting the Proposition</h5>
                 <figure>
                     <picture>
-                        <img src="A4/Against.jpg" 
+                        <img src="{base}/dataviz/A4/Against.jpg" 
                                 alt="Visualization supporting the proposition"
                                 style="width: 100%; height: auto; margin: auto; display:block; min-width: 300px;">
                     </picture>
                     <br/>
                     <picture>
-                        <img src="A4/Against_2.jpg" 
+                        <img src="{base}/dataviz/A4/Against_2.jpg" 
                                 alt="Visualization supporting the proposition"
                                 style="width: 100%; height: auto; margin: auto; display:block; min-width: 300px;">
                     </picture>
                     <br/>
                     <picture>
-                        <img src="A4/Against_3.gif" 
+                        <img src="{base}/dataviz/A4/Against_3.gif" 
                                 alt="Visualization supporting the proposition"
                                 style="width: 100%; height: auto; margin: auto; display:block; min-width: 300px;">
                     </picture>
@@ -85,19 +89,19 @@
                 <h5>Visualization Against the Proposition</h5>
                     <figure>
                         <picture>
-                            <img src="A4/For.jpg" 
+                            <img src="{base}/dataviz/A4/For.jpg" 
                                     alt="Visualization against the proposition"
                                     style="width: 100%; height: auto; margin: auto; display:block; min-width: 300px;">
                         </picture>
                         <br/>
                         <picture>
-                            <img src="A4/For_2.jpg" 
+                            <img src="{base}/dataviz/A4/For_2.jpg" 
                                     alt="Visualization against the proposition"
                                     style="width: 60%; height: auto; margin: auto; display:block; min-width: 300px;">
                         </picture>
                         <br/>
                         <picture>
-                            <img src="A4/For_3.gif" 
+                            <img src="{base}/dataviz/A4/For_3.gif" 
                                     alt="Visualization against the proposition"
                                     style="width: 75%; height: auto; margin: auto; display:block; min-width: 300px;">
                         </picture>
