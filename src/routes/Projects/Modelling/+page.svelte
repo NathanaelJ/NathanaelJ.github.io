@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   import MissileModel from '$lib/MissileModel.svelte';
   import missiles from '$lib/missiles.json';
 </script>

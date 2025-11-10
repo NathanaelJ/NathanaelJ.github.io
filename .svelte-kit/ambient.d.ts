@@ -38,6 +38,7 @@ declare module '$env/static/private' {
 	export const CONDA_SHLVL: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const CONDA_PROMPT_MODIFIER: string;
+	export const GSETTINGS_SCHEMA_DIR_CONDA_BACKUP: string;
 	export const CURSOR_TRACE_ID: string;
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
 	export const MallocNanoZone: string;
@@ -52,6 +53,7 @@ declare module '$env/static/private' {
 	export const __CF_USER_TEXT_ENCODING: string;
 	export const npm_execpath: string;
 	export const PATH: string;
+	export const GSETTINGS_SCHEMA_DIR: string;
 	export const npm_package_json: string;
 	export const npm_config_engine_strict: string;
 	export const _: string;
@@ -87,6 +89,7 @@ declare module '$env/static/private' {
 	export const GIT_ASKPASS: string;
 	export const INFOPATH: string;
 	export const HOMEBREW_CELLAR: string;
+	export const OSLogRateLimit: string;
 	export const APG: string;
 	export const npm_node_execpath: string;
 	export const npm_config_prefix: string;
@@ -133,6 +136,7 @@ declare module '$env/dynamic/private' {
 		CONDA_SHLVL: string;
 		TERM_PROGRAM_VERSION: string;
 		CONDA_PROMPT_MODIFIER: string;
+		GSETTINGS_SCHEMA_DIR_CONDA_BACKUP: string;
 		CURSOR_TRACE_ID: string;
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
 		MallocNanoZone: string;
@@ -147,6 +151,7 @@ declare module '$env/dynamic/private' {
 		__CF_USER_TEXT_ENCODING: string;
 		npm_execpath: string;
 		PATH: string;
+		GSETTINGS_SCHEMA_DIR: string;
 		npm_package_json: string;
 		npm_config_engine_strict: string;
 		_: string;
@@ -182,6 +187,7 @@ declare module '$env/dynamic/private' {
 		GIT_ASKPASS: string;
 		INFOPATH: string;
 		HOMEBREW_CELLAR: string;
+		OSLogRateLimit: string;
 		APG: string;
 		npm_node_execpath: string;
 		npm_config_prefix: string;
