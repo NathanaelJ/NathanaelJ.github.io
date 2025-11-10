@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   export let missile;
   export let animationDelay = "0s";
 </script>
@@ -18,6 +19,6 @@
   </div>
   
   <div class="image-container liquid-glass">
-    <img src="{missile.image}" alt="{missile.alt}">
+    <img src='{base}/Projects/{missile.image}' alt="{missile.alt}">
   </div>
 </div>

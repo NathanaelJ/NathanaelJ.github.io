@@ -1,11 +1,12 @@
 <script>
+  import { base } from '$app/paths';
   export let aircraft;
   export let animationDelay = "0s";
 </script>
 
 <div class="aircraft-card fade-in-up" style="animation-delay: {animationDelay};">
   <div class="image-container liquid-glass">
-    <img src="{aircraft.image}" alt="{aircraft.alt}">
+    <img src='{base}/Projects/{aircraft.image}' alt="{aircraft.alt}">
   </div>
   
   <div class="card-content">
