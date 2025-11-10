@@ -46,7 +46,7 @@
 
           <p>▸ Jenkins N A, Michael L, Westin B A, Guerra-Garcia C. Oct 2025. <b>A Physics-Based Approach to Aircraft Lightning Zoning: Zone 2</b> IEEE Access, Vol 13. DOI: <a href="https://doi.org/10.1109/ACCESS.2025.3628197" target="_blank" rel="noreferrer noopener">10.1109/ACCESS.2025.3628197</a></p>
 
-          <p>▸ Jenkins N A. Oct 2025. <b>Physical Interpretation of Swept Stroke Data (Supplementary Document)</b> Supplementary to '<i>A Physics-Based Approach to Aircraft Lightning Zoning: Zone 2</i>'. Available at: <a href="PhDResources/IEEE_Suppl.pdf" target="_blank" rel="noreferrer noopener">nathanaelj.github.io/Projects/PhDResources/IEEE_Suppl.pdf</a></p>
+          <p>▸ Jenkins N A. Oct 2025. <b>Physical Interpretation of Swept Stroke Data (Supplementary Document)</b> Supplementary to '<i>A Physics-Based Approach to Aircraft Lightning Zoning: Zone 2</i>'. Available at: <a href="https://nathanaelj.github.io/Projects/PhDResources/IEEE_Suppl.pdf" target="_blank" rel="noreferrer noopener">nathanaelj.github.io/Projects/PhDResources/IEEE_Suppl.pdf</a></p>
 
           <p>▸ Jenkins N, Michael L, Westin B, Guerra-Garcia C. Jul 2025. <b>Mapping of Swept Stroke Physical-Quantities to Zoning Diagrams.</b> EUROCAE WG-31 <a href="https://www.eurocae.net/aircraft-lightning-zoning-workshop/" target="_blank" rel="noreferrer noopener">Zoning Workshop</a>. Paris, France.</p>
 
