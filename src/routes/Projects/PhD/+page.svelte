@@ -12,7 +12,7 @@
       <div class="page-header fade-in-up liquid-glass">
           <h1>PhD Research</h1>
 
-          <p>On average, one aircraft is struck by lightning every 20 minutes. <b>This project is working towards an improved understanding of aircraft-lightning physics, and the development of reliable engineering methods for protecting aircraft of the future from lightning hazards.</b><br/>
+          <p>On average, one aircraft is struck by lightning every 20 minutes. This project is working towards an improved understanding of aircraft-lightning physics, and the development of reliable engineering methods for protecting aircraft of the future from lightning hazards.<br/>
           </p>
       </div>
 
@@ -47,6 +47,8 @@
           <p>▸ Jenkins N A, Michael L, Westin B A, Guerra-Garcia C. Oct 2025. <b>A Physics-Based Approach to Aircraft Lightning Zoning: Zone 2</b> IEEE Access, Vol 13. DOI: <a href="https://doi.org/10.1109/ACCESS.2025.3628197" target="_blank" rel="noreferrer noopener">10.1109/ACCESS.2025.3628197</a></p>
 
           <p>▸ Jenkins N A. Oct 2025. <b>Physical Interpretation of Swept Stroke Data (Supplementary Document)</b> Supplementary to '<i>A Physics-Based Approach to Aircraft Lightning Zoning: Zone 2</i>'. Available at: <a href="https://nathanaelj.github.io/Projects/PhDResources/IEEE_Suppl.pdf" target="_blank" rel="noreferrer noopener">nathanaelj.github.io/Projects/PhDResources/IEEE_Suppl.pdf</a></p>
+
+          <p>▸ Jenkins N, Guerra-Garcia C. Oct 2025. <b>Recent Progress in Zoning by Simulation.</b> <a href="https://standardsworks.sae.org/standards-committees/ae-2-lightning-committee" target="_blank" rel="noreferrer noopener">SAE AE-2</a> Committee Meeting. Pittsburgh, Pennsylvania.</p>
 
           <p>▸ Jenkins N, Michael L, Westin B, Guerra-Garcia C. Jul 2025. <b>Mapping of Swept Stroke Physical-Quantities to Zoning Diagrams.</b> EUROCAE WG-31 <a href="https://www.eurocae.net/aircraft-lightning-zoning-workshop/" target="_blank" rel="noreferrer noopener">Zoning Workshop</a>. Paris, France.</p>
 
