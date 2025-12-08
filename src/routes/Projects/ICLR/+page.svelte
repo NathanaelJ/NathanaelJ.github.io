@@ -19,10 +19,10 @@
         <h3>Flight videos</h3>
         
         <div class="download-buttons" style="margin-bottom: 0px;">
-            <a href="ICLRResources/ASTRA.mp4" target="_blank" rel="noreferrer noopener" class="download-btn liquid-glass">ASTRA Mk.I, 11.04.2021 (EARS event)</a>
-            <a href="ICLRResources/ASTRA2.mp4" target="_blank" rel="noreferrer noopener" class="download-btn liquid-glass">ASTRA Mk.II, 13.06.2021 (EARS event)</a>
-            <a href="ICLRResources/APEX.mp4" target="_blank" rel="noreferrer noopener" class="download-btn liquid-glass">APEX I, 03.07.2022 (Supported by SARA)</a>
-            <a href="ICLRResources/ASTRA3.mp4" target="_blank" rel="noreferrer noopener" class="download-btn liquid-glass">ASTRA Mk.III, 10.07.2022 (MRC event)</a>
+            <a href="{base}/ProjectsICLRResources/ASTRA.mp4" target="_blank" rel="noreferrer noopener" class="download-btn liquid-glass">ASTRA Mk.I, 11.04.2021 (EARS event)</a>
+            <a href="{base}/ProjectsICLRResources/ASTRA2.mp4" target="_blank" rel="noreferrer noopener" class="download-btn liquid-glass">ASTRA Mk.II, 13.06.2021 (EARS event)</a>
+            <a href="{base}/ProjectsICLRResources/APEX.mp4" target="_blank" rel="noreferrer noopener" class="download-btn liquid-glass">APEX I, 03.07.2022 (Supported by SARA)</a>
+            <a href="{base}/ProjectsICLRResources/ASTRA3.mp4" target="_blank" rel="noreferrer noopener" class="download-btn liquid-glass">ASTRA Mk.III, 10.07.2022 (MRC event)</a>
         </div>
     </div>
 
