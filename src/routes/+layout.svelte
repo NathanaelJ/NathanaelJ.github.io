@@ -4,23 +4,22 @@
     import projects from '$lib/projects.json';
 
     $: routeId = $page?.route?.id || '';
-
-    // Used for google tag
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', 'G-PKWKKGM4TW');
 </script>
 
 <svelte:head>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
     </style>
-</svelte:head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PKWKKGM4TW"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKWKKGM4TW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PKWKKGM4TW');
+    </script>
+</svelte:head>
 
 <header class="site-header">
     <div class="wrapper">
