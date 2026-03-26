@@ -12,9 +12,10 @@
       <div class="page-header fade-in-up liquid-glass">
           <h1>Hypersonic Computational Fluid Dynamics</h1>
           
-          <p>Summer term in the 3rd year of an Aeronautics degree at Imperial brings the infamous (maybe even notorious) 'Group Design Project'. I was tasked with performing an aerodynamic analysis on rocket nosecone designs. You can read the report below, or <a href="{base}/Projects/AcademicResources/GDP_Report.pdf">click to download.</a><br/><br/></p>
+          <p>For my 3rd year 'Group Design Project', I was tasked with performing an aerodynamic analysis on rocket nosecone designs. Read the full report below.<br/><br/></p>
+          <a href="{base}/Projects/AcademicResources/GDP_Report.pdf" class="project-link" download>Download PDF</a>
           
-          <p>As well as conducting the aerodynamic analysis, I used <a href="https://www.blender.org" target="_blank" rel="noreferrer noopener">Blender</a> and <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noreferrer noopener">Davinci Resolve</a> to create a short animation for our group presentations.</p>
+          <p><br/>I also used <a href="https://www.blender.org" target="_blank" rel="noreferrer noopener">Blender</a> and <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noreferrer noopener">Davinci Resolve</a> to create a short animation for our group presentations.</p>
 
           <div class="video-container" style="margin-bottom: 0px;">
             <!-- svelte-ignore a11y-media-has-caption -->

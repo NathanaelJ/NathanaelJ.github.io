@@ -12,7 +12,8 @@
       <div class="page-header fade-in-up liquid-glass">
           <h1>Ion Propulsion</h1>
 
-          <p>Alongside A-Level studies, I conducted a research project in electric propulsion, exploring the question, 'is ion propulsion the future of space and air travel?'. While ion propulsion currently powers many unmanned spacecraft, it has not yet been made viable for atmospheric vehicles. This is a result of the way in which it generates thrust being extremely efficient but incredibly weak. You can read the detailed report below, or <a href="{base}/Projects/AcademicResources/EPQ.pdf" download>download the report.</a></p>
+          <p>Alongside A-Level studies, I conducted an 'Extended Project Qualification' (EPQ) exploring ion propulsion for air and space travel. While ion propulsion is popular on unmanned spacecraft, it has not yet been made viable for atmospheric vehicles as it cannot generate high magnitudes of thrust. Read the full report below.<br/><br/></p>
+          <a href="{base}/Projects/AcademicResources/EPQ.pdf" class="project-link" download>Download PDF</a>
         </div>
 
           <div class="pdf-container">

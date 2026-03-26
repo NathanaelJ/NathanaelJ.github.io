@@ -15,14 +15,14 @@
     <div class="page-header fade-in-up liquid-glass">
       <h1>Aircraft Models</h1>
       
-      <p>I created these concept-level aircraft models to support my <a href="{base}/Projects/PhD">PhD</a> research. They are <b>not</b> representative of any single, existing aircraft, making them easier to publish and share.<br/><br/></p>
+      <p>I created these concept-level aircraft models to support my <a href="{base}/Projects/PhD">PhD</a> research.<br/>Free to use for non-commercial purposes.</p>
       
-      <p>
+      <!-- <p>
         {#each aircraft as plane}
           <a href="#{plane.id}">{plane.name}</a><br/>
         {/each}
         <a href="#F-106B">F-106B Delta Dart</a>
-      </p>
+      </p> -->
     </div>
     
     <div class="aircraft-grid">

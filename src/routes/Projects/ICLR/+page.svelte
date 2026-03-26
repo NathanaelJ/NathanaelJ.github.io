@@ -38,7 +38,7 @@
       
     <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.4s;">
         <h3>ASTRA</h3>
-        <p>This is a family of test-bed rockets used to verify systems in preparation for record-breaking flights. Three successful flights took place during my tenure, testing progressively more advanced systems. The family has continued to be used for increasingly complex test flights.</p>
+        <p>This is a family of test-bed rockets used to verify systems in preparation for record-breaking flights. Three successful flights took place during my tenure, testing progressively more advanced systems.</p>
         
         <div class="image-container liquid-glass">
             <img src="{base}/Projects/ICLRResources/ASTRA.png" alt="ASTRA Family">
@@ -49,7 +49,7 @@
         <h3>APEX</h3>
         <p>The APEX family of rockets are designed to break UKRA altitude records for various motor classes. Rocket motors are classified based on their total impulse (essentially a measure of the 'amount of push' they provide). The ICLR Altitude Record Team now holds the record for an I-Class rocket as of 2024.</p>
         
-        <p><b>APEX I</b> reached 9333ft (3845m) with a single motor, breaking the previous record of 9199ft. It travelled at supersonic speeds (Mach 1.55) thanks to its highly optimised design.</p>
+        <p><b>APEX I</b> reached 9333ft (3845m) with a single motor, breaking the previous record of 9199ft.</p>
         
         <div class="image-container liquid-glass">
             <img src="{base}/Projects/ICLRResources/APEXI.png" alt="APEX I">

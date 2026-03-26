@@ -12,11 +12,14 @@
       <div class="page-header fade-in-up liquid-glass">
           <h1>PhD Research</h1>
 
-          <p>On average, one aircraft is struck by lightning every 20 minutes. This project is working towards an improved understanding of aircraft-lightning physics, and the development of reliable engineering methods for protecting aircraft of the future from lightning hazards.<br/>
+          <p>On average, an aircraft is struck by lightning somewhere in the world every 20 minutes. This project is working towards an improved understanding of aircraft-lightning physics, and the development of reliable engineering methods for protecting aircraft of the future from lightning hazards.<br/>
+          <a href="https://doi.org/10.1109/ACCESS.2025.3628197" target="_blank" rel="noreferrer noopener">Check out my latest publication.</a>
           </p>
+
+          <p><br/>More coming soon, watch this space...</p>
       </div>
 
-      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.6s;">
+      <!-- <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.6s;">
         <h3>Aircraft Lightning Strikes</h3>
 
         <p>Approximately 90% of aircraft lightning strikes are 'aircraft triggered'. In less than a millisecond, the high current in the return stroke heats the lightning channel to more than 30,000ºc (hotter than the surface of the sun)! The sudden heating makes the air expand, making the sound of thunder. The aircraft continues to fly through the lightning channel, which is swept along the surface, in a phenomenon known as the swept stroke. Additional return strokes occur during the swept stroke, leaving a distinctive pattern of damage over the aircraft surface.</p>
@@ -27,9 +30,9 @@
         <p>Lightning strikes cause two kinds of damage to aircraft. (1) Direct effects are caused by the intense heat and pressure of the lightning channel which can burn holes in the aircraft surface, ignite flammable materials, and has even been known to vaporise internal wiring. (2) Indirect effects are caused by the intense electromagnetic fields around a lightning channel, which can disable or even destroy internal electronics.</p>
 
         <p>Rotorcraft are particularly vulnerable to lightning strikes, and particularly difficult to protect. A single lightning strike has been known to damage to all 5 rotor blades of a helicopter. Our research is working to better understand where damage is most likely to occur on these complex aircraft geometries.</p>
-      </div>
+      </div> -->
 
-      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.6s;">
+      <!-- <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.6s;">
         <h3>Research Progress</h3>
 
         <p>Our simulation tools produce zoning diagrams which are the industry standard for deciding which components of an aircraft are the most (and least) vulnerable to lightning strikes. This allows engineers to safely optimize the lightning protection system so that it is safe, but not excessive.</p>
@@ -39,7 +42,7 @@
         </div>
 
         <p>Watch this space...</p>
-      </div>
+      </div> -->
 
       <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.6s;">
           <h3>Conferences and Publications</h3>
