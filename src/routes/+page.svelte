@@ -12,10 +12,11 @@
         <div class="intro-text">
             <h1>Hi there!</h1>
             <p>I'm Nathanael, a PhD candidate in Aeronautics and Astronautics at the <a href="https://www.mit.edu" target="_blank" rel="noreferrer noopener">Massachusetts Institute of Technology</a>. Welcome to my little space on the web.</p>
+            <p><i>I'm working on some updates to this site, so please excuse the mess...</i></p>
         </div>
     </div>
 
-    <div class="intro-container fade-in-up" style="animation-delay: 0.2s;">
+    <!-- <div class="intro-container fade-in-up" style="animation-delay: 0.2s;">
         <div class="intro-text">
             <p>I'm researching multi-physics simulations for aircraft lightning protection. Find out more <a href="{base}/Projects/PhD">here</a>.</p>
         </div>
@@ -23,10 +24,10 @@
             <img src="/resources-General/CFD_Dark.gif" class="introimg" alt="Animated Taylor-Green vortex">
             <figcaption>DNS of a Taylor-Green vortex using <a href="https://www.incompact3d.com" target="_blank" rel="noopener">Incompact3D</a></figcaption>
         </figure>
-    </div>
+    </div> -->
 
     <div style="text-align: center; margin: var(--spacing-16) 0;">
-        <p style="margin-bottom: var(--spacing-6);">Feel free to reach out about my research</p>
+        <p style="margin-bottom: var(--spacing-6);">Feel free to reach out.</p>
         <a href="mailto:naj20@mit.edu" class="apple-button" style="text-decoration: none;">naj20@mit.edu</a>
     </div>
 </main>

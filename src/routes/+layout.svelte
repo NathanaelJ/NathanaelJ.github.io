@@ -54,6 +54,7 @@
     <nav class="social-links-container">
         <a class="social-links" href="https://www.linkedin.com/in/n-jenkins/" target="_blank" rel="noreferrer noopener"><img class="logo" src="/resources-General/In.png" alt="LinkedIn"/> LinkedIn</a>
         <a class="social-links" href="https://github.com/NathanaelJ" target="_blank" rel="noreferrer noopener"><img class="logo" src="/resources-General/Git.png" alt="GitHub"/> GitHub</a>
+        <a class="social-links" href="https://orcid.org/0009-0005-1155-9314" target="_blank" rel="noreferrer noopener"><img class="logo" src="/resources-General/Orcid.png" alt="ORCID"/> ORCID</a>
     </nav>
 
     <div class="footer-right">
