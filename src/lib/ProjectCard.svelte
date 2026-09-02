@@ -11,17 +11,17 @@
 </script>
 
 <article class="project-card">
-    <img src={data.img} alt="Project Thumbnail" class="project-image"/>
-    <div class="project-content">
-        <svelte:element this={"h" + hLevel}>{data.title}</svelte:element>
-        <h3>{data.subtitle}</h3>
-        <p>{data.year}</p>
-        <p>{data.description}</p>
-        <a href={projectLink} 
-           class="project-link" 
-           target={isExternal ? "_blank" : undefined}
-           rel={isExternal ? "noopener noreferrer" : undefined}>
-            View Project {#if isExternal}<span class="external-link-icon">⇱</span>{/if}
-        </a>
-    </div>
+    <a href={projectLink} 
+            target={isExternal ? "_blank" : undefined}
+            rel={isExternal ? "noopener noreferrer" : undefined}>
+        <img src={data.img} alt="Project Thumbnail" class="project-image"/>
+        <div class="project-content">
+            <div class="position-line">
+                <svelte:element this={"h" + hLevel}>{data.title}</svelte:element>
+                <span class="date-range">{data.year}</span>
+            </div>
+            <h3>{data.subtitle}</h3>
+            <!-- <p>{data.description}</p> -->
+        </div>
+    </a>
 </article>

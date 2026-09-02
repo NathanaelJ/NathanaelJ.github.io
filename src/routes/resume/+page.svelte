@@ -48,48 +48,48 @@
             <ul class="resume-list">
                 <li>
                     <div class="position-line">
-                        <span class="position">Student Partner</span>
+                        <span class="position"><a href="https://www.giant.vc/" target="_blank" rel="noreferrer noopener">Giant Ventures</a></span>
                         <span class="date-range">10/2024 - </span>
                     </div>
-                    <div class="institution"><a href="https://www.giant.vc/" target="_blank" rel="noreferrer noopener">Giant Ventures</a>, London (UK)</div>
-                    <div class="description">Identifying and referring exceptional ventures to a global firm focused on technology, health, and climate</div>
+                    <div class="institution">Student Partner, London (UK)</div>
+                    <div class="description">▸  Identifying and referring exceptional ventures to a global firm focused on technology, health, and climate</div>
                 </li>
                 <li>
                     <div class="position-line">
-                        <span class="position">Graduate Student, Aeronautics and Astronautics</span>
+                        <span class="position"><a href="https://aeroastro.mit.edu/" target="_blank" rel="noreferrer noopener">Massachusetts Institute of Technology (MIT)</a></span>
                         <span class="date-range">08/2024 - </span>
                     </div>
-                    <div class="institution"><a href="https://aeroastro.mit.edu/" target="_blank" rel="noreferrer noopener">MIT Department of Aeronautics and Astronautics</a>, Cambridge (USA)</div>
-                    <div class="description">Developing physics-based simulation tools for lightning strikes to aircraft and wind turbines</div>
-                    <div class="description">Collaborate with industry partners through conferences and participation in international standards committees</div>
+                    <div class="institution">Graduate Student, Aeronautics and Astronautics, Cambridge (USA)</div>
+                    <div class="description">▸ Developing physics-based simulation tools for lightning strikes to aircraft and wind turbines</div>
+                    <div class="description">▸ Collaborate with industry partners through conferences and participation in international standards committees</div>
                 </li>
                 <li>
                     <div class="position-line">
-                        <span class="position">Summer Intern, Simulation & Modeling</span>
+                        <span class="position"><a href="https://www.mbdainc.com" target="_blank" rel="noreferrer noopener">MBDA Missile Systems</a></span>
                         <span class="date-range">06/2022 - 08/2022</span>
                     </div>
-                    <div class="institution"><a href="https://www.mbdainc.com" target="_blank" rel="noreferrer noopener">MBDA Missile Systems</a>, Stevenage (UK)</div>
-                    <div class="description">Evaluated and implemented an alternative programming paradigm in a high-fidelity dynamic model</div>
-                    <div class="description">Identified a solution to a long-term project which protected company IP while meeting client requirements</div>
-                    <div class="description">Verified change sets, utilizing more than 2,000 core-hours on an industrial high-performance cluster</div>
+                    <div class="institution">Summer Intern, Simulation & Modeling, Stevenage (UK)</div>
+                    <div class="description">▸ Evaluated and implemented an alternative programming paradigm in a high-fidelity dynamic model</div>
+                    <div class="description">▸ Identified a solution to a long-term project which protected company IP while meeting client requirements</div>
+                    <div class="description">▸ Verified change sets, utilizing more than 2,000 core-hours on an industrial high-performance cluster</div>
                 </li>
                 <li>
                     <div class="position-line">
-                        <span class="position">Undergraduate Researcher (UROP) </span>
+                        <span class="position"><a href="https://www.imperial.ac.uk/aeronautics/" target="_blank" rel="noreferrer noopener">Imperial College London</a></span>
                         <span class="date-range">06/2021 - 08/2021</span>
                     </div>
-                    <div class="institution"><a href="https://www.imperial.ac.uk/aeronautics/" target="_blank" rel="noreferrer noopener">Imperial College London</a>, Dr Sylvain Laizet (Supervisor)</div>
-                    <div class="description">Implemented and profiled a novel C++ framework for high-performance heterogeneous computing</div>
+                    <div class="institution">Undergraduate Researcher (UROP), Dr Sylvain Laizet (Supervisor)</div>
+                    <div class="description">▸ Implemented and profiled a novel C++ framework for high-performance heterogeneous computing</div>
                 </li>
                 <li>
                     <div class="position-line">
-                        <span class="position">Lead Aerodynamics and Simulations Engineer </span>
+                        <span class="position"><a href="https://imperialrocketry.com" target="_blank" rel="noreferrer noopener">Imperial College London Rocketry</a></span>
                         <span class="date-range">10/2020 - 08/2023</span>
                     </div>
-                    <div class="institution"><a href="https://imperialrocketry.com" target="_blank" rel="noreferrer noopener">Imperial College London Rocketry</a>, Altitude Record Team</div>
-                    <div class="description">Conducted computational fluid dynamics (CFD) studies on high-powered supersonic rockets using StarCCM+</div>
-                    <div class="description">Negotiated sponsorship with ESTECO, acquiring licenses to modeFrontier optimization software</div>
-                    <div class="description">Integrated modeFrontier into engineering workflows, increasing rocket altitude by 3% and breaking a UK record</div>
+                    <div class="institution">Lead Aerodynamics and Simulations Engineer, Altitude Record Team</div>
+                    <div class="description">▸ Conducted computational fluid dynamics (CFD) studies on high-powered supersonic rockets using StarCCM+</div>
+                    <div class="description">▸ Negotiated sponsorship with ESTECO, acquiring licenses to modeFrontier optimization software</div>
+                    <div class="description">▸ Integrated modeFrontier into engineering workflows, increasing rocket altitude by 3% and breaking a UK record</div>
                 </li>
             </ul>
         </div>

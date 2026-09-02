@@ -126,7 +126,8 @@ body {
 
 a {
     color: var(--color-text-primary);
-    text-underline-offset: 0.18em;
+    text-decoration: none;
+    /* text-underline-offset: 0.18em; */
 }
 
 /* Neutralize legacy glass / liquid treatments */
@@ -226,7 +227,7 @@ a {
     transform: none;
     text-shadow: none;
     /* text-decoration: underline; */
-    text-underline-offset: 0.12em;
+    /* text-underline-offset: 0.12em; */
 }
 
 .subtitle {
@@ -638,7 +639,7 @@ p {
 
 .project-content a:not(.project-link) {
     color: var(--color-text-primary);
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight: 500;
 }
 
@@ -1039,6 +1040,10 @@ figcaption {
     background: none;
     border: none;
     border-bottom: 1px solid var(--color-border);
+}
+
+.resume-list a {
+    text-decoration: none;
 }
 
 .resume-list li:last-child {
