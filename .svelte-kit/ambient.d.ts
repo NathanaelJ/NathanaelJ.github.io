@@ -90,6 +90,7 @@ declare module '$env/static/private' {
 	export const INFOPATH: string;
 	export const HOMEBREW_CELLAR: string;
 	export const OSLogRateLimit: string;
+	export const SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS: string;
 	export const APG: string;
 	export const npm_node_execpath: string;
 	export const npm_config_prefix: string;
@@ -188,6 +189,7 @@ declare module '$env/dynamic/private' {
 		INFOPATH: string;
 		HOMEBREW_CELLAR: string;
 		OSLogRateLimit: string;
+		SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS: string;
 		APG: string;
 		npm_node_execpath: string;
 		npm_config_prefix: string;

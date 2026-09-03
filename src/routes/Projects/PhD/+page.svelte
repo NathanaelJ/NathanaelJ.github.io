@@ -16,7 +16,7 @@
           <a href="https://doi.org/10.1109/ACCESS.2025.3628197" target="_blank" rel="noreferrer noopener">Check out my latest publication.</a>
           </p>
 
-          <p><br/>More coming soon, watch this space...</p>
+          <p>More coming soon, watch this space...</p>
       </div>
 
       <!-- <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.6s;">

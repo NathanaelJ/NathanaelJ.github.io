@@ -13,9 +13,9 @@
     <div class="page-header fade-in-up liquid-glass">
       <h1>Missile Models</h1>
       
-      <p>All of the data relating to these models was taken from publicly available data, predominantly photos published by militaries or manufacturers. Dimensions are approximate.<br/><br/></p>
+      <p>All of the data relating to these models was taken from publicly available data, predominantly photos published by militaries or manufacturers. Dimensions are approximate.<br/></p>
       
-      <p>Free to hobbyists. For commercial use, please <a href="mailto:naj20@mit.edu">contact me</a> first.<br/><br/></p>
+      <p>Free to hobbyists. For commercial use, please <a href="mailto:naj20@mit.edu">contact me</a> first.<br/></p>
       
       <p>
         {#each missiles as missile}

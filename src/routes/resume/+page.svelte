@@ -21,7 +21,7 @@
                         <span class="date-range">2024 - </span>
                     </div>
                     <div class="institution"><a href="https://aeroastro.mit.edu/" target="_blank" rel="noreferrer noopener">Massachusetts Institute of Technology</a></div>
-                    <div class="description">Simulating aircraft lightning strikes in the Aerospace Plasma Group.</div>
+                    <div class="description">▸ Simulating aircraft lightning strikes in the Aerospace Plasma Group.</div>
                 </li>
                 <li>
                     <div class="position-line">
@@ -29,8 +29,8 @@
                         <span class="date-range">2020 - 2024</span>
                     </div>
                     <div class="institution"><a href="https://www.imperial.ac.uk/aeronautics/" target="_blank" rel="noreferrer noopener">Imperial College London</a>, Massachusetts Institute of Technology (final year)</div>
-                    <div class="description">Overall grade: 80% (GPA 5.0). Awarded the BAE Systems Prize for the best individual research project.</div>
-                    <div class="description">Sponsored by the Institution of Mechanical Engineers (IMechE) 'James Clayton' Undergraduate Scholarship</div>
+                    <div class="description">▸ Overall grade: 80% (GPA 5.0). Awarded the BAE Systems Prize for the best individual research project.</div>
+                    <div class="description">▸ Sponsored by the Institution of Mechanical Engineers (IMechE) 'James Clayton' Undergraduate Scholarship</div>
                 </li>
                 <li>
                     <div class="position-line">
@@ -38,7 +38,7 @@
                         <span class="date-range">2018 - 2020</span>
                     </div>
                     <div class="institution"><a href="https://www.psc.ac.uk/" target="_blank" rel="noreferrer noopener">Peter Symonds' College</a>, Winchester</div>
-                    <div class="description">Authored a grade A* extended project qualification on the future of ion propulsion for air and space transport</div>
+                    <div class="description">▸ Authored a grade A* extended project qualification on the future of ion propulsion for air and space transport</div>
                 </li>
             </ul>
         </div>

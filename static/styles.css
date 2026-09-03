@@ -126,8 +126,8 @@ body {
 
 a {
     color: var(--color-text-primary);
-    text-decoration: none;
-    /* text-underline-offset: 0.18em; */
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
 }
 
 /* Neutralize legacy glass / liquid treatments */
@@ -179,7 +179,7 @@ a {
 
 .site-main {
     padding-top: var(--spacing-12);
-    padding-bottom: var(--spacing-16);
+    /* padding-bottom: var(--spacing-16); */
     min-height: 60vh;
 }
 
@@ -284,6 +284,8 @@ a {
 
 .dropdown {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .dropdown-content {
@@ -567,6 +569,11 @@ p {
     border-left: 1px solid var(--color-text-primary);
 }
 
+.project-card a,
+.project-card a:hover {
+    text-decoration: none;
+}
+
 .project-card {
     background: var(--color-background);
     border: none;
@@ -804,8 +811,8 @@ p {
 .page-header {
     background: transparent;
     border: none;
-    padding: 0 0 var(--spacing-8);
-    margin-bottom: var(--spacing-8);
+    padding: 0 0 var(--spacing-4);
+    margin-bottom: var(--spacing-4);
     /* border-bottom: 1px solid var(--color-text-primary); */
     box-shadow: none;
     overflow: visible;
@@ -850,7 +857,7 @@ p {
     border: none;
     box-shadow: none;
     padding: 0;
-    margin: 0 0 var(--spacing-12);
+    margin: 0 0 var(--spacing-8);
     overflow: visible;
     position: relative;
 }
@@ -1411,7 +1418,7 @@ section h6 {
     height: 220px;
     object-fit: cover;
     display: block;
-    border: 1px solid var(--color-text-primary);
+    /* border: 1px solid var(--color-text-primary); */
     filter: grayscale(0.1) sepia(0.15);
 }
 
@@ -1557,10 +1564,10 @@ section h6 {
         font-size: var(--font-size-2xl);
     }
 
-    .page-header {
-        padding-bottom: var(--spacing-6);
-        margin-bottom: var(--spacing-6);
-    }
+    /* .page-header { */
+        /* padding-bottom: var(--spacing-6); */
+        /* margin-bottom: var(--spacing-6); */
+    /* } */
 
     .page-header h1 {
         font-size: var(--font-size-3xl);

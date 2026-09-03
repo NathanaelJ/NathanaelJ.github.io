@@ -19,13 +19,13 @@
 "dropdown":true
 },
 
-{"title":"Data Visualizations",
-"button_title":"Data Visualization",
-"year":"2024",
-"img":"/Thumbnails/Hollowvale.png",
-"subtitle":"6.C85: Interactive Data Visualisation and Society",
-"description":"MIT class work using interactive data visualization to analyse the Boston housing market.",
-"link":"dataviz",
+{"title":"Snooze Spiral",
+"button_title":"Snooze Spiral",
+"year":"2026",
+"img":"/Thumbnails/Snooze.png",
+"subtitle":"Sleep data visualization demo",
+"description":"",
+"link":"SnoozeSpiral",
 "dropdown":false
 },
 
