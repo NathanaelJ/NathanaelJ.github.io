@@ -1,0 +1,42 @@
+[
+    {
+      "title": "A Physics-Based Approach to Aircraft Lightning Zoning: Zone 2",
+      "button_title": "A Physics-Based Approach to Aircraft Lightning Zoning: Zone 2",
+      "year": "2025",
+      "img": "/Projects/PhDResources/Thumbnails/IEEE_Z2.png",
+      "subtitle": "IEEE Access, Vol 13",
+      "description": "A Physics-Based Approach to Aircraft Lightning Zoning: Zone 2",
+      "link": "external:https://doi.org/10.1109/ACCESS.2025.3628197",
+      "dropdown": false
+    },
+    {
+      "title": "Physical Interpretation of Swept Stroke Data",
+      "button_title": "Physical Interpretation of Swept Stroke Data",
+      "year": "2025",
+      "img": "/Projects/PhDResources/Thumbnails/Suppl.png",
+      "subtitle": "Supplementary to 'A Physics-Based Approach to Aircraft Lightning Zoning: Zone 2'",
+      "description": "Physical Interpretation of Swept Stroke Data (Supplementary Document)",
+      "link": "external:https://nathanaelj.github.io/Projects/PhDResources/IEEE_Suppl.pdf",
+      "dropdown": false
+    },
+    {
+      "title": "Numerical Simulation of the Lightning Swept Stroke: Application to the Results from the NASA Storm Hazards Program",
+      "button_title": "Numerical Simulation of the Lightning Swept Stroke",
+      "year": "2024",
+      "img": "/Projects/PhDResources/Thumbnails/IEEE_SHP.png",
+      "subtitle": "IEEE Access, Vol 12",
+      "description": "Numerical Simulation of the Lightning Swept Stroke: Application to the Results from the NASA Storm Hazards Program.",
+      "link": "external:https://doi.org/10.1109/ACCESS.2024.3515833",
+      "dropdown": false
+    },
+    {
+      "title": "Physics-Based Zoning of Unconventional Aircraft: The Swept Stroke Phase (Zenodo)",
+      "button_title": "Physics-Based Zoning (Zenodo)",
+      "year": "2024",
+      "img": "/Projects/PhDResources/Thumbnails/ICOLSE.png",
+      "subtitle": "International Conference On Lightning and Static Electricity (ICOLSE). Campinas, Brazil.",
+      "description": "Physics-Based Zoning of Unconventional Aircraft: The Swept Stroke Phase.",
+      "link": "external:https://zenodo.org/records/13838314",
+      "dropdown": false
+    }
+  ]
