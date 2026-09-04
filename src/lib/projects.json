@@ -1,7 +1,7 @@
 [
 {"title":"PhD Research",
 "button_title":"PhD Research",
-"year":"2025",
+"year":"♾️",
 "img":"/Thumbnails/PhD.png",
 "subtitle":"Physics-based simulations of aircraft lightning strikes",
 "description":"Developing tools for aircraft lightning protection design.",
@@ -9,24 +9,24 @@
 "dropdown":true
 },
 
-{"title":"Aircraft Models",
-"button_title":"Aircraft Models",
-"year":"2025",
-"img":"/Thumbnails/Aircraft.png",
-"subtitle":"CAD models of various aircraft",
-"description":"CAD models of generic aircraft for use in PhD research.",
-"link":"Projects/Aircraft",
-"dropdown":true
-},
-
 {"title":"Snooze Spiral",
 "button_title":"Snooze Spiral",
 "year":"2026",
 "img":"/Thumbnails/Snooze.png",
-"subtitle":"Sleep data visualization demo",
+"subtitle":"Sleep data visualization | Harvard CS271",
 "description":"",
-"link":"external:https://nathanaelj.github.io/SnoozeSpiral",
+"link":"Projects/Academic/SnoozeSpiral",
 "dropdown":false
+},
+
+{"title":"Aircraft Models",
+"button_title":"Aircraft Models",
+"year":"2025",
+"img":"/Thumbnails/Aircraft.png",
+"subtitle":"Generic aircraft CAD models",
+"description":"CAD models of generic aircraft for use in PhD research.",
+"link":"Projects/Aircraft",
+"dropdown":true
 },
 
 {"title":"Masters Thesis",
@@ -53,7 +53,7 @@
 "button_title":"ICL Rocketry",
 "year":"2023",
 "img":"/Thumbnails/ASTRA.png",
-"subtitle":"Altitude Record Team",
+"subtitle":"Altitude Record Team | Aerodynamics and Simulations Lead",
 "description":"Contributions to ICLR reacord-breaking attempts as Aerodynamics and Simulations team lead.",
 "link":"Projects/ICLR",
 "dropdown":true
