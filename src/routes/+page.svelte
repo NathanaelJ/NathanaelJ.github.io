@@ -12,7 +12,6 @@
         <div class="intro-text">
             <h1>Hi there!</h1>
             <p>I'm Nathanael, a PhD candidate in Aeronautics and Astronautics at the <a href="https://www.mit.edu" target="_blank" rel="noreferrer noopener">Massachusetts Institute of Technology</a>. Welcome to my little space on the web.</p>
-            <p><i>I'm working on some updates to this site, so please excuse the mess...</i></p>
         </div>
     </div>
 

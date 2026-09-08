@@ -40,7 +40,7 @@
                     <a href="{base}/Projects" class="dropdown-view-all">All Projects</a>
                 </div>
             </div>
-            <a href="{base}/resume" class="menu-links" class:current-page={routeId.includes("/resume")} id="resume-link">Resume</a>
+            <a href="{base}/CV" class="menu-links" class:current-page={routeId.includes("/CV")} id="resume-link">CV</a>
         </nav>
     </div>
     <hr class="rule">

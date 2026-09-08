@@ -1,0 +1,280 @@
+<script>import { base } from '$app/paths';</script>
+
+<svelte:head>
+  <title>CV | N Jenkins</title>
+</svelte:head>
+
+<main class="site-main">
+    <div class="wrapper">
+        <div class="page-header fade-in-up">
+            <h1>Curriculum Vitae</h1>
+            <a href="{base}/resources-CV/NJenkins CV.pdf" class="project-link" download>Download PDF</a> <a href="mailto:naj20@mit.edu" class="project-link">Contact me</a>
+        </div>
+
+        <div class="resume-section fade-in-up" style="animation-delay: 0.2s;">
+            <h5>Education</h5>
+            <ul class="resume-list">
+                <li>
+                    <div class="position-line">
+                        <span class="position">PhD in Aeronautics and Astronautics (Ongoing)</span>
+                        <span class="date-range">2024 -</span>
+                    </div>
+                    <div class="institution"><a href="https://aeroastro.mit.edu/" target="_blank" rel="noreferrer noopener">Massachusetts Institute of Technology</a></div>
+                    <div class="description">▸ Major: Plasma and Lightning Physics | Minor: Data Visualization</div>
+                    <div class="description">▸ MIT Outing Club Vice President, Graduate Christian Fellowship Treasurer, MIT Veritas Forum lead</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position">MEng Aeronautical Engineering with a Year Abroad (1st class honors)</span>
+                        <span class="date-range">2020 - 2024</span>
+                    </div>
+                    <div class="institution"><a href="https://www.imperial.ac.uk/aeronautics/" target="_blank" rel="noreferrer noopener">Imperial College London</a>, Massachusetts Institute of Technology (final year)</div>
+                    <div class="description">▸ Overall grade: 80% (GPA 5.0). Awarded the BAE Systems Prize for the best individual research project</div>
+                    <div class="description">▸ Sponsored by the Institution of Mechanical Engineers (IMechE) 'James Clayton' Undergraduate Scholarship</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position">A-Levels in Maths, Further Maths, Physics, Product Design (A*, A*, A*, A*)</span>
+                        <span class="date-range">2018 - 2020</span>
+                    </div>
+                    <div class="institution"><a href="https://www.psc.ac.uk/" target="_blank" rel="noreferrer noopener">Peter Symonds' College</a></div>
+                    <div class="description">▸ Authored a grade A* Extended Project Qualification on ion propulsion for air and space transport</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="resume-section fade-in-up" style="animation-delay: 0.4s;">
+            <h5>Experience</h5>
+            <ul class="resume-list">
+                <li>
+                    <div class="position-line">
+                        <span class="position">The Boeing Company</span>
+                        <span class="date-range">05/2026 - 08/2026</span>
+                    </div>
+                    <div class="institution">Graduate Researcher, Engineering & Technology Innovation</div>
+                    <div class="description">▸ Created a new model-based systems engineering tool for aircraft lightning protection</div>
+                    <div class="description">▸ Designed, executed, and evaluated an experimental campaign to evaluate novel material properties</div>
+                    <div class="description">▸ Delivered tools and results to stakeholders across the enterprise</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position"><a href="https://aeroastro.mit.edu/" target="_blank" rel="noreferrer noopener">Massachusetts Institute of Technology</a></span>
+                        <span class="date-range">09/2024 -</span>
+                    </div>
+                    <div class="institution">Graduate Student, Aeronautics and Astronautics</div>
+                    <div class="description">▸ Developed physics-based simulation tools for aircraft lightning protection</div>
+                    <div class="description">▸ Collaborated with industry partners through conferences and international standards committees</div>
+                    <div class="description">▸ Drove model validation using flight test data and high-fidelity computational electromagnetic aerodynamics</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position">Massachusetts Institute of Technology</span>
+                        <span class="date-range">09/2024 -</span>
+                    </div>
+                    <div class="institution">Graduate Resident Advisor, New Vassar</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position"><a href="https://www.giant.vc/" target="_blank" rel="noreferrer noopener">Giant Ventures</a></span>
+                        <span class="date-range">09/2024 -</span>
+                    </div>
+                    <div class="institution">Student Partner</div>
+                    <div class="description">▸ Identifying and referring exceptional ventures to a global firm focused on technology, health, and climate</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position"><a href="https://www.mbdainc.com" target="_blank" rel="noreferrer noopener">MBDA Missile Systems</a></span>
+                        <span class="date-range">06/2022 - 08/2022</span>
+                    </div>
+                    <div class="institution">Summer Intern, Simulation & Modeling</div>
+                    <div class="description">▸ Evaluated and implemented an alternative programming paradigm in a high-fidelity dynamic model</div>
+                    <div class="description">▸ Identified a solution to a long-term project which protected company IP while meeting client requirements</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position"><a href="https://www.imperial.ac.uk/aeronautics/" target="_blank" rel="noreferrer noopener">Imperial College London</a></span>
+                        <span class="date-range">06/2021 - 08/2021</span>
+                    </div>
+                    <div class="institution">Undergraduate Researcher (UROP), Dr Sylvain Laizet (Supervisor)</div>
+                    <div class="description">▸ Implemented and profiled a novel C++ framework for high-performance heterogeneous computing</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position">The Food Warehouse</span>
+                        <span class="date-range">03/2020 - 01/2021</span>
+                    </div>
+                    <div class="institution">Duty Manager</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position"><a href="https://imperialrocketry.com" target="_blank" rel="noreferrer noopener">Imperial College London Rocketry</a></span>
+                        <span class="date-range">10/2020 - 08/2023</span>
+                    </div>
+                    <div class="institution">Lead Aerodynamics and Simulations Engineer, Altitude Record Team</div>
+                    <div class="description">▸ Conducted computational fluid dynamics (CFD) studies on high-powered supersonic rockets using StarCCM+</div>
+                    <div class="description">▸ Negotiated sponsorship with ESTECO, acquiring licenses to modeFrontier optimization software</div>
+                    <div class="description">▸ Integrated modeFrontier into engineering workflows, increasing rocket altitude by 3% and breaking a UK record</div>
+                </li>
+                <li>
+                    <div class="position-line">
+                        <span class="position">F1inSchools (STEM Racing) Alumnus, Judge, and Event Volunteer</span>
+                        <span class="date-range">09/2017 - 07/2021</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="resume-section fade-in-up" style="animation-delay: 0.6s;">
+            <h5>📄 Publications & 🎤 Presentations</h5>
+            <ul class="resume-list-tight">
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">International Conference on Lightning and Static Electricity (ICOLSE) 2026</span>
+                        <span class="date-range">10/2026</span>
+                    </div>
+                    <div class="institution">📄🎤 An End-to-End Simulation-Based Workflow for Zoning | Charleston, SC</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">Future Leaders in Aerospace Symposium</span>
+                        <span class="date-range">05/2026</span>
+                    </div>
+                    <div class="institution">🎤 Aircraft Lightning Protection: Zoning by Simulation | Boulder, CO</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">MIT-Boeing Annual Review</span>
+                        <span class="date-range">05/2026</span>
+                    </div>
+                    <div class="institution">🎤 Aircraft-Scale Modeling of Lightning Phenomena: Zoning by Simulation | Boston, MA</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">A Physics-Based Approach to Aircraft Lightning Zoning: Zone 2</span>
+                        <span class="date-range">10/2025</span>
+                    </div>
+                    <div class="institution">📄 IEEE Access, vol. 13, doi: 10.1109/ACCESS.2024.3515833</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">SAE AE-2 Committee Meeting</span>
+                        <span class="date-range">10/2025</span>
+                    </div>
+                    <div class="institution">🎤 Recent Progress in Zoning by Simulation | Pittsburgh, PA</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">EUROCAE WG 31 Zoning Workshop</span>
+                        <span class="date-range">07/2025</span>
+                    </div>
+                    <div class="institution">📄🎤 Mapping of Swept Stroke Physical-Quantities to Zoning Diagrams | Paris, France</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">MIT-Boeing Annual Review</span>
+                        <span class="date-range">04/2025</span>
+                    </div>
+                    <div class="institution">🎤 A Numerical Model for the Zoning of Unconventional Aircraft: The Swept Stroke Phase | Boston, MA</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">Numerical Simulation of the Lightning Swept Stroke</span>
+                        <span class="date-range">12/2024</span>
+                    </div>
+                    <div class="institution">📄 IEEE Access, vol. 12, doi: 10.1109/ACCESS.2025.3628197</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">SAE AE-2 Committee Meeting</span>
+                        <span class="date-range">10/2024</span>
+                    </div>
+                    <div class="institution">🎤 Development and Validation of Numerical Models for Lightning Zoning Assessment | Cape Canaveral, FL</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">International Conference on Lightning and Static Electricity (ICOLSE) 2024</span>
+                        <span class="date-range">09/2024</span>
+                    </div>
+                    <div class="institution">📄🎤 Physics-Based Zoning of Unconventional Aircraft: The Swept Stroke Phase | Campinas, Brazil</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">Masters Thesis</span>
+                        <span class="date-range">06/2024</span>
+                    </div>
+                    <div class="institution">📄 Numerical Simulation of the Lightning Swept Stroke for the Zoning of Unconventional Aircraft | London, UK</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">MIT-Boeing Annual Review</span>
+                        <span class="date-range">04/2024</span>
+                    </div>
+                    <div class="institution">🎤 The Lightning Swept Stroke: A Numerical Model for the Zoning of Unconventional Aircraft | Boston, MA</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="resume-section fade-in-up" style="animation-delay: 0.8s;">
+            <h5>Awards</h5>
+            <ul class="resume-list-tight">
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">Mathworks Engineering Fellowship</span>
+                        <span class="date-range">2025, 2026</span>
+                    </div>
+                    <div class="institution">Mathworks Inc.</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">Graduate Fellowship</span>
+                        <span class="date-range">2024</span>
+                    </div>
+                    <div class="institution">MIT School of Engineering</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">Engineering Simulation Techniques: Outstanding Undergraduate Project Award (2nd prize)</span>
+                        <span class="date-range">2024</span>
+                    </div>
+                    <div class="institution">NAFEMS and the Institution of Mechanical Engineers</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">BAE Systems Prize</span>
+                        <span class="date-range">2024</span>
+                    </div>
+                    <div class="institution">Imperial College Dept. of Aeronautics, best individual research project</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">Aeronautics Scholar</span>
+                        <span class="date-range">2022</span>
+                    </div>
+                    <div class="institution">Imperial College Dept. of Aeronautics</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">Dean's List</span>
+                        <span class="date-range">2021 - 2024</span>
+                    </div>
+                    <div class="institution">Imperial College Dept. of Aeronautics, top 10% of cohort</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">James Clayton Undergraduate Scholarship</span>
+                        <span class="date-range">2020 - 2024</span>
+                    </div>
+                    <div class="institution">Institution of Mechanical Engineers</div>
+                </li>
+                <li>
+                    <div class="position-line-tight">
+                        <span class="position">Arkwright Scholar</span>
+                        <span class="date-range">2018</span>
+                    </div>
+                    <div class="institution">The Smallpeice Trust</div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</main>

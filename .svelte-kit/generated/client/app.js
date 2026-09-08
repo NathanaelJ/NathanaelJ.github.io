@@ -28,22 +28,22 @@ export const server_loads = [];
 export const dictionary = {
 		"/": [2],
 		"/404": [3],
-		"/Projects": [4],
-		"/Projects/Academic": [5],
-		"/Projects/Academic/EPQ": [6],
-		"/Projects/Academic/GDP": [7],
-		"/Projects/Academic/SnoozeSpiral": [8],
-		"/Projects/Academic/UROP": [9],
-		"/Projects/Aircraft": [10],
-		"/Projects/ICLR": [11],
-		"/Projects/Modelling": [12],
-		"/Projects/PhD": [13],
-		"/Projects/Thesis": [14],
-		"/dataviz": [15],
-		"/dataviz/A2": [16],
-		"/dataviz/A3": [17],
-		"/dataviz/A4": [18],
-		"/resume": [19]
+		"/CV": [4],
+		"/Projects": [5],
+		"/Projects/Academic": [6],
+		"/Projects/Academic/EPQ": [7],
+		"/Projects/Academic/GDP": [8],
+		"/Projects/Academic/SnoozeSpiral": [9],
+		"/Projects/Academic/UROP": [10],
+		"/Projects/Aircraft": [11],
+		"/Projects/ICLR": [12],
+		"/Projects/Modelling": [13],
+		"/Projects/PhD": [14],
+		"/Projects/Thesis": [15],
+		"/dataviz": [16],
+		"/dataviz/A2": [17],
+		"/dataviz/A3": [18],
+		"/dataviz/A4": [19]
 	};
 
 export const hooks = {

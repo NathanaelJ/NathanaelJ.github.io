@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/Projects/Academic/EPQ/+page.svelte";
+export { default as component } from "../../../../src/routes/Projects/Academic/+page.svelte";
