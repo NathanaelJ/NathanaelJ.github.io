@@ -1,0 +1,9 @@
+import { c as create_ssr_component, e as escape } from "../../../../../chunks/ssr.js";
+import { b as base } from "../../../../../chunks/paths.js";
+const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  const today = (/* @__PURE__ */ new Date()).toLocaleDateString();
+  return `${$$result.head += `<!-- HEAD_svelte-14qth9k_START -->${$$result.title = `<title>GPU Parallelisation of 2D Navier-Stokes Solver | N Jenkins</title>`, ""}<!-- HEAD_svelte-14qth9k_END -->`, ""} <main class="site-main"><div class="wrapper"><div class="page-header fade-in-up liquid-glass"><h1 data-svelte-h="svelte-n2kor0">GPU Parallelisation of a 2D Navier-Stokes Solver</h1> <p data-svelte-h="svelte-s7mlqy">For an undergraduate research opportunity (UROP) with Prof. Sylvain Laizet, I evaluated the performance of <a href="https://github.com/illuhad/hipSYCL" target="_blank" rel="noreferrer noopener">hipSYCL</a>, a high-performance heterogeneous computing framework, for CFD codes.<br></p> <div class="citation-section"><p data-svelte-h="svelte-hqa0fs">Please cite this project:</p> <p>Jenkins, N. (2021). <i data-svelte-h="svelte-k0mgvk">GPU Parallelisation of a 2D Navier-Stokes Solver</i> [pdf] London: Imperial College London. Available at: http://nathanaelj.github.io/Projects/AcademicResources/UROP_Report.pdf [Accessed: ${escape(today)}]</p></div> <a href="${escape(base, true) + "/Projects/AcademicResources/UROP_Report.pdf"}" class="project-link" download data-svelte-h="svelte-1aj24ii">Download PDF</a></div> <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.2s;" data-svelte-h="svelte-rsheb3"><div class="pdf-container" style="margin-bottom: 0px; margin-top: 0px;"><iframe class="pdf-viewer" title="UROP Report" src="${escape(base, true) + "/Projects/AcademicResources/UROP_Report.pdf"}"></iframe></div></div></div></main>`;
+});
+export {
+  Page as default
+};

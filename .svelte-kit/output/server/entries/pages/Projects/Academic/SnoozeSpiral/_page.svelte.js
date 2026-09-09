@@ -1,0 +1,9 @@
+import { c as create_ssr_component, e as escape } from "../../../../../chunks/ssr.js";
+import { b as base } from "../../../../../chunks/paths.js";
+const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  const today = (/* @__PURE__ */ new Date()).toLocaleDateString();
+  return `${$$result.head += `<!-- HEAD_svelte-bxzb4s_START -->${$$result.title = `<title>SnoozeSpiral | N Jenkins</title>`, ""}<!-- HEAD_svelte-bxzb4s_END -->`, ""} <main class="site-main"><div class="wrapper"><div class="page-header fade-in-up liquid-glass"><h1 data-svelte-h="svelte-1tcjzap">Data Visualization: Snooze Spiral</h1> <p data-svelte-h="svelte-1tgsn62">This is a final project from <a href="https://cs-271.github.io" target="_blank" rel="noreferrer noopener">CS271: Topics in Data Visualization</a> at Harvard University, that I produced in collaboration with <a href="https://www.tejaswi.net" target="_blank" rel="noreferrer noopener">Tejaswi Polimetla</a>.<br></p> <div class="citation-section"><p data-svelte-h="svelte-hqa0fs">Please cite this project:</p> <p>Polimetla, T. and Jenkins, N. (2026). <i data-svelte-h="svelte-1yoykgj">Snooze Spiral: A Visualization for Cyclical Sleep Tracking</i> [pdf] Harvard University. Cambridge, USA. Available at: http://nathanaelj.github.io/Projects/AcademicResources/SnoozeSpiral.pdf [Accessed: ${escape(today)}]</p></div> <a href="${escape(base, true) + "/Projects/AcademicResources/SnoozeSpiral.pdf"}" class="project-link" download data-svelte-h="svelte-2md4w8">Download PDF</a> <a href="https://nathanaelj.github.io/SnoozeSpiral" class="project-link" target="_blank" rel="noreferrer noopener" data-svelte-h="svelte-1gbba85">View Demo ⇱</a></div> <div class="pdf-container" data-svelte-h="svelte-jt8lre"><iframe class="pdf-viewer" title="Snooze Spiral paper" src="${escape(base, true) + "/Projects/AcademicResources/SnoozeSpiral.pdf"}"></iframe></div></div></main>`;
+});
+export {
+  Page as default
+};
