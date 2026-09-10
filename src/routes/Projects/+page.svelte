@@ -12,7 +12,7 @@
 
 <main class="site-main">
     <div class="wrapper">
-        <div class="page-header fade-in-up">
+        <div class="page-header ">
             <h1>Portfolio</h1>
             <p>Explore my recent projects and research work.</p>
         </div>

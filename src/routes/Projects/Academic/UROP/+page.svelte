@@ -9,7 +9,7 @@
 
 <main class="site-main">
   <div class="wrapper">
-      <div class="page-header fade-in-up liquid-glass">
+      <div class="page-header  ">
           <h1>GPU Parallelisation of a 2D Navier-Stokes Solver</h1>
 
           <p>For an undergraduate research opportunity (UROP) with Prof. Sylvain Laizet, I evaluated the performance of <a href="https://github.com/illuhad/hipSYCL" target="_blank" rel="noreferrer noopener">hipSYCL</a>, a high-performance heterogeneous computing framework, for CFD codes.<br/></p>
@@ -21,7 +21,7 @@
           <a href="{base}/Projects/AcademicResources/UROP_Report.pdf" class="project-link" download>Download PDF</a>
         </div>
 
-        <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.2s;">
+        <div class="project-section  " style="animation-delay: 0.2s;">
           <div class="pdf-container" style="margin-bottom: 0px; margin-top: 0px;">
               <iframe class="pdf-viewer" title="UROP Report" src="{base}/Projects/AcademicResources/UROP_Report.pdf"></iframe>
           </div>

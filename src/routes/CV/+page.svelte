@@ -6,12 +6,12 @@
 
 <main class="site-main">
     <div class="wrapper">
-        <div class="page-header fade-in-up">
+        <div class="page-header ">
             <h1>Curriculum Vitae</h1>
             <a href="{base}/resources-CV/NJenkins CV.pdf" class="project-link" download>Download PDF</a> <a href="mailto:naj20@mit.edu" class="project-link">Contact me</a>
         </div>
 
-        <div class="resume-section fade-in-up" style="animation-delay: 0.2s;">
+        <div class="resume-section " style="animation-delay: 0.2s;">
             <h5>Education</h5>
             <ul class="resume-list">
                 <li>
@@ -43,7 +43,7 @@
             </ul>
         </div>
 
-        <div class="resume-section fade-in-up" style="animation-delay: 0.4s;">
+        <div class="resume-section " style="animation-delay: 0.4s;">
             <h5>Experience</h5>
             <ul class="resume-list">
                 <li>
@@ -124,7 +124,7 @@
             </ul>
         </div>
 
-        <div class="resume-section fade-in-up" style="animation-delay: 0.6s;">
+        <div class="resume-section " style="animation-delay: 0.6s;">
             <h5>📄 Publications & 🎤 Presentations</h5>
             <ul class="resume-list-tight">
                 <li>
@@ -214,7 +214,7 @@
             </ul>
         </div>
 
-        <div class="resume-section fade-in-up" style="animation-delay: 0.8s;">
+        <div class="resume-section " style="animation-delay: 0.8s;">
             <h5>Awards</h5>
             <ul class="resume-list-tight">
                 <li>

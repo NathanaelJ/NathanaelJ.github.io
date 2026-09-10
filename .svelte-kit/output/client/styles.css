@@ -134,7 +134,7 @@ a {
 .glass-card,
 .glass-button,
 .glass-effect,
-.liquid-glass,
+.,
 .card-elevated,
 .professional-card {
     background: transparent;
@@ -148,13 +148,13 @@ a {
 
 .glass-card::before,
 .glass-button::before,
-.liquid-glass::before,
+.::before,
 .professional-card::before {
     display: none;
 }
 
 .glass-card:hover,
-.liquid-glass:hover,
+.:hover,
 .professional-card:hover,
 .card-elevated:hover {
     transform: none;
@@ -1530,7 +1530,7 @@ section h6 {
     margin: var(--spacing-8) 0;
 }
 
-.fade-in-up,
+.,
 .float-animation,
 .pulse-animation {
     animation: none;

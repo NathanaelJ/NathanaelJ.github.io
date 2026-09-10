@@ -9,11 +9,11 @@
 
 <main class="site-main">
   <div class="wrapper">
-      <div class="page-header fade-in-up liquid-glass">
+      <div class="page-header  ">
           <h1>Hypersonic Computational Fluid Dynamics</h1>
           
           <p>For my 3rd year 'Group Design Project', I was tasked with performing an aerodynamic analysis on rocket nosecone designs. I also created a short animation for our group presentations.<br/></p>
-          <div class="citation-section fade-in-up liquid-glass" style="animation-delay: 0.8s;">
+          <div class="citation-section  " style="animation-delay: 0.8s;">
             <p>Please cite this project:</p>
             <p>Jenkins, N. (2023). <i>SpaceHAVEN: Aerothermodynamic Analysis of a Hypersonic Rocket Nosecone.</i> [pdf] London: Imperial College London. Available at: http://nathanaelj.github.io/Projects/AcademicResources/GDP_Report.pdf [Accessed: {today}]</p>
           </div>
@@ -32,7 +32,7 @@
           </div>
       </div>
       
-      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.4s;">          
+      <div class="project-section  " style="animation-delay: 0.4s;">          
           <div class="pdf-container">
               <iframe class="pdf-viewer" title="Group Design Project Report" src="{base}/Projects/AcademicResources/GDP_Report.pdf"></iframe>
           </div>

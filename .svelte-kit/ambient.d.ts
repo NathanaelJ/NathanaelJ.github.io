@@ -26,6 +26,7 @@
  * ```
  */
 declare module '$env/static/private' {
+	export const PARLEY_API_KEY: string;
 	export const VSCODE_GIT_IPC_AUTH_TOKEN: string;
 	export const TERM_PROGRAM: string;
 	export const NODE: string;
@@ -125,6 +126,7 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		PARLEY_API_KEY: string;
 		VSCODE_GIT_IPC_AUTH_TOKEN: string;
 		TERM_PROGRAM: string;
 		NODE: string;

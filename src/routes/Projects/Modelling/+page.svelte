@@ -10,7 +10,7 @@
 
 <main class="site-main modelling-page">
   <div class="wrapper">
-    <div class="page-header fade-in-up liquid-glass">
+    <div class="page-header  ">
       <h1>Missile Models</h1>
       
       <p>All of the data relating to these models was taken from publicly available data, predominantly photos published by militaries or manufacturers. Dimensions are approximate.<br/></p>

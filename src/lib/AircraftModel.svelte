@@ -4,8 +4,8 @@
   export let animationDelay = "0s";
 </script>
 
-<div class="aircraft-card fade-in-up" style="animation-delay: {animationDelay};">
-  <div class="image-container liquid-glass">
+<div class="aircraft-card " style="animation-delay: {animationDelay};">
+  <div class="image-container ">
     <img src='{base}/Projects/{aircraft.image}' alt="{aircraft.alt}">
   </div>
   
@@ -17,10 +17,10 @@
     {/if}
     
     <div class="download-buttons">
-      <a href="{aircraft.link}" target="_blank" class="download-btn liquid-glass">⇱ OpenVSP</a>
-      <a href="{aircraft.downloads.stp}" download class="download-btn liquid-glass">Download STP</a>
-      <a href="{aircraft.downloads.stl}" download class="download-btn liquid-glass">Download STL</a>
-      <a href="{aircraft.downloads.obj}" download class="download-btn liquid-glass">Download OBJ</a>
+      <a href="{aircraft.link}" target="_blank" class="download-btn ">⇱ OpenVSP</a>
+      <a href="{aircraft.downloads.stp}" download class="download-btn ">Download STP</a>
+      <a href="{aircraft.downloads.stl}" download class="download-btn ">Download STL</a>
+      <a href="{aircraft.downloads.obj}" download class="download-btn ">Download OBJ</a>
     </div>
   </div>
 </div>

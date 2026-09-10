@@ -14,7 +14,7 @@
 
 <main class="site-main">
   <div class="wrapper">
-      <div class="page-header fade-in-up liquid-glass">
+      <div class="page-header  ">
           <h1>PhD Research</h1>
 
           <p>On average, an aircraft is struck by lightning somewhere in the world every 20 minutes. This project is working towards an improved understanding of aircraft-lightning physics, and the development of reliable engineering methods for protecting aircraft of the future from lightning hazards.<br/>
@@ -36,7 +36,7 @@
       <!-- NOTE TO SELF: Add list of presentations too?? -->
 
 
-      <!-- <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.6s;">
+      <!-- <div class="project-section  " style="animation-delay: 0.6s;">
           <h3>Conferences and Publications</h3>
 
           <p>▸ Jenkins N A, Michael L, Westin B A, Guerra-Garcia C. Oct 2025. <b>A Physics-Based Approach to Aircraft Lightning Zoning: Zone 2</b> IEEE Access, Vol 13. DOI: <a href="https://doi.org/10.1109/ACCESS.2025.3628197" target="_blank" rel="noreferrer noopener">10.1109/ACCESS.2025.3628197</a></p>
@@ -54,17 +54,17 @@
           <p>▸ Jenkins N, Guerra-Garcia C. Sep 2024. <b>Physics-Based Zoning of Unconventional Aircraft: The Swept Stroke Phase.</b> <a href="https://icolse2024.fee.unicamp.br" target="_blank" rel="noreferrer noopener">International Conference On Lightning and Static Electricity (ICOLSE).</a> Campinas, Brazil. <a href="https://zenodo.org/records/13838314" target="_blank" rel="noreferrer noopener">zenodo.org/records/13838314</a></p>
       </div> -->
 
-      <div class="project-section fade-in-up liquid-glass" style="animation-delay: 0.8s;">
+      <div class="project-section  " style="animation-delay: 0.8s;">
           <h3>Related Links</h3>
           <div class="download-buttons">
-            <a href="{base}/Projects/Thesis" target="_blank" rel="noreferrer noopener" class="download-btn liquid-glass">Masters Thesis</a>
-            <a href="https://apg.mit.edu" target="_blank" rel="noreferrer noopener" class="download-btn liquid-glass">⇱ Aerospace Plasma Group</a>
-            <a href="https://aeroastro.mit.edu/people/carmen-guerra-garcia/" target="_blank" rel="noreferrer noopener" class="download-btn liquid-glass">⇱ Prof. Guerra-Garcia</a>
+            <a href="{base}/Projects/Thesis" target="_blank" rel="noreferrer noopener" class="download-btn ">Masters Thesis</a>
+            <a href="https://apg.mit.edu" target="_blank" rel="noreferrer noopener" class="download-btn ">⇱ Aerospace Plasma Group</a>
+            <a href="https://aeroastro.mit.edu/people/carmen-guerra-garcia/" target="_blank" rel="noreferrer noopener" class="download-btn ">⇱ Prof. Guerra-Garcia</a>
           </div>
       </div>
 
       <!-- Add citation once PhD published -->
-      <!-- <div class="citation-section fade-in-up liquid-glass" style="animation-delay: 0.8s;">
+      <!-- <div class="citation-section  " style="animation-delay: 0.8s;">
           <p>Please cite this project:</p>
           <p>Jenkins, N. (2023). <i>Numerical Simulation of the Lightning Swept Stroke for
               the Zoning of Unconventional Aircraft.</i> [Master's Thesis.] Boston: Massachusetts Institute of Technology. Available at: http://nathanaelj.github.io/Projects/FYP [Accessed: {today}]</p>

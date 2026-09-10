@@ -14,7 +14,7 @@
 
 <main class="site-main">
   <div class="wrapper">
-      <div class="page-header fade-in-up">
+      <div class="page-header ">
           <h1>Academic Projects</h1>
           <p>A collection of projects from my undergraduate and pre-university studies</p>
       </div>

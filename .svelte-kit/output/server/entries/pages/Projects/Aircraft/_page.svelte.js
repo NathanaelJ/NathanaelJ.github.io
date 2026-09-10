@@ -23,7 +23,7 @@ const AircraftModel = create_ssr_component(($$result, $$props, $$bindings, slots
     $$bindings.aircraft(aircraft2);
   if ($$props.animationDelay === void 0 && $$bindings.animationDelay && animationDelay !== void 0)
     $$bindings.animationDelay(animationDelay);
-  return `<div class="aircraft-card fade-in-up" style="${"animation-delay: " + escape(animationDelay, true) + ";"}"><div class="image-container liquid-glass"><img src="${escape(base, true) + "/Projects/" + escape(aircraft2.image, true)}"${add_attribute("alt", aircraft2.alt, 0)}></div> <div class="card-content"><h3${add_attribute("id", aircraft2.id, 0)}>${escape(aircraft2.name)}</h3> ${aircraft2.description ? `<p>${escape(aircraft2.description)}</p>` : ``} <div class="download-buttons"><a${add_attribute("href", aircraft2.link, 0)} target="_blank" class="download-btn liquid-glass">⇱ OpenVSP</a> <a${add_attribute("href", aircraft2.downloads.stp, 0)} download class="download-btn liquid-glass">Download STP</a> <a${add_attribute("href", aircraft2.downloads.stl, 0)} download class="download-btn liquid-glass">Download STL</a> <a${add_attribute("href", aircraft2.downloads.obj, 0)} download class="download-btn liquid-glass">Download OBJ</a></div></div></div>`;
+  return `<div class="aircraft-card " style="${"animation-delay: " + escape(animationDelay, true) + ";"}"><div class="image-container "><img src="${escape(base, true) + "/Projects/" + escape(aircraft2.image, true)}"${add_attribute("alt", aircraft2.alt, 0)}></div> <div class="card-content"><h3${add_attribute("id", aircraft2.id, 0)}>${escape(aircraft2.name)}</h3> ${aircraft2.description ? `<p>${escape(aircraft2.description)}</p>` : ``} <div class="download-buttons"><a${add_attribute("href", aircraft2.link, 0)} target="_blank" class="download-btn ">⇱ OpenVSP</a> <a${add_attribute("href", aircraft2.downloads.stp, 0)} download class="download-btn ">Download STP</a> <a${add_attribute("href", aircraft2.downloads.stl, 0)} download class="download-btn ">Download STL</a> <a${add_attribute("href", aircraft2.downloads.obj, 0)} download class="download-btn ">Download OBJ</a></div></div></div>`;
 });
 const aircraft = [
   {
@@ -106,7 +106,7 @@ const aircraft = [
   }
 ];
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${$$result.head += `<!-- HEAD_svelte-1ccqm6r_START -->${$$result.title = `<title>Aircraft | N Jenkins</title>`, ""}<!-- HEAD_svelte-1ccqm6r_END -->`, ""} <main class="site-main modelling-page"><div class="wrapper"><div class="page-header fade-in-up liquid-glass" data-svelte-h="svelte-1fdmere"><h1>Aircraft Models</h1> <p>I created these concept-level aircraft models to support my <a href="${escape(base, true) + "/Projects/PhD"}">PhD</a> research.<br>Free to use for non-commercial purposes.</p> </div> <div class="aircraft-grid">${each(aircraft, (plane, index) => {
+  return `${$$result.head += `<!-- HEAD_svelte-1ccqm6r_START -->${$$result.title = `<title>Aircraft | N Jenkins</title>`, ""}<!-- HEAD_svelte-1ccqm6r_END -->`, ""} <main class="site-main modelling-page"><div class="wrapper"><div class="page-header  " data-svelte-h="svelte-1fdmere"><h1>Aircraft Models</h1> <p>I created these concept-level aircraft models to support my <a href="${escape(base, true) + "/Projects/PhD"}">PhD</a> research.<br>Free to use for non-commercial purposes.</p> </div> <div class="aircraft-grid">${each(aircraft, (plane, index) => {
     return `${validate_component(AircraftModel, "AircraftModel").$$render(
       $$result,
       {

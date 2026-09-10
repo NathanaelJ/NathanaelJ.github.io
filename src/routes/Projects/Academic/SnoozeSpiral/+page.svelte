@@ -9,7 +9,7 @@
 
 <main class="site-main">
   <div class="wrapper">
-      <div class="page-header fade-in-up liquid-glass">
+      <div class="page-header  ">
           <h1>Data Visualization: Snooze Spiral</h1>
 
           <p>This is a final project from <a href="https://cs-271.github.io" target="_blank" rel="noreferrer noopener">CS271: Topics in Data Visualization</a> at Harvard University, that I produced in collaboration with <a href="https://www.tejaswi.net" target="_blank" rel="noreferrer noopener">Tejaswi Polimetla</a>.<br/></p>

@@ -8,11 +8,11 @@
 
 <main class="site-main">
   <div class="wrapper">
-    <div class="error-container fade-in-up">
+    <div class="error-container ">
       <h1>404: Page Not Found</h1>
     </div>
 
-    <div class="intro-container fade-in-up" style="animation-delay: 0.2s;">
+    <div class="intro-container " style="animation-delay: 0.2s;">
       <div class="intro-text">
         <p>Oops! It looks like you've wandered into uncharted territory. While you're here, enjoy this photo of Minnie the dog.</p>
       </div>

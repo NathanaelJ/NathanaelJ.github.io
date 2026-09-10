@@ -55,7 +55,7 @@ const missiles = [
   }
 ];
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${$$result.head += `<!-- HEAD_svelte-c6lhp8_START -->${$$result.title = `<title>Modelling | N Jenkins</title>`, ""}<!-- HEAD_svelte-c6lhp8_END -->`, ""} <main class="site-main modelling-page"><div class="wrapper"><div class="page-header fade-in-up liquid-glass"><h1 data-svelte-h="svelte-1p0azqq">Missile Models</h1> <p data-svelte-h="svelte-16sqosq">All of the data relating to these models was taken from publicly available data, predominantly photos published by militaries or manufacturers. Dimensions are approximate.<br></p> <p data-svelte-h="svelte-10ztzsz">Free to hobbyists. For commercial use, please <a href="mailto:naj20@mit.edu">contact me</a> first.<br></p> <p>${each(missiles, (missile) => {
+  return `${$$result.head += `<!-- HEAD_svelte-c6lhp8_START -->${$$result.title = `<title>Modelling | N Jenkins</title>`, ""}<!-- HEAD_svelte-c6lhp8_END -->`, ""} <main class="site-main modelling-page"><div class="wrapper"><div class="page-header  "><h1 data-svelte-h="svelte-1p0azqq">Missile Models</h1> <p data-svelte-h="svelte-16sqosq">All of the data relating to these models was taken from publicly available data, predominantly photos published by militaries or manufacturers. Dimensions are approximate.<br></p> <p data-svelte-h="svelte-10ztzsz">Free to hobbyists. For commercial use, please <a href="mailto:naj20@mit.edu">contact me</a> first.<br></p> <p>${each(missiles, (missile) => {
     return `<a href="${"#" + escape(missile.id, true)}">${escape(missile.name)}</a><br>`;
   })}</p></div> ${each(missiles, (missile, index) => {
     return `${validate_component(MissileModel, "MissileModel").$$render(

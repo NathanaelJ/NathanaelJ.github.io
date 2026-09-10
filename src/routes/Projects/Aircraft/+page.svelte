@@ -12,7 +12,7 @@
 
 <main class="site-main modelling-page">
   <div class="wrapper">
-    <div class="page-header fade-in-up liquid-glass">
+    <div class="page-header  ">
       <h1>Aircraft Models</h1>
       
       <p>I created these concept-level aircraft models to support my <a href="{base}/Projects/PhD">PhD</a> research.<br/>Free to use for non-commercial purposes.</p>

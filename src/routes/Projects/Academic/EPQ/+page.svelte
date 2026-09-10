@@ -9,11 +9,11 @@
 
 <main class="site-main">
   <div class="wrapper">
-      <div class="page-header fade-in-up liquid-glass">
+      <div class="page-header  ">
           <h1>Ion Propulsion</h1>
 
           <p>Alongside A-Level studies, I conducted an 'Extended Project Qualification' (EPQ) exploring ion propulsion for air and space travel.<br/></p>
-          <div class="citation-section fade-in-up liquid-glass" style="animation-delay: 0.8s;">
+          <div class="citation-section  " style="animation-delay: 0.8s;">
             <p>Please cite this project:</p>
             <p>Jenkins, N. (2019). <i>Is ion propulsion the future of air and space transport?</i> [pdf] Winchester: Peter Symonds College. Available at: http://nathanaelj.github.io/Projects/AcademicResources/EPQ.pdf [Accessed: {today}]</p>
           </div>

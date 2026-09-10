@@ -7,7 +7,7 @@
 </svelte:head>
 
 <main class="site-main">
-    <div class="intro-container fade-in-up" style="margin-top: 0;">
+    <div class="intro-container " style="margin-top: 0;">
         <img src="/resources-General/Self.jpg" class="introimg" alt="Nathanael Jenkins portrait">
         <div class="intro-text">
             <h1>Hi there!</h1>
@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <!-- <div class="intro-container fade-in-up" style="animation-delay: 0.2s;">
+    <!-- <div class="intro-container " style="animation-delay: 0.2s;">
         <div class="intro-text">
             <p>I'm researching multi-physics simulations for aircraft lightning protection. Find out more <a href="{base}/Projects/PhD">here</a>.</p>
         </div>
