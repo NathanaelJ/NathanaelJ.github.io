@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/dataviz/A4/+page.svelte";

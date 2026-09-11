@@ -9,6 +9,17 @@
 "dropdown":true
 },
 
+{
+    "title":"AI in Research",
+    "button_title":"",
+    "year":"2026",
+    "img":"/Thumbnails/AI.png",
+    "subtitle":"Project portfolio | MIT 16.S983",
+    "description":"",
+    "link":"Projects/Academic/AI",
+    "dropdown":false
+},
+
 {"title":"Snooze Spiral",
 "button_title":"Snooze Spiral",
 "year":"2026",

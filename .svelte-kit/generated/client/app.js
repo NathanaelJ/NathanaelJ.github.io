@@ -20,7 +20,8 @@ export const nodes = [
 	() => import('./nodes/16'),
 	() => import('./nodes/17'),
 	() => import('./nodes/18'),
-	() => import('./nodes/19')
+	() => import('./nodes/19'),
+	() => import('./nodes/20')
 ];
 
 export const server_loads = [];
@@ -31,19 +32,20 @@ export const dictionary = {
 		"/CV": [4],
 		"/Projects": [5],
 		"/Projects/Academic": [6],
-		"/Projects/Academic/EPQ": [7],
-		"/Projects/Academic/GDP": [8],
-		"/Projects/Academic/SnoozeSpiral": [9],
-		"/Projects/Academic/UROP": [10],
-		"/Projects/Aircraft": [11],
-		"/Projects/ICLR": [12],
-		"/Projects/Modelling": [13],
-		"/Projects/PhD": [14],
-		"/Projects/Thesis": [15],
-		"/dataviz": [16],
-		"/dataviz/A2": [17],
-		"/dataviz/A3": [18],
-		"/dataviz/A4": [19]
+		"/Projects/Academic/AI": [7],
+		"/Projects/Academic/EPQ": [8],
+		"/Projects/Academic/GDP": [9],
+		"/Projects/Academic/SnoozeSpiral": [10],
+		"/Projects/Academic/UROP": [11],
+		"/Projects/Aircraft": [12],
+		"/Projects/ICLR": [13],
+		"/Projects/Modelling": [14],
+		"/Projects/PhD": [15],
+		"/Projects/Thesis": [16],
+		"/dataviz": [17],
+		"/dataviz/A2": [18],
+		"/dataviz/A3": [19],
+		"/dataviz/A4": [20]
 	};
 
 export const hooks = {
