@@ -19,7 +19,8 @@
 
           <p>On average, an aircraft is struck by lightning somewhere in the world every 20 minutes. This project is working towards an improved understanding of aircraft-lightning physics, and the development of reliable engineering methods for protecting aircraft of the future from lightning hazards.<br/>
           </p>
-          <a href="https://news.mit.edu/2025/lightning-prediction-tool-could-help-protect-planes-future-1104" class="project-link" target="_blank" rel="noreferrer noopener">Check out our feature in MIT News ⇱</a>
+          <a href="https://news.mit.edu/2025/lightning-prediction-tool-could-help-protect-planes-future-1104" class="project-link" target="_blank" rel="noreferrer noopener">MIT News feature ⇱</a>
+          <a href="https://www.boeing.com/features/2026/10/smarter-lightning-defense-for-future-aircraft" class="project-link" target="_blank" rel="noreferrer noopener">Boeing News feature ⇱</a>
 
       </div>
 
