@@ -1,5 +1,15 @@
 [
     {
+      "title": "An End-to-End Workflow for Zoning by Simulation",
+      "button_title": "An End-to-End Workflow for Zoning by Simulation",
+      "year": "2026",
+      "img": "/Projects/PhDResources/Thumbnails/ICOLSE_26.png",
+      "subtitle": "International Conference On Lightning and Static Electricity (ICOLSE), USA",
+      "description": "An End-to-End Workflow for Zoning by Simulation",
+      "link": "external:https://doi.org/10.5281/zenodo.23083878",
+      "dropdown": false
+    },
+    {
       "title": "A Physics-Based Approach to Aircraft Lightning Zoning: Zone 2",
       "button_title": "A Physics-Based Approach to Aircraft Lightning Zoning: Zone 2",
       "year": "2025",
