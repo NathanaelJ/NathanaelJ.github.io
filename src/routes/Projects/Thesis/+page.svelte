@@ -14,7 +14,7 @@
       <!-- </div>
       
       <div class="project-section  " style="animation-delay: 0.2s;"> -->
-          <p>For my masters' thesis, I developed a physics-based model for the 'swept-stroke' phase of lightning strikes on aircraft under the supervision of Prof. Guerra-Garcia in the <a href="apg.mit.edu">MIT Aerospace Plasma Group.</a> I am continuing the research for my <a href="{base}/Projects/PhD">PhD</a>.<br/></p>
+          <p>For my masters' thesis, I developed a physics-based model for the 'swept-stroke' phase of lightning strikes on aircraft under the supervision of Prof. Guerra-Garcia in the <a href="https://apg.mit.edu" target="_blank" rel="noreferrer noopener">MIT Aerospace Plasma Group.</a> I am continuing the research for my <a href="{base}/Projects/PhD">PhD</a>.<br/></p>
 
           <div class="citation-section  " style="animation-delay: 0.8s;">
               <p>Please cite this project:</p>

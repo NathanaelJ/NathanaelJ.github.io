@@ -18,9 +18,9 @@
     
     <div class="download-buttons">
       <a href="{aircraft.link}" target="_blank" class="download-btn ">⇱ OpenVSP</a>
-      <a href="{aircraft.downloads.stp}" download class="download-btn ">Download STP</a>
-      <a href="{aircraft.downloads.stl}" download class="download-btn ">Download STL</a>
-      <a href="{aircraft.downloads.obj}" download class="download-btn ">Download OBJ</a>
+      <a href="{base}/Projects/{aircraft.downloads.stp}" download class="download-btn ">Download STP</a>
+      <a href="{base}/Projects/{aircraft.downloads.stl}" download class="download-btn ">Download STL</a>
+      <a href="{base}/Projects/{aircraft.downloads.obj}" download class="download-btn ">Download OBJ</a>
     </div>
   </div>
 </div>

@@ -10,7 +10,7 @@
   <div class="wrapper">
       <div class="page-header  ">
           <h1>Imperial College London Rocketry</h1>
-          <p>The Altitude Record Team (ART) is a project within <a href="https://imperialrocketry.com" target="_blank" rel="noreferrer noopener">Imperial College London Rocketry (ICLR)</a> which exists to break <a href="https://ukra.ork.uk" target="_blank" rel="noreferrer noopener">United Kingdom Rocketry Association (UKRA)</a> altitude records. The team formed in 2019, with its first two launches in early 2021, and our first record-breaking flight in 2022.<br/></p>
+          <p>The Altitude Record Team (ART) is a project within <a href="https://imperialrocketry.com" target="_blank" rel="noreferrer noopener">Imperial College London Rocketry (ICLR)</a> which exists to break <a href="https://ukra.org.uk" target="_blank" rel="noreferrer noopener">United Kingdom Rocketry Association (UKRA)</a> altitude records. The team formed in 2019, with its first two launches in early 2021, and our first record-breaking flight in 2022.<br/></p>
           
           <p>From 2020-2023, I led the aerodynamics and simulations sub-team, using computational methods to model and optimise the behaviour of our rocket. We used tools including <a href="https://openrocket.info" target="_blank" rel="noreferrer noopener">OpenRocket</a>, <a href="https://www.plm.automation.siemens.com/global/en/products/simcenter/STAR-CCM.html" target="_blank" rel="noreferrer noopener">StarCCM+</a>, and <a href="https://engineering.esteco.com/modefrontier/" target="_blank" rel="noreferrer noopener">ESTECO modeFrontier</a>.</p>
       </div>
@@ -51,8 +51,8 @@
         <p><a href="https://engineering.esteco.com/modefrontier/" target="_blank" rel="noreferrer noopener">ESTECO</a> kindly provided ICL Rocketry with licenses to use their powerful multidisciplinary optimisation (MDO) software, modeFrontier. This connects with many engineering modelling packages and can be used to optimise complex designs in much shorter timeframes, and with much greater control over simulations, than our previous methods. The team successfully used it to break the I-Class record with APEX-I.</p>
         
         <div class="download-buttons" style="margin-bottom: 0px;">
-            <a href="ICLRResources/oR_mF/oRmFIntegration.pdf" target="_blank" rel="noreferrer noopener" class="download-btn ">openRocket-modeFrontier Integration</a>
-            <a href="ICLRResources/oR_mF/NSGA_HYBRID.pdf" target="_blank" rel="noreferrer noopener" class="download-btn ">NSGA-HYBRID Performance Evaluation</a>
+            <a href="{base}/Projects/ICLRResources/oR_mF/oRmFIntegration.pdf" target="_blank" rel="noreferrer noopener" class="download-btn ">openRocket-modeFrontier Integration</a>
+            <a href="{base}/Projects/ICLRResources/oR_mF/NSGA_HYBRID.pdf" target="_blank" rel="noreferrer noopener" class="download-btn ">NSGA-HYBRID Performance Evaluation</a>
         </div>
     </div>
 

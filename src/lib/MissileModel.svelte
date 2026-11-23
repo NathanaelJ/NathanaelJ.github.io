@@ -12,10 +12,10 @@
   {/if}
   
   <div class="download-buttons">
-    <a href="{missile.downloads.step}" download class="download-btn ">Download STEP</a>
-    <a href="{missile.downloads.stl}" download class="download-btn ">Download STL (Binary)</a>
-    <a href="{missile.downloads.obj}" download class="download-btn ">Download OBJ</a>
-    <a href="{missile.downloads.pdf}" download class="download-btn ">Download drawing (PDF)</a>
+    <a href="{base}/Projects/{missile.downloads.step}" download class="download-btn ">Download STEP</a>
+    <a href="{base}/Projects/{missile.downloads.stl}" download class="download-btn ">Download STL (Binary)</a>
+    <a href="{base}/Projects/{missile.downloads.obj}" download class="download-btn ">Download OBJ</a>
+    <a href="{base}/Projects/{missile.downloads.pdf}" download class="download-btn ">Download drawing (PDF)</a>
   </div>
   
   <div class="image-container ">
