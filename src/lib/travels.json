@@ -1,5 +1,5 @@
 {
-    "countries": ["GB", "US", "FR", "AT", "IT", "BR", "CH", "MY", "QA", "CA", "ES", "SI", "DE"],
+    "countries": ["GB", "US", "FR", "AT", "IT", "BR", "CH", "MY", "QA", "CA", "ES", "SI", "DE", "NL"],
     "states": ["MA", "VA", "DC", "FL", "CA", "PA", "TX", "CO", "SC", "WA", "MD", "ME", "NH", "VT", "NY", "CT", "NJ", "DE", "RI", "GA"],
     "flights": [
         "BOS-IAD",
@@ -61,6 +61,15 @@
         "LHR-DOH",
         "DOH-KUL",
         "KUL-DOH",
-        "DOH-LHR"
+        "DOH-LHR",
+        "LGW-AGP",
+        "AGP-LGW",
+        "LHR-MRS",
+        "MRS-LHR",
+        "LGW-AJA",
+        "AJA-LGW",
+        "NCL-LHR",
+        "LHR-GLA",
+        "GLA-LHR"
     ]
 }
