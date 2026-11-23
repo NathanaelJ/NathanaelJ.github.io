@@ -14,7 +14,7 @@
     <div class="wrapper">
         <div class="page-header">
             <h1 class="visually-hidden">Travels</h1>
-            <p>I'm trying to keep track of places I've visited. Here are the trips I remembered to log...</p>
+            <p>Places I've been, and flights I've taken...</p>
         </div>
     </div>
 

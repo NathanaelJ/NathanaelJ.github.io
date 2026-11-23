@@ -1,5 +1,24 @@
 <script>
+    import { onMount } from 'svelte';
     import { base } from '$app/paths';
+    import { strike } from '$lib/lightning/index.js';
+
+    let portrait;
+
+    // One strike on the portrait per visit (skipped for people who prefer reduced motion)
+    onMount(() => {
+        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        let seen = false;
+        try {
+            seen = sessionStorage.getItem('struck') === '1';
+            sessionStorage.setItem('struck', '1');
+        } catch {
+            /* storage unavailable: strike anyway */
+        }
+        if (reduced || seen) return;
+        const timer = setTimeout(() => strike(portrait), 900);
+        return () => clearTimeout(timer);
+    });
 </script>
 
 <svelte:head>
@@ -8,10 +27,20 @@
 
 <main class="site-main">
     <div class="intro-container " style="margin-top: 0;">
-        <img src="/resources-General/Self.jpg" class="introimg" alt="Nathanael Jenkins portrait">
+        <img
+            bind:this={portrait}
+            src="/resources-General/Self.jpg"
+            class="introimg strikeable"
+            alt="Nathanael Jenkins portrait"
+            on:click={() => strike(portrait)}
+        >
         <div class="intro-text">
             <h1>Hi there!</h1>
             <p>I'm Nathanael, a PhD candidate in Aeronautics and Astronautics at the <a href="https://www.mit.edu" target="_blank" rel="noreferrer noopener">Massachusetts Institute of Technology</a>. Welcome to my little space on the web.</p>
+            <div class="intro-buttons">
+                <a href="{base}/Projects/PhD" class="apple-button">What I do</a>
+                <a href="{base}/Projects/Travels" class="apple-button">Where I've been</a>
+            </div>
         </div>
     </div>
 

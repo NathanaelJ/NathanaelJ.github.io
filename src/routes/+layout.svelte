@@ -2,6 +2,8 @@
     import { base } from '$app/paths';
     import { page } from "$app/stores";
     import projects from '$lib/projects.json';
+    import Lightning from '$lib/Lightning.svelte';
+    import StormToggle from '$lib/StormToggle.svelte';
 
     $: routeId = $page?.route?.id || '';
 </script>
@@ -41,12 +43,15 @@
                 </div>
             </div>
             <a href="{base}/CV" class="menu-links" class:current-page={routeId.includes("/CV")} id="resume-link">CV</a>
+            <StormToggle />
         </nav>
     </div>
     <hr class="rule">
 </header>
 
 <slot></slot>
+
+<Lightning />
 
 <footer class="footer">
     <hr class="rule">
