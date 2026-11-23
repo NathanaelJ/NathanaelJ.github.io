@@ -1,1 +1,0 @@
-export { default as component } from "../../../../src/routes/Projects/Academic/UROP/+page.svelte";
