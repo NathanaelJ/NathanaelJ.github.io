@@ -9,6 +9,16 @@
 "dropdown":true
 },
 
+{"title":"Travels",
+"button_title":"Travels",
+"year":"2026",
+"img":"/Projects/Travels/thumbnail.svg",
+"subtitle":"Where I've been",
+"description":"A map of places I've been and the flights that got me there.",
+"link":"Projects/Travels",
+"dropdown":false
+},
+
 {
     "title":"AI in Research",
     "button_title":"",

@@ -125,91 +125,91 @@
         </div>
 
         <div class="resume-section " style="animation-delay: 0.6s;">
-            <h5>📄 Publications & 🎤 Presentations</h5>
+            <h5>Publications & Presentations</h5>
             <ul class="resume-list-tight">
                 <li>
                     <div class="position-line-tight">
                         <span class="position">International Conference on Lightning and Static Electricity (ICOLSE) 2026</span>
                         <span class="date-range">10/2026</span>
                     </div>
-                    <div class="institution">📄🎤 An End-to-End Simulation-Based Workflow for Zoning | Charleston, SC</div>
+                    <div class="institution">An End-to-End Simulation-Based Workflow for Zoning | Charleston, SC</div>
                 </li>
                 <li>
                     <div class="position-line-tight">
                         <span class="position">Future Leaders in Aerospace Symposium</span>
                         <span class="date-range">05/2026</span>
                     </div>
-                    <div class="institution">🎤 Aircraft Lightning Protection: Zoning by Simulation | Boulder, CO</div>
+                    <div class="institution">Aircraft Lightning Protection: Zoning by Simulation | Boulder, CO</div>
                 </li>
                 <li>
                     <div class="position-line-tight">
                         <span class="position">MIT-Boeing Annual Review</span>
                         <span class="date-range">05/2026</span>
                     </div>
-                    <div class="institution">🎤 Aircraft-Scale Modeling of Lightning Phenomena: Zoning by Simulation | Boston, MA</div>
+                    <div class="institution">Aircraft-Scale Modeling of Lightning Phenomena: Zoning by Simulation | Boston, MA</div>
                 </li>
                 <li>
                     <div class="position-line-tight">
                         <span class="position">A Physics-Based Approach to Aircraft Lightning Zoning: Zone 2</span>
                         <span class="date-range">10/2025</span>
                     </div>
-                    <div class="institution">📄 IEEE Access, vol. 13, doi: 10.1109/ACCESS.2024.3515833</div>
+                    <div class="institution">IEEE Access, vol. 13, doi: 10.1109/ACCESS.2024.3515833</div>
                 </li>
                 <li>
                     <div class="position-line-tight">
                         <span class="position">SAE AE-2 Committee Meeting</span>
                         <span class="date-range">10/2025</span>
                     </div>
-                    <div class="institution">🎤 Recent Progress in Zoning by Simulation | Pittsburgh, PA</div>
+                    <div class="institution">Recent Progress in Zoning by Simulation | Pittsburgh, PA</div>
                 </li>
                 <li>
                     <div class="position-line-tight">
                         <span class="position">EUROCAE WG 31 Zoning Workshop</span>
                         <span class="date-range">07/2025</span>
                     </div>
-                    <div class="institution">📄🎤 Mapping of Swept Stroke Physical-Quantities to Zoning Diagrams | Paris, France</div>
+                    <div class="institution">Mapping of Swept Stroke Physical-Quantities to Zoning Diagrams | Paris, France</div>
                 </li>
                 <li>
                     <div class="position-line-tight">
                         <span class="position">MIT-Boeing Annual Review</span>
                         <span class="date-range">04/2025</span>
                     </div>
-                    <div class="institution">🎤 A Numerical Model for the Zoning of Unconventional Aircraft: The Swept Stroke Phase | Boston, MA</div>
+                    <div class="institution">A Numerical Model for the Zoning of Unconventional Aircraft: The Swept Stroke Phase | Boston, MA</div>
                 </li>
                 <li>
                     <div class="position-line-tight">
                         <span class="position">Numerical Simulation of the Lightning Swept Stroke</span>
                         <span class="date-range">12/2024</span>
                     </div>
-                    <div class="institution">📄 IEEE Access, vol. 12, doi: 10.1109/ACCESS.2025.3628197</div>
+                    <div class="institution">IEEE Access, vol. 12, doi: 10.1109/ACCESS.2025.3628197</div>
                 </li>
                 <li>
                     <div class="position-line-tight">
                         <span class="position">SAE AE-2 Committee Meeting</span>
                         <span class="date-range">10/2024</span>
                     </div>
-                    <div class="institution">🎤 Development and Validation of Numerical Models for Lightning Zoning Assessment | Cape Canaveral, FL</div>
+                    <div class="institution">Development and Validation of Numerical Models for Lightning Zoning Assessment | Cape Canaveral, FL</div>
                 </li>
                 <li>
                     <div class="position-line-tight">
                         <span class="position">International Conference on Lightning and Static Electricity (ICOLSE) 2024</span>
                         <span class="date-range">09/2024</span>
                     </div>
-                    <div class="institution">📄🎤 Physics-Based Zoning of Unconventional Aircraft: The Swept Stroke Phase | Campinas, Brazil</div>
+                    <div class="institution">Physics-Based Zoning of Unconventional Aircraft: The Swept Stroke Phase | Campinas, Brazil</div>
                 </li>
                 <li>
                     <div class="position-line-tight">
                         <span class="position">Masters Thesis</span>
                         <span class="date-range">06/2024</span>
                     </div>
-                    <div class="institution">📄 Numerical Simulation of the Lightning Swept Stroke for the Zoning of Unconventional Aircraft | London, UK</div>
+                    <div class="institution">Numerical Simulation of the Lightning Swept Stroke for the Zoning of Unconventional Aircraft | London, UK</div>
                 </li>
                 <li>
                     <div class="position-line-tight">
                         <span class="position">MIT-Boeing Annual Review</span>
                         <span class="date-range">04/2024</span>
                     </div>
-                    <div class="institution">🎤 The Lightning Swept Stroke: A Numerical Model for the Zoning of Unconventional Aircraft | Boston, MA</div>
+                    <div class="institution">The Lightning Swept Stroke: A Numerical Model for the Zoning of Unconventional Aircraft | Boston, MA</div>
                 </li>
             </ul>
         </div>

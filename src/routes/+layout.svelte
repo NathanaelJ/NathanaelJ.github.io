@@ -58,7 +58,7 @@
     </nav>
 
     <div class="footer-right">
-        <p>&copy; Nathanael Jenkins, 2025</p>
-        <p>improved using <a href="https://cursor.com/" target="_blank" rel="noreferrer noopener">Cursor</a></p>
+        <p>&copy; Nathanael Jenkins, 2026</p>
+        <p>improved using <a href="https://cursor.com/" target="_blank" rel="noreferrer noopener">Cursor</a> and <a href="https://claude.com/claude-code" target="_blank" rel="noreferrer noopener">Claude</a></p>
     </div>
 </footer>

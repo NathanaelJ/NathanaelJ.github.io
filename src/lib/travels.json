@@ -1,0 +1,14 @@
+{
+    "countries": ["GB", "US", "FR"],
+    "states": ["MA", "CO"],
+    "flights": [
+        "BOS-LHR",
+        "LHR-BOS",
+        "BOS-DEN",
+        "DEN-BOS",
+        "BOS-LHR",
+        "LHR-BOS",
+        "BOS-DCA",
+        "LHR-CDG"
+    ]
+}

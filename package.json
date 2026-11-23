@@ -20,6 +20,9 @@
 	"dependencies": {
 		"@floating-ui/dom": "^1.6.13",
 		"d3": "^7.9.0",
-		"svelte-scrolly": "^0.0.4"
+		"svelte-scrolly": "^0.0.4",
+		"topojson-client": "^3.1.0",
+		"us-atlas": "^3.0.1",
+		"world-atlas": "^2.0.2"
 	}
 }
