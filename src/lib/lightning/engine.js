@@ -18,6 +18,7 @@ export const ATTACHABLE = [
     '.download-btn',
     '.menu-links',
     '.storm-toggle',
+    '.sink-link',
     '.image-container img',
     'figure img'
 ].join(',');

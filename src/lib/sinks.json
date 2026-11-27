@@ -1,0 +1,34 @@
+[
+{
+    "name": "Cotswolds AirBnB",
+    "location": "UK",
+    "date": "2026-05-26",
+    "photo": "cotswolds.jpg",
+    "summary": "",
+    "reviewer": "Annabella",
+    "ratings": {
+        "aesthetics":   { "score": 4.7,   "notes": "Colours/tiles pair nicely, I like the drain + sharp edges of the basin" },
+        "splash":       { "score": 1.5, "notes": "Pretty poor mostly due to shallow basin" },
+        "practicality": { "score": 2.5,   "notes": "Surface area too small to wash face, and tap in line of sight + built in so difficult to access plumbing" },
+        "ratio":        { "score": 3.9,   "notes": "Proportional and good for discouraging clutter" },
+        "total":        { "score": 3.15, "notes": "Pretty but would not use for anything more than washing hands (at best)" }
+    }
+},
+
+{
+    "name": "L'Occitane Disney Springs",
+    "location": "Orlando, FL",
+    "date": "2026-11-14",
+    "photo": "florida.jpeg",
+    "summary": "Disney's finest",
+    "reviewer": "Nat",
+    "ratings": {
+        "aesthetics":   { "score": 4.1,   "notes": "Nice tiles, cool shape, pretty splashback. But the paper-towel box stands out too much." },
+        "splash":       { "score": 1.5, "notes": "Poor due to almost-flat basin." },
+        "practicality": { "score": 4.8,   "notes": "Not good for washing away soap drips. But the foot pedal is *amazing*" },
+        "ratio":        { "score": 4.2,   "notes": "Enough space for soap and not much else. Good for discouraging clutter." },
+        "total":        { "score": 3.65, "notes": "Big points for the foot pedal." }
+    }
+}
+
+]

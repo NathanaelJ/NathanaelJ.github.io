@@ -142,6 +142,34 @@ html.storm .aircraft-card .image-container img {
     filter: drop-shadow(0 0 6px rgba(60, 130, 255, 0.9));
 }
 
+/* Unlabelled sink icon next to the storm toggle: secret link to /sinks */
+.sink-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    color: var(--color-text-primary);
+    align-self: center;
+}
+
+.sink-link svg {
+    width: 1rem;
+    height: 1rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.sink-link:hover svg,
+.sink-link.current-page svg {
+    fill: rgba(60, 130, 255, 0.22);
+    stroke: #3d82ff;
+}
+
 .strikeable {
     cursor: pointer;
 }

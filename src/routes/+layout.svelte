@@ -44,6 +44,14 @@
             </div>
             <a href="{base}/CV" class="menu-links" class:current-page={routeId.includes("/CV")} id="resume-link">CV</a>
             <StormToggle />
+            <!-- Secret: the only way in to the hidden /sinks page -->
+            <a href="{base}/sinks" class="sink-link" class:current-page={routeId.startsWith("/sinks")} aria-label="Sinks" rel="nofollow">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M9 12V5a2.5 2.5 0 0 1 5 0v1.5" />
+                    <path d="M2.5 12h19" />
+                    <path d="M4 12a8 8 0 0 0 16 0" />
+                </svg>
+            </a>
         </nav>
     </div>
     <hr class="rule">
